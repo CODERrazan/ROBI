@@ -1,0 +1,59 @@
+{
+  "browser": "Edge via CDP",
+  "steps": [
+    {
+      "label": "greeting",
+      "seconds": 2.18,
+      "reply": "Conversation service failed. Please try again."
+    },
+    {
+      "label": "outfit",
+      "seconds": 6.29,
+      "reply": "هلاا! أنا روبي 🎀 مساعدتك في تنسيق أفاتارك! وش ودك نلبّسها اليوم؟"
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+  ],
+  "api": [
+    {
+      "url": "/api/chat",
+      "method": "POST",
+      "status": 502,
+      "seconds": 1.91,
+      "result": {
+        "detail": "Conversation service failed. Please try again."
+      }
+    },
+    {
+      "url": "/api/chat",
+      "method": "POST",
+      "status": 200,
+      "seconds": 6.18,
+      "result": {
+        "intent": "outfit",
+        "ready": false,
+        "reply": "هلاا! أنا روبي 🎀 مساعدتك في تنسيق أفاتارك! وش ودك نلبّسها اليوم؟",
+        "requirements": {
+          "intent": "generate_outfit",
+          "avatar_type": null,
+          "style": [],
+          "colors": [],
+          "categories": [],
+          "budget_robux": 100,
+          "skin_tone": null,
+          "category_preferences": {},
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {},
+          "changed_categories": [],
+          "removed_categories": []
+        },
+        "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+      }
+    }
+  ],
+  "passed": false,
+  "error": "Timed out waiting for document.querySelectorAll('.outfit-option').length>0"
+}

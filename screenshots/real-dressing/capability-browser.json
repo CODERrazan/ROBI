@@ -1,0 +1,253 @@
+{
+  "method": "Real Edge browser CDP interaction with React UI and live backend; no mocked network",
+  "api": [
+    {
+      "url": "http://localhost:8000/api/avatar/resolve",
+      "request": {
+        "items": [
+          {
+            "assetId": 17331596106,
+            "assetType": 11
+          },
+          {
+            "assetId": 9694994699,
+            "assetType": 12
+          },
+          {
+            "assetId": 6439158354,
+            "assetType": 2
+          },
+          {
+            "assetId": 88305103859479,
+            "assetType": 67
+          }
+        ]
+      },
+      "http_status": 200,
+      "seconds": 0.01,
+      "result": {
+        "rig": "native_classic_r15",
+        "items": [
+          {
+            "asset_id": 17331596106,
+            "asset_type": 11,
+            "name": "୨ৎ black cute shirt",
+            "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "shirt",
+            "order": 1,
+            "texture_asset_id": 17331596076,
+            "texture_url": "/api/avatar/textures/95144e3d15889e4ec5dd7fb71a6c2f1a3bceb12935f629cfea2f939ec5bc892a",
+            "texture_sha256": "95144e3d15889e4ec5dd7fb71a6c2f1a3bceb12935f629cfea2f939ec5bc892a",
+            "width": 585,
+            "height": 559,
+            "resolution_status": "resolved"
+          },
+          {
+            "asset_id": 9694994699,
+            "asset_type": 12,
+            "name": "white plaid pjs y2k lol cute trendy ",
+            "description": "Grey version\nhttps://www.roblox.com/catalog/9694992049/grey-plaid-pjs-y2k-lol-cute-trendy\n✧༺Ty for purchasing༻∞\n\nShorts:\n",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "pants",
+            "order": 2,
+            "texture_asset_id": 9694994682,
+            "texture_url": "/api/avatar/textures/f6cceb09f00701ab38d51533f099af72a0730f42b82b1f9e3ea68d69be637858",
+            "texture_sha256": "f6cceb09f00701ab38d51533f099af72a0730f42b82b1f9e3ea68d69be637858",
+            "width": 585,
+            "height": 559,
+            "resolution_status": "resolved"
+          },
+          {
+            "asset_id": 6439158354,
+            "asset_type": 2,
+            "name": "Roblox🎮",
+            "description": "T-Shirt",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "tshirt",
+            "order": 3,
+            "texture_asset_id": 6439158322,
+            "texture_url": "/api/avatar/textures/52359f6ba611111108b2ddaa937ddb71197de921a73a8286178530fc639dba37",
+            "texture_sha256": "52359f6ba611111108b2ddaa937ddb71197de921a73a8286178530fc639dba37",
+            "width": 420,
+            "height": 420,
+            "resolution_status": "resolved"
+          },
+          {
+            "asset_id": 88305103859479,
+            "asset_type": 67,
+            "name": "Black",
+            "description": "Black: https://www.roblox.com/catalog/93635133768445/Black\nMore Black UGCS: https://www.roblox.com/catalog?Keyword=Black&Category=1&CreatorName=Kool+closet&CreatorType=Group&salesTypeFilter=1",
+            "price": 120,
+            "availability": "available",
+            "preview_capability": "native_only",
+            "slot": "layered",
+            "accessory_type": "Jacket",
+            "is_layered": true,
+            "order": 4,
+            "resolution_status": "unsupported",
+            "message": "Accurate preview requires the Roblox Experience."
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/designs/launch-token",
+      "request": {
+        "config": {
+          "version": 1,
+          "rigType": "R15",
+          "bodyColors": {
+            "head": "#E8B590",
+            "torso": "#E8B590",
+            "leftArm": "#E8B590",
+            "rightArm": "#E8B590",
+            "leftLeg": "#E8B590",
+            "rightLeg": "#E8B590"
+          },
+          "scales": {
+            "height": 1,
+            "width": 1,
+            "head": 1,
+            "bodyType": 0,
+            "proportion": 0
+          },
+          "items": [
+            {
+              "slot": "shirt",
+              "source": "roblox",
+              "assetId": 17331596106,
+              "assetType": 11,
+              "name": "୨ৎ black cute shirt",
+              "verified": true,
+              "price": 5,
+              "availability": "available"
+            },
+            {
+              "slot": "pants",
+              "source": "roblox",
+              "assetId": 9694994699,
+              "assetType": 12,
+              "name": "white plaid pjs y2k lol cute trendy ",
+              "verified": true,
+              "price": 5,
+              "availability": "available"
+            },
+            {
+              "slot": "tshirt",
+              "source": "roblox",
+              "assetId": 6439158354,
+              "assetType": 2,
+              "name": "Roblox🎮",
+              "verified": true,
+              "price": 5,
+              "availability": "available"
+            },
+            {
+              "slot": "layered",
+              "source": "roblox",
+              "assetId": 88305103859479,
+              "assetType": 67,
+              "name": "Black",
+              "verified": true,
+              "price": 120,
+              "availability": "available",
+              "accessoryType": "Jacket"
+            }
+          ]
+        }
+      },
+      "http_status": 200,
+      "seconds": 3.081,
+      "result": {
+        "design_id": "650a236a-3cd3-4458-af3f-59c7a9511e11",
+        "version": 1,
+        "code": "[redacted]",
+        "expires_at": 1793693221,
+        "launch_url": "https://www.roblox.com/games/137572714213370",
+        "handoff_mode": "one_time_code_with_website_confirmation",
+        "items": [
+          {
+            "asset_id": 17331596106,
+            "asset_type": 11,
+            "name": "୨ৎ black cute shirt",
+            "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "shirt",
+            "order": 1
+          },
+          {
+            "asset_id": 9694994699,
+            "asset_type": 12,
+            "name": "white plaid pjs y2k lol cute trendy ",
+            "description": "Grey version\nhttps://www.roblox.com/catalog/9694992049/grey-plaid-pjs-y2k-lol-cute-trendy\n✧༺Ty for purchasing༻∞\n\nShorts:\n",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "pants",
+            "order": 2
+          },
+          {
+            "asset_id": 6439158354,
+            "asset_type": 2,
+            "name": "Roblox🎮",
+            "description": "T-Shirt",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "tshirt",
+            "order": 3
+          },
+          {
+            "asset_id": 88305103859479,
+            "asset_type": 67,
+            "name": "Black",
+            "description": "Black: https://www.roblox.com/catalog/93635133768445/Black\nMore Black UGCS: https://www.roblox.com/catalog?Keyword=Black&Category=1&CreatorName=Kool+closet&CreatorType=Group&salesTypeFilter=1",
+            "price": 120,
+            "availability": "available",
+            "preview_capability": "native_only",
+            "slot": "layered",
+            "accessory_type": "Jacket",
+            "is_layered": true,
+            "order": 4
+          }
+        ]
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "steps": [
+    {
+      "screenshot": "03-graphic-layered-capability.png"
+    },
+    {
+      "screenshot": "04-roblox-code-handoff.png"
+    },
+    {
+      "screenshot": "05-mobile-preview.png"
+    }
+  ],
+  "capability": {
+    "state": "partially_supported",
+    "ids": "17331596106,9694994699,6439158354"
+  },
+  "handoffUI": {
+    "dialog": true,
+    "codeVisible": true,
+    "url": "https://www.roblox.com/games/137572714213370"
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "state": "partially_supported"
+  },
+  "passed": true
+}

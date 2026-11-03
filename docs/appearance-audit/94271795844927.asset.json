@@ -1,0 +1,1254 @@
+[
+  {
+    "class": [
+      "Accessory",
+      1
+    ],
+    "name": "AccessoryType",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Accessory",
+      1
+    ],
+    "name": "AttachmentPoint",
+    "type": 16,
+    "length": 49,
+    "value": null,
+    "hex": "00a2067fbfaccab8bcbc69ac3de7170b21f046773ff283843eb07eb2bdd802843e095676bf7dcf19817d194ce07dd11ec1"
+  },
+  {
+    "class": [
+      "Accessory",
+      1
+    ],
+    "name": "AttributesSerialize",
+    "type": 1,
+    "length": 4,
+    "value": [
+      ""
+    ],
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Accessory",
+      1
+    ],
+    "name": "Capabilities",
+    "type": 33,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000000"
+  },
+  {
+    "class": [
+      "Accessory",
+      1
+    ],
+    "name": "DefinesCapabilities",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "Accessory",
+      1
+    ],
+    "name": "Name",
+    "type": 1,
+    "length": 32,
+    "value": [
+      "Accessory (PinkBowAccessory)"
+    ],
+    "hex": "1c0000004163636573736f7279202850696e6b426f774163636573736f727929"
+  },
+  {
+    "class": [
+      "Accessory",
+      1
+    ],
+    "name": "SourceAssetId",
+    "type": 27,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000001"
+  },
+  {
+    "class": [
+      "Accessory",
+      1
+    ],
+    "name": "Tags",
+    "type": 28,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Attachment",
+      1
+    ],
+    "name": "AttributesSerialize",
+    "type": 1,
+    "length": 4,
+    "value": [
+      ""
+    ],
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Attachment",
+      1
+    ],
+    "name": "CFrame",
+    "type": 16,
+    "length": 49,
+    "value": null,
+    "hex": "009e067fbf9bcab8bcac69ac3de5170b21ec46773fee83843ead7eb2bdd602843e095676bf7dcf19817d194ce07dd11ec1"
+  },
+  {
+    "class": [
+      "Attachment",
+      1
+    ],
+    "name": "Capabilities",
+    "type": 33,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000000"
+  },
+  {
+    "class": [
+      "Attachment",
+      1
+    ],
+    "name": "DefinesCapabilities",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "Attachment",
+      1
+    ],
+    "name": "Name",
+    "type": 1,
+    "length": 17,
+    "value": [
+      "HatAttachment"
+    ],
+    "hex": "0d0000004861744174746163686d656e74"
+  },
+  {
+    "class": [
+      "Attachment",
+      1
+    ],
+    "name": "SourceAssetId",
+    "type": 27,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000001"
+  },
+  {
+    "class": [
+      "Attachment",
+      1
+    ],
+    "name": "Tags",
+    "type": 28,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Attachment",
+      1
+    ],
+    "name": "Visible",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "CFrameValue",
+      1
+    ],
+    "name": "AttributesSerialize",
+    "type": 1,
+    "length": 4,
+    "value": [
+      ""
+    ],
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "CFrameValue",
+      1
+    ],
+    "name": "Capabilities",
+    "type": 33,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000000"
+  },
+  {
+    "class": [
+      "CFrameValue",
+      1
+    ],
+    "name": "DefinesCapabilities",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "CFrameValue",
+      1
+    ],
+    "name": "Name",
+    "type": 1,
+    "length": 24,
+    "value": [
+      "ThumbnailCameraValue"
+    ],
+    "hex": "140000005468756d626e61696c43616d65726156616c7565"
+  },
+  {
+    "class": [
+      "CFrameValue",
+      1
+    ],
+    "name": "SourceAssetId",
+    "type": 27,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000001"
+  },
+  {
+    "class": [
+      "CFrameValue",
+      1
+    ],
+    "name": "Tags",
+    "type": 28,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "CFrameValue",
+      1
+    ],
+    "name": "Value",
+    "type": 16,
+    "length": 49,
+    "value": null,
+    "hex": "000c61383f0c23adbe94111b3f563c473e37c36f3f7f40953ee5772abf4c9dbcbd0e873d3f7de77b807cd1c4007e2adf00"
+  },
+  {
+    "class": [
+      "Configuration",
+      1
+    ],
+    "name": "AttributesSerialize",
+    "type": 1,
+    "length": 4,
+    "value": [
+      ""
+    ],
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Configuration",
+      1
+    ],
+    "name": "Capabilities",
+    "type": 33,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000000"
+  },
+  {
+    "class": [
+      "Configuration",
+      1
+    ],
+    "name": "DefinesCapabilities",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "Configuration",
+      1
+    ],
+    "name": "Name",
+    "type": 1,
+    "length": 26,
+    "value": [
+      "ThumbnailConfiguration"
+    ],
+    "hex": "160000005468756d626e61696c436f6e66696775726174696f6e"
+  },
+  {
+    "class": [
+      "Configuration",
+      1
+    ],
+    "name": "SourceAssetId",
+    "type": 27,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000001"
+  },
+  {
+    "class": [
+      "Configuration",
+      1
+    ],
+    "name": "Tags",
+    "type": 28,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "ObjectValue",
+      1
+    ],
+    "name": "AttributesSerialize",
+    "type": 1,
+    "length": 4,
+    "value": [
+      ""
+    ],
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "ObjectValue",
+      1
+    ],
+    "name": "Capabilities",
+    "type": 33,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000000"
+  },
+  {
+    "class": [
+      "ObjectValue",
+      1
+    ],
+    "name": "DefinesCapabilities",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "ObjectValue",
+      1
+    ],
+    "name": "Name",
+    "type": 1,
+    "length": 25,
+    "value": [
+      "ThumbnailCameraTarget"
+    ],
+    "hex": "150000005468756d626e61696c43616d657261546172676574"
+  },
+  {
+    "class": [
+      "ObjectValue",
+      1
+    ],
+    "name": "SourceAssetId",
+    "type": 27,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000001"
+  },
+  {
+    "class": [
+      "ObjectValue",
+      1
+    ],
+    "name": "Tags",
+    "type": 28,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "ObjectValue",
+      1
+    ],
+    "name": "Value",
+    "type": 19,
+    "length": 4,
+    "value": null,
+    "hex": "00000002"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Anchored",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "AttributesSerialize",
+    "type": 1,
+    "length": 4,
+    "value": [
+      ""
+    ],
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "AudioCanCollide",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "01"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "BackParamA",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000001"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "BackParamB",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "BackSurface",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "BackSurfaceInput",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "BottomParamA",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000001"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "BottomParamB",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "BottomSurface",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "BottomSurfaceInput",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "CFrame",
+    "type": 16,
+    "length": 49,
+    "value": null,
+    "hex": "00a2067fbf00000000b07eb2bdaccab8bcf046773fd802843ebc69ac3df283843e095676bf82fb24b482e03c46820f1ebb"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "CanCollide",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "01"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "CanQuery",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "01"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "CanTouch",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "01"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Capabilities",
+    "type": 33,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "CastShadow",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "01"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "CollisionGroup",
+    "type": 1,
+    "length": 11,
+    "value": [
+      "Default"
+    ],
+    "hex": "0700000044656661756c74"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "CollisionGroupId",
+    "type": 3,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Color3uint8",
+    "type": 26,
+    "length": 3,
+    "value": null,
+    "hex": "a3a2a5"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "CustomPhysicalProperties",
+    "type": 25,
+    "length": 1,
+    "value": null,
+    "hex": "02"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "DefinesCapabilities",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "EnableFluidForces",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "01"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "FrontParamA",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000001"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "FrontParamB",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "FrontSurface",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "FrontSurfaceInput",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "LeftParamA",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000001"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "LeftParamB",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "LeftSurface",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "LeftSurfaceInput",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Locked",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Massless",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Material",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000100"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "MaterialVariantSerialized",
+    "type": 1,
+    "length": 4,
+    "value": [
+      ""
+    ],
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Name",
+    "type": 1,
+    "length": 10,
+    "value": [
+      "Handle"
+    ],
+    "hex": "0600000048616e646c65"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "PivotOffset",
+    "type": 16,
+    "length": 13,
+    "value": null,
+    "hex": "02000000000000000000000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Reflectance",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "RightParamA",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000001"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "RightParamB",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "RightSurface",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "RightSurfaceInput",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "RootPriority",
+    "type": 3,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "RotVelocity",
+    "type": 14,
+    "length": 12,
+    "value": null,
+    "hex": "000000000000000000000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "SourceAssetId",
+    "type": 27,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000001"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Tags",
+    "type": 28,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "TopParamA",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000001"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "TopParamB",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "7e000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "TopSurface",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "TopSurfaceInput",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Transparency",
+    "type": 4,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "Velocity",
+    "type": 14,
+    "length": 12,
+    "value": null,
+    "hex": "000000000000000000000000"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "formFactorRaw",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000001"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "shape",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000001"
+  },
+  {
+    "class": [
+      "Part",
+      1
+    ],
+    "name": "size",
+    "type": 14,
+    "length": 12,
+    "value": null,
+    "hex": "7f0000007f0000007f000000"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "AttributesSerialize",
+    "type": 1,
+    "length": 4,
+    "value": [
+      ""
+    ],
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "Capabilities",
+    "type": 33,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000000"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "DefinesCapabilities",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "MeshId",
+    "type": 1,
+    "length": 32,
+    "value": [
+      "rbxassetid://110544728088996"
+    ],
+    "hex": "1c000000726278617373657469643a2f2f313130353434373238303838393936"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "MeshType",
+    "type": 18,
+    "length": 4,
+    "value": null,
+    "hex": "00000005"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "Name",
+    "type": 1,
+    "length": 15,
+    "value": [
+      "SpecialMesh"
+    ],
+    "hex": "0b0000005370656369616c4d657368"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "Offset",
+    "type": 14,
+    "length": 12,
+    "value": null,
+    "hex": "000000000000000000000000"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "Scale",
+    "type": 14,
+    "length": 12,
+    "value": null,
+    "hex": "7f0000007f0000007f000000"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "SourceAssetId",
+    "type": 27,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000001"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "Tags",
+    "type": 28,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "TextureId",
+    "type": 1,
+    "length": 31,
+    "value": [
+      "rbxassetid://88377309305978"
+    ],
+    "hex": "1b000000726278617373657469643a2f2f3838333737333039333035393738"
+  },
+  {
+    "class": [
+      "SpecialMesh",
+      1
+    ],
+    "name": "VertexColor",
+    "type": 14,
+    "length": 12,
+    "value": null,
+    "hex": "7f0000007f0000007f000000"
+  },
+  {
+    "class": [
+      "StringValue",
+      1
+    ],
+    "name": "AttributesSerialize",
+    "type": 1,
+    "length": 4,
+    "value": [
+      ""
+    ],
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "StringValue",
+      1
+    ],
+    "name": "Capabilities",
+    "type": 33,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000000"
+  },
+  {
+    "class": [
+      "StringValue",
+      1
+    ],
+    "name": "DefinesCapabilities",
+    "type": 2,
+    "length": 1,
+    "value": null,
+    "hex": "00"
+  },
+  {
+    "class": [
+      "StringValue",
+      1
+    ],
+    "name": "Name",
+    "type": 1,
+    "length": 23,
+    "value": [
+      "AvatarPartScaleType"
+    ],
+    "hex": "13000000417661746172506172745363616c6554797065"
+  },
+  {
+    "class": [
+      "StringValue",
+      1
+    ],
+    "name": "SourceAssetId",
+    "type": 27,
+    "length": 8,
+    "value": null,
+    "hex": "0000000000000001"
+  },
+  {
+    "class": [
+      "StringValue",
+      1
+    ],
+    "name": "Tags",
+    "type": 28,
+    "length": 4,
+    "value": null,
+    "hex": "00000000"
+  },
+  {
+    "class": [
+      "StringValue",
+      1
+    ],
+    "name": "Value",
+    "type": 1,
+    "length": 11,
+    "value": [
+      "Classic"
+    ],
+    "hex": "07000000436c6173736963"
+  }
+]

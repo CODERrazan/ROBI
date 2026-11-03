@@ -1,0 +1,344 @@
+{
+  "public_health": {
+    "http": 200,
+    "seconds": 0.79,
+    "result": {
+      "ok": true,
+      "llm_configured": true,
+      "database_configured": true
+    }
+  },
+  "greeting": {
+    "http": 200,
+    "seconds": 8.864,
+    "result": {
+      "intent": "conversation",
+      "ready": false,
+      "reply": "هلا عزيزتي، كيفك؟ 😊",
+      "requirements": null,
+      "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    }
+  },
+  "dress": {
+    "http": 200,
+    "seconds": 14.954,
+    "result": {
+      "intent": "outfit",
+      "ready": true,
+      "reply": "أكيد، فستان وردي كيوت! 🎀 ما نوع الفستان؟ طويل ولا قصير؟",
+      "requirements": {
+        "intent": "generate_outfit",
+        "avatar_type": null,
+        "style": [
+          "cute"
+        ],
+        "colors": [],
+        "categories": [
+          "layeredDressSkirt"
+        ],
+        "budget_robux": 100,
+        "skin_tone": null,
+        "category_preferences": {
+          "layeredDressSkirt": [
+            "cute",
+            "pink"
+          ]
+        },
+        "occasion": null,
+        "preferences": [],
+        "excluded_items": [],
+        "category_colors": {
+          "layeredDressSkirt": [
+            "pink"
+          ]
+        },
+        "changed_categories": [],
+        "removed_categories": []
+      },
+      "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    }
+  },
+  "dress_search": {
+    "http": 200,
+    "seconds": 12.305,
+    "result": {
+      "requirements": {
+        "intent": "generate_outfit",
+        "avatar_type": null,
+        "style": [
+          "cute"
+        ],
+        "colors": [],
+        "categories": [
+          "layeredDressSkirt"
+        ],
+        "budget_robux": 100,
+        "skin_tone": null,
+        "category_preferences": {
+          "layeredDressSkirt": [
+            "cute",
+            "pink"
+          ]
+        },
+        "occasion": null,
+        "preferences": [],
+        "excluded_items": [],
+        "category_colors": {
+          "layeredDressSkirt": [
+            "pink"
+          ]
+        },
+        "changed_categories": [],
+        "removed_categories": []
+      },
+      "intent": "generate_outfit",
+      "outfit_options": [],
+      "selected_items": [],
+      "partial_items": [],
+      "search_audit": {
+        "queries": [
+          {
+            "category": "layeredDressSkirt",
+            "keyword": "pink cute dress",
+            "asset_type": 72,
+            "subcategory": null
+          }
+        ],
+        "query_count": 3,
+        "failed_queries": 0,
+        "raw_results": 39,
+        "duplicate_results": 0,
+        "invalid_results": 0,
+        "excluded_results": 0,
+        "categories": {
+          "layeredDressSkirt": {
+            "retrieved": 39,
+            "known_over_budget": 0
+          }
+        },
+        "compatibility": [
+          {
+            "asset_id": 73598153533805,
+            "status": "unsupported",
+            "reason": "This clothing type requires the native Roblox preview."
+          },
+          {
+            "asset_id": 98306784237907,
+            "status": "unsupported",
+            "reason": "This clothing type requires the native Roblox preview."
+          },
+          {
+            "asset_id": 88988162197578,
+            "status": "unsupported",
+            "reason": "This clothing type requires the native Roblox preview."
+          },
+          {
+            "asset_id": 94204734719661,
+            "status": "unsupported",
+            "reason": "This clothing type requires the native Roblox preview."
+          },
+          {
+            "asset_id": 119827521158428,
+            "status": "unsupported",
+            "reason": "This clothing type requires the native Roblox preview."
+          },
+          {
+            "asset_id": 139646290689349,
+            "status": "unsupported",
+            "reason": "This clothing type requires the native Roblox preview."
+          }
+        ],
+        "visual_candidates": 0,
+        "visual_verified": 0
+      },
+      "compatibility_checks": [
+        {
+          "asset_id": 73598153533805,
+          "asset_type": 72,
+          "name": "Cute Pink Ruffled Valentines Angel Dress",
+          "description": "join & shop starbby:\nhttps://www.roblox.com/communities/36031287/starbby#!/store\ncreds: cat123x",
+          "price": 60,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        },
+        {
+          "asset_id": 98306784237907,
+          "asset_type": 72,
+          "name": "Cute Pink Mouse Dress",
+          "description": "Mouse Set : https://www.roblox.com/catalog?Keyword=Mouse&taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=starbby&CreatorType=All&salesTypeFilter=1\n\nJoin & shop starbby:\nhttps://www.roblox.com/communities/36031287/starbby#!/store\n\nCredits : lucero",
+          "price": 60,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        },
+        {
+          "asset_id": 88988162197578,
+          "asset_type": 72,
+          "name": "♡ : cute princess ruffle bow bone dress in pink",
+          "description": "♡ Property of dollaby꒱\n꒰Made by june\n꒰Credits: @pawsomeqt\n꒰DMCA IS IN FULL USE\n♡ Join dollaby for more!! ♡♬♪",
+          "price": 60,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        },
+        {
+          "asset_id": 94204734719661,
+          "asset_type": 72,
+          "name": "Cute Ruffled Pink Strawberry Overalls Dress",
+          "description": "Get the whole set → https://www.roblox.com/catalog?Keyword=Strawberry&Category=1&CreatorName=starbby&CreatorType=Group&salesTypeFilter=1&SortType=3\nJoin & shop starbby:\nhttps://www.roblox.com/communities/36031287/starbby#!/store\nMade by linxia",
+          "price": 60,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        },
+        {
+          "asset_id": 119827521158428,
+          "asset_type": 72,
+          "name": "Cute Black & Pink Button Up Dress with Bow",
+          "description": "Join & shop starbby:\nhttps://www.roblox.com/communities/36031287/starbby#!/store\nMade by besmira",
+          "price": 60,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        },
+        {
+          "asset_id": 139646290689349,
+          "asset_type": 72,
+          "name": "Cute Ruffled Dress with Laced Skirt in White&Pink",
+          "description": "︵︵︵︵︵︵︵︵\nmore ugc https://www.roblox.com/communities/35317254/tyny#!/about\n\n\nmodeled by besmira \n︵︵︵︵︵︵︵︵",
+          "price": 60,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        }
+      ],
+      "candidates": [],
+      "missing_categories": [
+        "layeredDressSkirt"
+      ],
+      "total_known_price": 0,
+      "reply": "لقيت 39 قطعة بقسم الفساتين والتنانير 🎀 بس ما عندي منها فستان متحقق أقدر أعرضه هنا. ما غيرت طلبك ولا إطلالتك.",
+      "models": {
+        "reasoning": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        "vision": "google/gemma-4-26B-A4B-it"
+      },
+      "source": "Roblox Marketplace API",
+      "pipeline_status": {
+        "selection_status": "no_match",
+        "price_status": "not_applicable",
+        "budget_status": "not_applicable",
+        "availability_status": "not_applicable",
+        "image_retrieval_status": "failed",
+        "visual_analysis_status": "failed",
+        "avatar_application_status": "not_started"
+      },
+      "selection_status": "no_match",
+      "price_status": "not_applicable",
+      "budget_status": "not_applicable",
+      "availability_status": "not_applicable",
+      "image_retrieval_status": "failed",
+      "visual_analysis_status": "failed",
+      "avatar_application_status": "not_started",
+      "timings_ms": {
+        "requirements": 0,
+        "preserved_validation": 0,
+        "catalog": 2531,
+        "catalog_failed_queries": 0,
+        "compatibility": 9718,
+        "visual_stage": 0,
+        "selection": 0,
+        "total": 12272
+      },
+      "catalog_candidate_count": 39,
+      "visual_candidate_count": 0,
+      "visual_failure_count": 0,
+      "visual_cache_hit_count": 0,
+      "visual_model_request_count": 0,
+      "unsupported_asset_count": 0
+    }
+  },
+  "advice": {
+    "http": 200,
+    "seconds": 10.154,
+    "result": {
+      "intent": "conversation",
+      "ready": false,
+      "reply": "أهلا! وش المناسبة اللي تلبسين لها اليوم؟",
+      "requirements": null,
+      "conversation_kind": "advice",
+      "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    }
+  },
+  "recipient_lookup": {
+    "http": 200,
+    "seconds": 0.946,
+    "result": {
+      "id": 1,
+      "name": "Roblox",
+      "display_name": "Roblox"
+    }
+  },
+  "launch": {
+    "http": 200,
+    "mode": "recipient_bound_code",
+    "recipient_user_id": 1
+  },
+  "wrong_recipient": {
+    "error": "HTTP Error 403: Forbidden",
+    "seconds": 0.018
+  },
+  "claim": {
+    "http": 200,
+    "state": "approved",
+    "requires_website_confirmation": false
+  },
+  "redeem": {
+    "http": 200,
+    "state": "redeemed",
+    "items": [
+      {
+        "asset_id": 17331596106,
+        "asset_type": 11,
+        "name": "୨ৎ black cute shirt",
+        "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+        "price": 5,
+        "availability": "available",
+        "preview_capability": "classic_template",
+        "slot": "shirt",
+        "order": 1
+      }
+    ]
+  },
+  "native_roblox_test": false
+}

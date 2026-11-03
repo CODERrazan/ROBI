@@ -1,0 +1,22 @@
+[
+  {
+    "file": "Roblox\\OutfitDescription.lua",
+    "exit_code": 0,
+    "errors": ""
+  },
+  {
+    "file": "Roblox\\ROBI.client.lua",
+    "exit_code": 0,
+    "errors": ""
+  },
+  {
+    "file": "Roblox\\ROBI.server.lua",
+    "exit_code": 0,
+    "errors": ""
+  },
+  {
+    "file": "Roblox\\ROBIConfig.lua",
+    "exit_code": 0,
+    "errors": ""
+  }
+]

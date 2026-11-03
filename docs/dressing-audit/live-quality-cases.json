@@ -1,0 +1,1995 @@
+[
+  {
+    "case": "free_clothing",
+    "seconds": 1.725,
+    "http_status": 200,
+    "result": {
+      "requirements": {
+        "intent": "generate_outfit",
+        "avatar_type": null,
+        "style": [
+          "cute"
+        ],
+        "colors": [
+          "black"
+        ],
+        "categories": [
+          "shirt",
+          "pants"
+        ],
+        "budget_robux": 0,
+        "occasion": null,
+        "preferences": [],
+        "excluded_items": [],
+        "category_colors": {},
+        "changed_categories": [],
+        "removed_categories": []
+      },
+      "intent": "generate_outfit",
+      "outfit_options": [],
+      "selected_items": [],
+      "partial_items": [],
+      "candidates": [],
+      "missing_categories": [
+        "shirt",
+        "pants"
+      ],
+      "total_known_price": 0,
+      "reply": "I could not assemble a complete verified outfit within the budget. Would you like to change the style or budget?",
+      "models": {
+        "reasoning": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        "vision": "google/gemma-4-26B-A4B-it"
+      },
+      "source": "Roblox Marketplace API",
+      "pipeline_status": {
+        "selection_status": "no_match",
+        "price_status": "not_applicable",
+        "budget_status": "not_applicable",
+        "availability_status": "not_applicable",
+        "image_retrieval_status": "failed",
+        "visual_analysis_status": "failed",
+        "avatar_application_status": "not_started"
+      },
+      "selection_status": "no_match",
+      "price_status": "not_applicable",
+      "budget_status": "not_applicable",
+      "availability_status": "not_applicable",
+      "image_retrieval_status": "failed",
+      "visual_analysis_status": "failed",
+      "avatar_application_status": "not_started",
+      "timings_ms": {
+        "requirements": 0,
+        "preserved_validation": 0,
+        "catalog": 1260,
+        "visual_stage": 0,
+        "selection": 0,
+        "total": 1260
+      },
+      "catalog_candidate_count": 13,
+      "visual_candidate_count": 0,
+      "visual_failure_count": 0,
+      "visual_cache_hit_count": 0,
+      "visual_model_request_count": 0,
+      "unsupported_asset_count": 0
+    }
+  },
+  {
+    "case": "low_budget",
+    "seconds": 35.158,
+    "http_status": 200,
+    "result": {
+      "requirements": {
+        "intent": "generate_outfit",
+        "avatar_type": null,
+        "style": [
+          "cute"
+        ],
+        "colors": [
+          "black"
+        ],
+        "categories": [
+          "shirt",
+          "pants"
+        ],
+        "budget_robux": 5,
+        "occasion": null,
+        "preferences": [],
+        "excluded_items": [],
+        "category_colors": {},
+        "changed_categories": [],
+        "removed_categories": []
+      },
+      "intent": "generate_outfit",
+      "outfit_options": [],
+      "selected_items": [],
+      "partial_items": [
+        {
+          "asset_id": 17331596106,
+          "name": "\u0b68\u09ce black cute shirt",
+          "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+          "asset_type": 11,
+          "category": "shirt",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/17331596106",
+          "creator": "miyadesu",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "black",
+              "white"
+            ],
+            "secondary_colors": [],
+            "style": "cute, softie, y2k",
+            "pattern": "solid",
+            "visible_details": [
+              "sleeveless",
+              "square neckline",
+              "black torso",
+              "white/light grey accents"
+            ],
+            "asset_id": 17331596106,
+            "visual_style": [
+              "cute",
+              "softie",
+              "y2k"
+            ],
+            "clothing_type": "shirt",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Matches black color requirement and cute style perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 575,
+          "image_download_ms": 741,
+          "image_verified_for_asset_id": 17331596106,
+          "image_identity_sha256": "32a56fb7d9cfca5f7adc8a953d6541e6454c8a0592e63ef217545e4d6de6c7c6",
+          "image_file_sha256": "9eda341c014f4c0c023cdf34996d97cdd109e990d63dd515dd418a7d8dc17ac3",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 17331596106,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 3388,
+            "inference_wall_ms": 3388,
+            "cache_hit": false
+          },
+          "reason": "",
+          "match_score": 0
+        }
+      ],
+      "candidates": [
+        {
+          "asset_id": 17331596106,
+          "name": "\u0b68\u09ce black cute shirt",
+          "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+          "asset_type": 11,
+          "category": "shirt",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/17331596106",
+          "creator": "miyadesu",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "black",
+              "white"
+            ],
+            "secondary_colors": [],
+            "style": "cute, softie, y2k",
+            "pattern": "solid",
+            "visible_details": [
+              "sleeveless",
+              "square neckline",
+              "black torso",
+              "white/light grey accents"
+            ],
+            "asset_id": 17331596106,
+            "visual_style": [
+              "cute",
+              "softie",
+              "y2k"
+            ],
+            "clothing_type": "shirt",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Matches black color requirement and cute style perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 575,
+          "image_download_ms": 741,
+          "image_verified_for_asset_id": 17331596106,
+          "image_identity_sha256": "32a56fb7d9cfca5f7adc8a953d6541e6454c8a0592e63ef217545e4d6de6c7c6",
+          "image_file_sha256": "9eda341c014f4c0c023cdf34996d97cdd109e990d63dd515dd418a7d8dc17ac3",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 17331596106,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 3388,
+            "inference_wall_ms": 3388,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 8770955691,
+          "name": "\u2661 panda stripe bow cute black white kawaii skirt",
+          "description": "\u0b68\u0b67 made by k1tyr \u2661\n\nmatching top\u2193\nhttps://www.roblox.com/catalog/8771785958/cute-skull-crop-top-off-sleeve\n\njoin inure for more!! \u2661 \u2193\nhttps://www.roblox.com/groups/6341386/I-N-U-R-E#!/about\n\n\ud835\udc2d\ud835\udc1a\ud835\udc20\ud835\udc2c\u2193\ny2k grunge swag punk cyber streetwear vamp emo ok piano yes paws aesthetic mhm fashion kitty gyaru alt trendy punk yay kawaii usahana swag cropped pink purple green yellow black orange red anime low core tanktop vamp trendy popular vintage goth sage hi qt angel pastel um cool shirt sanrio meow uwu croptop realistic",
+          "asset_type": 12,
+          "category": "pants",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c1af660535c1e35c3e1b6fb4746cd3b4/150/150/Pants/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/8770955691",
+          "creator": "lovelane",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "black",
+              "white"
+            ],
+            "secondary_colors": [],
+            "style": "cute, kawaii, grunge",
+            "pattern": "striped",
+            "visible_details": [
+              "bow",
+              "stripes",
+              "black waistband"
+            ],
+            "asset_id": 8770955691,
+            "visual_style": [
+              "cute",
+              "kawaii",
+              "grunge"
+            ],
+            "clothing_type": "skirt",
+            "description_match": true,
+            "category_compatible": false,
+            "match_score": 0.8,
+            "reason": "Matches color and style requirements, but is a skirt while category is pants",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 575,
+          "image_download_ms": 994,
+          "image_verified_for_asset_id": 8770955691,
+          "image_identity_sha256": "4bf115958e05986b7c96f7ea358e7d786d4217be38350e62d5d69c7a5f2c49d9",
+          "image_file_sha256": "506db8e11c6164cb8acd72c0106d5585b31adfa77d7ee78a505b6ac5c354f627",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 8770955691,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 9075,
+            "inference_wall_ms": 9075,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 120754709718635,
+          "name": "black cute shirt",
+          "description": "Shirt",
+          "asset_type": 11,
+          "category": "shirt",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-9c58a84835e16a80180bddb0b52d77cc/150/150/Shirt/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/120754709718635",
+          "creator": "casually family",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "black",
+              "white"
+            ],
+            "secondary_colors": [],
+            "style": "cute",
+            "pattern": "solid",
+            "visible_details": [
+              "strapless design",
+              "black bodice",
+              "black arm bands"
+            ],
+            "asset_id": 120754709718635,
+            "visual_style": [
+              "cute"
+            ],
+            "clothing_type": "shirt",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Matches color, style, and category requirements perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 575,
+          "image_download_ms": 987,
+          "image_verified_for_asset_id": 120754709718635,
+          "image_identity_sha256": "4beb5255bde6ced5220f987608de9d0c8e952b79238c34f1cd161032a88b80d7",
+          "image_file_sha256": "eb522de1a088b144aa91bf3a88bf67c84a75687208129db519660a398162688b",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 120754709718635,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 7985,
+            "inference_wall_ms": 7985,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 114915582025729,
+          "name": "black cute pants",
+          "description": "Black pants, cute, kawaii.",
+          "asset_type": 12,
+          "category": "pants",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-34dd131e5e6616b6eee2995c747fb932/150/150/Pants/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/114915582025729",
+          "creator": "vanj kazino1",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "black"
+            ],
+            "secondary_colors": [],
+            "style": "cute",
+            "pattern": "solid",
+            "visible_details": [
+              "solid color",
+              "simple design"
+            ],
+            "asset_id": 114915582025729,
+            "visual_style": [
+              "cute"
+            ],
+            "clothing_type": "pants",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Item matches color, style, and category requirements perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 575,
+          "image_download_ms": 451,
+          "image_verified_for_asset_id": 114915582025729,
+          "image_identity_sha256": "049ae246e82c98a1349ae5467dfb78a70113886394d3cb050e5b97192e199b9d",
+          "image_file_sha256": "00e19219bf1a073938a168195cb16a75130e20e6c97baf6c2f96531cb89f7a53",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 114915582025729,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 2535,
+            "inference_wall_ms": 2535,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 13574837640,
+          "name": "black cute shirt",
+          "description": "Shirt",
+          "asset_type": 11,
+          "category": "shirt",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-60e56a34936dfee5ce5535a236348e97/150/150/Shirt/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/13574837640",
+          "creator": "Darko\u2019s Thrift Shop!",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "black"
+            ],
+            "secondary_colors": [],
+            "style": "cute",
+            "pattern": "solid",
+            "visible_details": [
+              "v-neck",
+              "lace trim",
+              "long sleeves"
+            ],
+            "asset_id": 13574837640,
+            "visual_style": [
+              "cute"
+            ],
+            "clothing_type": "shirt",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Matches color, style, and category requirements perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 575,
+          "image_download_ms": 982,
+          "image_verified_for_asset_id": 13574837640,
+          "image_identity_sha256": "9f55b2871edf33f430a616891527d522b71ec489c0900d7cde619fb680e4c29f",
+          "image_file_sha256": "3871a0b56e82f91c96b139be603244913da781298f4b1935efa9cbd36071f3f8",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 13574837640,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 5792,
+            "inference_wall_ms": 5792,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 12570011199,
+          "name": "black cute pants",
+          "description": "\u2764\ufe0fCHECK MORE CLOTHING\u2764\ufe0f \u2193\u2193\u2193\nhttps://www.roblox.com/catalog?Category=3&Subcategory=3&CreatorName=City%20Slickerz&CreatorType=Group&salesTypeFilter=1\n\ny2k, drain, draincore, winter, cry, lowrise, swag, bape, supreme, emo, scene, scenecore, pleated, skirt, dc, 2000s, juicy couture, pls, help, lol, hi, hey, zip up, rot, ok, vamp, skull, yay, skool, val, bun, kami, dont, hate, wyd, hug, kitten, cupcake, ethereal, gyaru, flwr, grl, lily, lilith, floral, riot, clique, kidcore, fairycore, kawaii, kogal socks, loose socks, bun, bunny, strawberry, hibiscus,",
+          "asset_type": 12,
+          "category": "pants",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-d5d97e57928f3e094d8637f65d0699e7/150/150/Pants/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/12570011199",
+          "creator": "City Slickerz",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "grey",
+              "black",
+              "white"
+            ],
+            "secondary_colors": [],
+            "style": "y2k, grunge",
+            "pattern": "graphic print",
+            "visible_details": [
+              "black waistband",
+              "grey fabric",
+              "white graphic patterns"
+            ],
+            "asset_id": 12570011199,
+            "visual_style": [
+              "y2k",
+              "grunge"
+            ],
+            "clothing_type": "pants",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 0.7,
+            "reason": "Color mismatch: item is grey/white while effective_item_colors specifies black.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 575,
+          "image_download_ms": 978,
+          "image_verified_for_asset_id": 12570011199,
+          "image_identity_sha256": "d941bd70d01270457e7dd91520c448828b99cc49d4452bcaeaae48d5dab1e55e",
+          "image_file_sha256": "b78abaf7468b0cbaed2130a0eb07e04d8f8f72fb58c0b1672414079d58aba16d",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 12570011199,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 4944,
+            "inference_wall_ms": 4944,
+            "cache_hit": false
+          }
+        }
+      ],
+      "missing_categories": [
+        "shirt",
+        "pants"
+      ],
+      "total_known_price": 0,
+      "reply": "I could not assemble a complete verified outfit within the budget. Would you like to change the style or budget?",
+      "models": {
+        "reasoning": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        "vision": "google/gemma-4-26B-A4B-it"
+      },
+      "source": "Roblox Marketplace API",
+      "pipeline_status": {
+        "selection_status": "partial",
+        "price_status": "not_applicable",
+        "budget_status": "not_applicable",
+        "availability_status": "not_applicable",
+        "image_retrieval_status": "verified",
+        "visual_analysis_status": "verified",
+        "avatar_application_status": "not_started"
+      },
+      "selection_status": "partial",
+      "price_status": "not_applicable",
+      "budget_status": "not_applicable",
+      "availability_status": "not_applicable",
+      "image_retrieval_status": "verified",
+      "visual_analysis_status": "verified",
+      "avatar_application_status": "not_started",
+      "timings_ms": {
+        "requirements": 0,
+        "preserved_validation": 0,
+        "catalog": 1243,
+        "visual_stage": 10884,
+        "selection": 22740,
+        "total": 34868
+      },
+      "catalog_candidate_count": 72,
+      "visual_candidate_count": 6,
+      "visual_failure_count": 0,
+      "visual_cache_hit_count": 0,
+      "visual_model_request_count": 6,
+      "unsupported_asset_count": 0
+    }
+  },
+  {
+    "case": "cute_black",
+    "seconds": 23.956,
+    "http_status": 200,
+    "result": {
+      "requirements": {
+        "intent": "generate_outfit",
+        "avatar_type": null,
+        "style": [
+          "cute"
+        ],
+        "colors": [
+          "black"
+        ],
+        "categories": [
+          "shirt",
+          "pants"
+        ],
+        "budget_robux": 100,
+        "occasion": null,
+        "preferences": [],
+        "excluded_items": [],
+        "category_colors": {},
+        "changed_categories": [],
+        "removed_categories": []
+      },
+      "intent": "generate_outfit",
+      "outfit_options": [],
+      "selected_items": [],
+      "partial_items": [],
+      "candidates": [
+        {
+          "asset_id": 114915582025729,
+          "name": "black cute pants",
+          "description": "Black pants, cute, kawaii.",
+          "asset_type": 12,
+          "category": "pants",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-34dd131e5e6616b6eee2995c747fb932/150/150/Pants/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/114915582025729",
+          "creator": "vanj kazino1",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "black"
+            ],
+            "secondary_colors": [],
+            "style": "cute",
+            "pattern": "solid",
+            "visible_details": [
+              "solid color",
+              "simple design"
+            ],
+            "asset_id": 114915582025729,
+            "visual_style": [
+              "cute"
+            ],
+            "clothing_type": "pants",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Item matches color, style, and category requirements perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 532,
+          "image_download_ms": 966,
+          "image_verified_for_asset_id": 114915582025729,
+          "image_identity_sha256": "049ae246e82c98a1349ae5467dfb78a70113886394d3cb050e5b97192e199b9d",
+          "image_file_sha256": "00e19219bf1a073938a168195cb16a75130e20e6c97baf6c2f96531cb89f7a53",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 114915582025729,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 2584,
+            "inference_wall_ms": 2584,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 12570011199,
+          "name": "black cute pants",
+          "description": "\u2764\ufe0fCHECK MORE CLOTHING\u2764\ufe0f \u2193\u2193\u2193\nhttps://www.roblox.com/catalog?Category=3&Subcategory=3&CreatorName=City%20Slickerz&CreatorType=Group&salesTypeFilter=1\n\ny2k, drain, draincore, winter, cry, lowrise, swag, bape, supreme, emo, scene, scenecore, pleated, skirt, dc, 2000s, juicy couture, pls, help, lol, hi, hey, zip up, rot, ok, vamp, skull, yay, skool, val, bun, kami, dont, hate, wyd, hug, kitten, cupcake, ethereal, gyaru, flwr, grl, lily, lilith, floral, riot, clique, kidcore, fairycore, kawaii, kogal socks, loose socks, bun, bunny, strawberry, hibiscus,",
+          "asset_type": 12,
+          "category": "pants",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-d5d97e57928f3e094d8637f65d0699e7/150/150/Pants/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/12570011199",
+          "creator": "City Slickerz",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "grey",
+              "black",
+              "white"
+            ],
+            "secondary_colors": [],
+            "style": "y2k, grunge",
+            "pattern": "graphic print",
+            "visible_details": [
+              "low-rise waist",
+              "patterned legs"
+            ],
+            "asset_id": 12570011199,
+            "visual_style": [
+              "y2k",
+              "grunge"
+            ],
+            "clothing_type": "pants",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 0.6,
+            "reason": "Color mismatch: item is grey/white while effective_item_colors requires black.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 532,
+          "image_download_ms": 717,
+          "image_verified_for_asset_id": 12570011199,
+          "image_identity_sha256": "d941bd70d01270457e7dd91520c448828b99cc49d4452bcaeaae48d5dab1e55e",
+          "image_file_sha256": "b78abaf7468b0cbaed2130a0eb07e04d8f8f72fb58c0b1672414079d58aba16d",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 12570011199,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 3071,
+            "inference_wall_ms": 3071,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 6397572452,
+          "name": "Black Cute Pants",
+          "description": "Pants",
+          "asset_type": 12,
+          "category": "pants",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-a4ecee6505d1411dd939095fa21de5af/150/150/Pants/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/6397572452",
+          "creator": "s\u1d0f\u0280\u0280\u1d0f\u1d21 s\u1d0b\u026a\u1d07s",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "black",
+              "grey"
+            ],
+            "secondary_colors": [],
+            "style": "cute, goth, grunge",
+            "pattern": "solid with decorative details",
+            "visible_details": [
+              "studded belt",
+              "chain details",
+              "pocket accents"
+            ],
+            "asset_id": 6397572452,
+            "visual_style": [
+              "cute",
+              "goth",
+              "grunge"
+            ],
+            "clothing_type": "pants",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Matches color, style, and category requirements perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 532,
+          "image_download_ms": 1204,
+          "image_verified_for_asset_id": 6397572452,
+          "image_identity_sha256": "60cff060eefcb94a5c7ca39bff4ba54b08f9e4f0add1df2e1e697794b8d24e33",
+          "image_file_sha256": "72ad6398020f49a94d95f11394d8195651064876c652b96a2c8ffa56642995c1",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 6397572452,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 5820,
+            "inference_wall_ms": 5820,
+            "cache_hit": false
+          }
+        }
+      ],
+      "missing_categories": [
+        "shirt",
+        "pants"
+      ],
+      "total_known_price": 0,
+      "reply": "I could not assemble a complete verified outfit within the budget. Would you like to change the style or budget?",
+      "models": {
+        "reasoning": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        "vision": "google/gemma-4-26B-A4B-it"
+      },
+      "source": "Roblox Marketplace API",
+      "pipeline_status": {
+        "selection_status": "no_match",
+        "price_status": "not_applicable",
+        "budget_status": "not_applicable",
+        "availability_status": "not_applicable",
+        "image_retrieval_status": "verified",
+        "visual_analysis_status": "verified",
+        "avatar_application_status": "not_started"
+      },
+      "selection_status": "no_match",
+      "price_status": "not_applicable",
+      "budget_status": "not_applicable",
+      "availability_status": "not_applicable",
+      "image_retrieval_status": "verified",
+      "visual_analysis_status": "verified",
+      "avatar_application_status": "not_started",
+      "timings_ms": {
+        "requirements": 0,
+        "preserved_validation": 0,
+        "catalog": 8675,
+        "visual_stage": 7795,
+        "selection": 7172,
+        "total": 23643
+      },
+      "catalog_candidate_count": 34,
+      "visual_candidate_count": 3,
+      "visual_failure_count": 0,
+      "visual_cache_hit_count": 0,
+      "visual_model_request_count": 3,
+      "unsupported_asset_count": 0
+    }
+  },
+  {
+    "case": "different_aesthetic",
+    "seconds": 26.755,
+    "http_status": 200,
+    "result": {
+      "requirements": {
+        "intent": "generate_outfit",
+        "avatar_type": null,
+        "style": [
+          "streetwear"
+        ],
+        "colors": [
+          "blue"
+        ],
+        "categories": [
+          "shirt",
+          "pants"
+        ],
+        "budget_robux": 50,
+        "occasion": null,
+        "preferences": [],
+        "excluded_items": [],
+        "category_colors": {},
+        "changed_categories": [],
+        "removed_categories": []
+      },
+      "intent": "generate_outfit",
+      "outfit_options": [
+        {
+          "id": "outfit-b0adf0f948d0",
+          "name": "Blue Streetwear Outfit",
+          "items": [
+            {
+              "asset_id": 17090674198,
+              "name": "Da hood blue grunge y2k t shirt emo streetwear",
+              "description": "hello!\nJoin this group = https://www.roblox.com/groups/15860303/Logogems#!/about \nPair ( if any) = \nTags: Y2k, Goth, Emo, Vamp, Punk, Soft, Edgy, Grunge, Aesthetic, Trendy, Cottagecore, Sanriocore, Angelcore, Retro, Sofite, Pastel Goth, Streetwear, Trash, Trush gang, Vibe, Scenecore,My melody, Cute, Scene, Anime, Core, Waifo, Doll, Clothes, Girls, Boys, Shirts, Pants, Checkered, Leather, Red, Orange, Yellow, Green, Blue, Purple, Black, White, Gray, Pink, Brown, Cherry, Rainbow, Crop top, Halter,Jeans, Jacket, Nirvana, Green day, abs, Rock and roll, Grunge rock, Punk, Rocker,Mupp, Kidcore, Musician, Art, Skull, Demon, Angel, Heart, Sanrio, Angel, , BLM, HappyPride, LGBTQ, Vintage, P4rkr, Sanrio, Playxboy, Streetwear, Mandrake, Manga, Cyber, Collection, Exclusive, Limited, Original, Aesthetic, Pop OUTFITS, The best, Elite, Money, VIP, PLUS, Loyalty, Gold, Retro, Nostalgia, Sale, Clothing, CyberBullet. ",
+              "asset_type": 11,
+              "category": "shirt",
+              "price": 5,
+              "currency": "Robux",
+              "availability": "unknown",
+              "thumbnail_url": "https://tr.rbxcdn.com/180DAY-a61a6a553d68f7b18487bb1e26b62f8a/150/150/Shirt/Png/noFilter",
+              "item_type": "Asset",
+              "catalog_url": "https://www.roblox.com/catalog/17090674198",
+              "creator": "Logogems",
+              "image_retrieval_status": "verified",
+              "visual_analysis_status": "verified",
+              "visual_analysis": {
+                "dominant_colors": [
+                  "blue",
+                  "dark blue"
+                ],
+                "secondary_colors": [],
+                "style": "streetwear, grunge, y2k, emo",
+                "pattern": "graphic print",
+                "visible_details": [
+                  "dark blue base",
+                  "light blue graphic design",
+                  "short sleeves"
+                ],
+                "asset_id": 17090674198,
+                "visual_style": [
+                  "streetwear",
+                  "grunge",
+                  "y2k",
+                  "emo"
+                ],
+                "clothing_type": "shirt",
+                "description_match": true,
+                "category_compatible": true,
+                "match_score": 1,
+                "reason": "Item matches requested color (blue) and style (streetwear) perfectly.",
+                "visual_analysis_success": true
+              },
+              "image_error": null,
+              "visual_cache_status": "miss",
+              "thumbnail_lookup_ms": 595,
+              "image_download_ms": 1001,
+              "image_verified_for_asset_id": 17090674198,
+              "image_identity_sha256": "e5c513b28d94fd0e372675d311cc0b567c605818a98e1578992f3d4882967e47",
+              "image_file_sha256": "0fac1f9648f5905ebc0ed4a8d22bdf2325e57f312a265addc10c20eb3e13e4a7",
+              "vision_image": {
+                "source_size": [
+                  150,
+                  150
+                ],
+                "input_size": [
+                  150,
+                  150
+                ],
+                "resized": false
+              },
+              "visual_analysis_metrics": {
+                "asset_id": 17090674198,
+                "actual_model": "google/gemma-4-26B-A4B-it",
+                "provider": "deepinfra",
+                "http_status": 200,
+                "wall_ms": 10402,
+                "inference_wall_ms": 10402,
+                "cache_hit": false
+              },
+              "reason": "",
+              "match_score": 0,
+              "price_robux": 5,
+              "asset_type_name": "ClassicShirt"
+            },
+            {
+              "asset_id": 113194029488956,
+              "name": "Blue Y2K Streetwear Da Hoodian Pant",
+              "description": "join group for more\ndmca active\ntags\nswag lol paris hilton da hood club iris dollhouse baddie envy vamp couture skullz barbie latex white pink blue strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt black sad bow kitty teddy bear pawprint flower floral butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll dahood headless affliction Sanrio yay ok dh envy tryhard matching kawaii harajuku crocs rogang keystone it girl grunge gothic swag lol paris hilton da hood club iris dollhouse baddie envy vamp couture skullz barbie latex white pink blue yay ok dh envy tryhard matching kawaii harajuku crocs rogang keystone it girl grunge gothic",
+              "asset_type": 12,
+              "category": "pants",
+              "price": 5,
+              "currency": "Robux",
+              "availability": "unknown",
+              "thumbnail_url": "https://tr.rbxcdn.com/180DAY-8f472a183297a971745a3573b8774a52/150/150/Pants/Png/noFilter",
+              "item_type": "Asset",
+              "catalog_url": "https://www.roblox.com/catalog/113194029488956",
+              "creator": "kwats drip",
+              "image_retrieval_status": "verified",
+              "visual_analysis_status": "verified",
+              "visual_analysis": {
+                "dominant_colors": [
+                  "dark blue",
+                  "black"
+                ],
+                "secondary_colors": [],
+                "style": "streetwear, y2k, grunge",
+                "pattern": "graphic",
+                "visible_details": [
+                  "waistband detail",
+                  "pocket graphics",
+                  "dark wash"
+                ],
+                "asset_id": 113194029488956,
+                "visual_style": [
+                  "streetwear",
+                  "y2k",
+                  "grunge"
+                ],
+                "clothing_type": "pants",
+                "description_match": true,
+                "category_compatible": true,
+                "match_score": 0.9,
+                "reason": "Matches requested color and style perfectly",
+                "visual_analysis_success": true
+              },
+              "image_error": null,
+              "visual_cache_status": "miss",
+              "thumbnail_lookup_ms": 595,
+              "image_download_ms": 990,
+              "image_verified_for_asset_id": 113194029488956,
+              "image_identity_sha256": "074e7612d3ada97d246fe2617bbbb992cee8215df7a9abfa777773e4e94479ad",
+              "image_file_sha256": "092fb869e2f062c57d6b720fb4a33983debda2710be1ffb0500569d6c2ba40c5",
+              "vision_image": {
+                "source_size": [
+                  150,
+                  150
+                ],
+                "input_size": [
+                  150,
+                  150
+                ],
+                "resized": false
+              },
+              "visual_analysis_metrics": {
+                "asset_id": 113194029488956,
+                "actual_model": "google/gemma-4-26B-A4B-it",
+                "provider": "deepinfra",
+                "http_status": 200,
+                "wall_ms": 5980,
+                "inference_wall_ms": 5980,
+                "cache_hit": false
+              },
+              "reason": "",
+              "match_score": 0,
+              "price_robux": 5,
+              "asset_type_name": "ClassicPants"
+            }
+          ],
+          "total_known_price": 10,
+          "total_price_known": true,
+          "explanation": "Matches streetwear style and blue color"
+        },
+        {
+          "id": "outfit-33932ba94f78",
+          "name": "Blue Streetwear Combo",
+          "items": [
+            {
+              "asset_id": 128454887743205,
+              "name": "Blue Streetwear Shirt",
+              "description": "drip, core, aesthetic, archive, y2k, ywk, emo, scene, grunge, streetwear, underground, alt, anime, manga, graphic, indie, opium, darkwear, skater, rare",
+              "asset_type": 11,
+              "category": "shirt",
+              "price": 5,
+              "currency": "Robux",
+              "availability": "unknown",
+              "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c9fe16e3d9a83993424d6fe9e8ef4406/150/150/Shirt/Png/noFilter",
+              "item_type": "Asset",
+              "catalog_url": "https://www.roblox.com/catalog/128454887743205",
+              "creator": "a1btr4um",
+              "image_retrieval_status": "verified",
+              "visual_analysis_status": "verified",
+              "visual_analysis": {
+                "dominant_colors": [
+                  "blue"
+                ],
+                "secondary_colors": [],
+                "style": "streetwear",
+                "pattern": "dotted circle",
+                "visible_details": [
+                  "blue base",
+                  "darker blue dotted circular pattern on chest"
+                ],
+                "asset_id": 128454887743205,
+                "visual_style": [
+                  "streetwear"
+                ],
+                "clothing_type": "shirt",
+                "description_match": true,
+                "category_compatible": true,
+                "match_score": 1,
+                "reason": "Matches color, style, and category requirements perfectly.",
+                "visual_analysis_success": true
+              },
+              "image_error": null,
+              "visual_cache_status": "miss",
+              "thumbnail_lookup_ms": 595,
+              "image_download_ms": 992,
+              "image_verified_for_asset_id": 128454887743205,
+              "image_identity_sha256": "c51f2eb241673d1bf5c93c451c4f2f2594e78b473e5eb94055137f0d950f97a7",
+              "image_file_sha256": "c0e55e6ed0c8cf0980e6339448c9fbe6c67e00052c4f64396db54fb04bad02d9",
+              "vision_image": {
+                "source_size": [
+                  150,
+                  150
+                ],
+                "input_size": [
+                  150,
+                  150
+                ],
+                "resized": false
+              },
+              "visual_analysis_metrics": {
+                "asset_id": 128454887743205,
+                "actual_model": "google/gemma-4-26B-A4B-it",
+                "provider": "deepinfra",
+                "http_status": 200,
+                "wall_ms": 9216,
+                "inference_wall_ms": 9216,
+                "cache_hit": false
+              },
+              "reason": "",
+              "match_score": 0,
+              "price_robux": 5,
+              "asset_type_name": "ClassicShirt"
+            },
+            {
+              "asset_id": 115865026568571,
+              "name": "Blue Streetwear Pants",
+              "description": "Blue Streetwear pants ",
+              "asset_type": 12,
+              "category": "pants",
+              "price": 5,
+              "currency": "Robux",
+              "availability": "unknown",
+              "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c191ced8c69268b0e99d324480090724/150/150/Pants/Png/noFilter",
+              "item_type": "Asset",
+              "catalog_url": "https://www.roblox.com/catalog/115865026568571",
+              "creator": "Style Haven Clothing",
+              "image_retrieval_status": "verified",
+              "visual_analysis_status": "verified",
+              "visual_analysis": {
+                "dominant_colors": [
+                  "blue"
+                ],
+                "secondary_colors": [],
+                "style": "streetwear",
+                "pattern": "solid",
+                "visible_details": [
+                  "blue fabric",
+                  "dark trim at bottom"
+                ],
+                "asset_id": 115865026568571,
+                "visual_style": [
+                  "streetwear"
+                ],
+                "clothing_type": "pants",
+                "description_match": true,
+                "category_compatible": true,
+                "match_score": 1,
+                "reason": "Matches color, style, and category requirements perfectly.",
+                "visual_analysis_success": true
+              },
+              "image_error": null,
+              "visual_cache_status": "miss",
+              "thumbnail_lookup_ms": 595,
+              "image_download_ms": 748,
+              "image_verified_for_asset_id": 115865026568571,
+              "image_identity_sha256": "507de99e4ed2483fddf5585a1a10bb3d95c2c3ecb728d24c9139e17fdb9ee17b",
+              "image_file_sha256": "a2e4cb837f6a463e764b8986b5572e255a9133f3bc51595e23aaa116bce02494",
+              "vision_image": {
+                "source_size": [
+                  150,
+                  150
+                ],
+                "input_size": [
+                  150,
+                  150
+                ],
+                "resized": false
+              },
+              "visual_analysis_metrics": {
+                "asset_id": 115865026568571,
+                "actual_model": "google/gemma-4-26B-A4B-it",
+                "provider": "deepinfra",
+                "http_status": 200,
+                "wall_ms": 2723,
+                "inference_wall_ms": 2723,
+                "cache_hit": false
+              },
+              "reason": "",
+              "match_score": 0,
+              "price_robux": 5,
+              "asset_type_name": "ClassicPants"
+            }
+          ],
+          "total_known_price": 10,
+          "total_price_known": true,
+          "explanation": "Fits streetwear style and blue color scheme"
+        },
+        {
+          "id": "outfit-c83f05bcc714",
+          "name": "Blue Streetwear Pair",
+          "items": [
+            {
+              "asset_id": 15669039218,
+              "name": "blue shirt streetwear",
+              "description": "beige version:\nhttps://www.roblox.com/catalog/15669053292/beige-shirt\n\nwhite version:\nhttps://www.roblox.com/catalog/15668993778/white-shirt",
+              "asset_type": 11,
+              "category": "shirt",
+              "price": 5,
+              "currency": "Robux",
+              "availability": "unknown",
+              "thumbnail_url": "https://tr.rbxcdn.com/180DAY-62a1499678474b5239511753c6013b4d/150/150/Shirt/Png/noFilter",
+              "item_type": "Asset",
+              "catalog_url": "https://www.roblox.com/catalog/15669039218",
+              "creator": "Celestial Threads",
+              "image_retrieval_status": "verified",
+              "visual_analysis_status": "verified",
+              "visual_analysis": {
+                "dominant_colors": [
+                  "dark blue",
+                  "grey"
+                ],
+                "secondary_colors": [],
+                "style": "streetwear, minimalist",
+                "pattern": "solid",
+                "visible_details": [
+                  "short sleeves",
+                  "crew neck"
+                ],
+                "asset_id": 15669039218,
+                "visual_style": [
+                  "streetwear",
+                  "minimalist"
+                ],
+                "clothing_type": "shirt",
+                "description_match": null,
+                "category_compatible": true,
+                "match_score": 1,
+                "reason": "Color matches effective_item_colors and style matches requirements",
+                "visual_analysis_success": true
+              },
+              "image_error": null,
+              "visual_cache_status": "miss",
+              "thumbnail_lookup_ms": 595,
+              "image_download_ms": 984,
+              "image_verified_for_asset_id": 15669039218,
+              "image_identity_sha256": "bb13383c9c07deec30cb4e60614bd964fba05c4a03de8dc3194772a31521e17c",
+              "image_file_sha256": "f180baacf7fe3f322f7b1a3da6d10f9f417228f41f21eb8091cc31e1ee82c3f8",
+              "vision_image": {
+                "source_size": [
+                  150,
+                  150
+                ],
+                "input_size": [
+                  150,
+                  150
+                ],
+                "resized": false
+              },
+              "visual_analysis_metrics": {
+                "asset_id": 15669039218,
+                "actual_model": "google/gemma-4-26B-A4B-it",
+                "provider": "deepinfra",
+                "http_status": 200,
+                "wall_ms": 6414,
+                "inference_wall_ms": 6414,
+                "cache_hit": false
+              },
+              "reason": "",
+              "match_score": 0,
+              "price_robux": 5,
+              "asset_type_name": "ClassicShirt"
+            },
+            {
+              "asset_id": 8889610840,
+              "name": "Blue Streetwear Pants",
+              "description": "Blue Streetwear Pants\n\nThere was going to be a shirt but it was cancelled.\n\nGroup: https://www.roblox.com/groups/11427771/Gloom-room#!/about",
+              "asset_type": 12,
+              "category": "pants",
+              "price": 5,
+              "currency": "Robux",
+              "availability": "unknown",
+              "thumbnail_url": "https://tr.rbxcdn.com/180DAY-35389727411d86ed334268fc6b30df62/150/150/Pants/Png/noFilter",
+              "item_type": "Asset",
+              "catalog_url": "https://www.roblox.com/catalog/8889610840",
+              "creator": "Gloom room",
+              "image_retrieval_status": "verified",
+              "visual_analysis_status": "verified",
+              "visual_analysis": {
+                "dominant_colors": [
+                  "blue",
+                  "light blue",
+                  "white"
+                ],
+                "secondary_colors": [],
+                "style": "streetwear",
+                "pattern": "graphic",
+                "visible_details": [
+                  "blue patterns",
+                  "light blue base",
+                  "white accents"
+                ],
+                "asset_id": 8889610840,
+                "visual_style": [
+                  "streetwear"
+                ],
+                "clothing_type": "pants",
+                "description_match": true,
+                "category_compatible": true,
+                "match_score": 1,
+                "reason": "Matches color, style, and category requirements perfectly.",
+                "visual_analysis_success": true
+              },
+              "image_error": null,
+              "visual_cache_status": "miss",
+              "thumbnail_lookup_ms": 595,
+              "image_download_ms": 501,
+              "image_verified_for_asset_id": 8889610840,
+              "image_identity_sha256": "8b9954fce5e29b48f13e350da0229a12e74eb3c5c53197e94850355300c2e290",
+              "image_file_sha256": "10c8615d5b5d1d5452d2be6742d6daf128090598ea62f5e4d9b87d9c66554bd2",
+              "vision_image": {
+                "source_size": [
+                  150,
+                  150
+                ],
+                "input_size": [
+                  150,
+                  150
+                ],
+                "resized": false
+              },
+              "visual_analysis_metrics": {
+                "asset_id": 8889610840,
+                "actual_model": "google/gemma-4-26B-A4B-it",
+                "provider": "deepinfra",
+                "http_status": 200,
+                "wall_ms": 3453,
+                "inference_wall_ms": 3453,
+                "cache_hit": false
+              },
+              "reason": "",
+              "match_score": 0,
+              "price_robux": 5,
+              "asset_type_name": "ClassicPants"
+            }
+          ],
+          "total_known_price": 10,
+          "total_price_known": true,
+          "explanation": "Streetwear style and blue color coordinated"
+        }
+      ],
+      "selected_items": [
+        {
+          "asset_id": 17090674198,
+          "name": "Da hood blue grunge y2k t shirt emo streetwear",
+          "description": "hello!\nJoin this group = https://www.roblox.com/groups/15860303/Logogems#!/about \nPair ( if any) = \nTags: Y2k, Goth, Emo, Vamp, Punk, Soft, Edgy, Grunge, Aesthetic, Trendy, Cottagecore, Sanriocore, Angelcore, Retro, Sofite, Pastel Goth, Streetwear, Trash, Trush gang, Vibe, Scenecore,My melody, Cute, Scene, Anime, Core, Waifo, Doll, Clothes, Girls, Boys, Shirts, Pants, Checkered, Leather, Red, Orange, Yellow, Green, Blue, Purple, Black, White, Gray, Pink, Brown, Cherry, Rainbow, Crop top, Halter,Jeans, Jacket, Nirvana, Green day, abs, Rock and roll, Grunge rock, Punk, Rocker,Mupp, Kidcore, Musician, Art, Skull, Demon, Angel, Heart, Sanrio, Angel, , BLM, HappyPride, LGBTQ, Vintage, P4rkr, Sanrio, Playxboy, Streetwear, Mandrake, Manga, Cyber, Collection, Exclusive, Limited, Original, Aesthetic, Pop OUTFITS, The best, Elite, Money, VIP, PLUS, Loyalty, Gold, Retro, Nostalgia, Sale, Clothing, CyberBullet. ",
+          "asset_type": 11,
+          "category": "shirt",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-a61a6a553d68f7b18487bb1e26b62f8a/150/150/Shirt/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/17090674198",
+          "creator": "Logogems",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "blue",
+              "dark blue"
+            ],
+            "secondary_colors": [],
+            "style": "streetwear, grunge, y2k, emo",
+            "pattern": "graphic print",
+            "visible_details": [
+              "dark blue base",
+              "light blue graphic design",
+              "short sleeves"
+            ],
+            "asset_id": 17090674198,
+            "visual_style": [
+              "streetwear",
+              "grunge",
+              "y2k",
+              "emo"
+            ],
+            "clothing_type": "shirt",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Item matches requested color (blue) and style (streetwear) perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 595,
+          "image_download_ms": 1001,
+          "image_verified_for_asset_id": 17090674198,
+          "image_identity_sha256": "e5c513b28d94fd0e372675d311cc0b567c605818a98e1578992f3d4882967e47",
+          "image_file_sha256": "0fac1f9648f5905ebc0ed4a8d22bdf2325e57f312a265addc10c20eb3e13e4a7",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 17090674198,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 10402,
+            "inference_wall_ms": 10402,
+            "cache_hit": false
+          },
+          "reason": "",
+          "match_score": 0,
+          "price_robux": 5,
+          "asset_type_name": "ClassicShirt"
+        },
+        {
+          "asset_id": 113194029488956,
+          "name": "Blue Y2K Streetwear Da Hoodian Pant",
+          "description": "join group for more\ndmca active\ntags\nswag lol paris hilton da hood club iris dollhouse baddie envy vamp couture skullz barbie latex white pink blue strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt black sad bow kitty teddy bear pawprint flower floral butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll dahood headless affliction Sanrio yay ok dh envy tryhard matching kawaii harajuku crocs rogang keystone it girl grunge gothic swag lol paris hilton da hood club iris dollhouse baddie envy vamp couture skullz barbie latex white pink blue yay ok dh envy tryhard matching kawaii harajuku crocs rogang keystone it girl grunge gothic",
+          "asset_type": 12,
+          "category": "pants",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-8f472a183297a971745a3573b8774a52/150/150/Pants/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/113194029488956",
+          "creator": "kwats drip",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "dark blue",
+              "black"
+            ],
+            "secondary_colors": [],
+            "style": "streetwear, y2k, grunge",
+            "pattern": "graphic",
+            "visible_details": [
+              "waistband detail",
+              "pocket graphics",
+              "dark wash"
+            ],
+            "asset_id": 113194029488956,
+            "visual_style": [
+              "streetwear",
+              "y2k",
+              "grunge"
+            ],
+            "clothing_type": "pants",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 0.9,
+            "reason": "Matches requested color and style perfectly",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 595,
+          "image_download_ms": 990,
+          "image_verified_for_asset_id": 113194029488956,
+          "image_identity_sha256": "074e7612d3ada97d246fe2617bbbb992cee8215df7a9abfa777773e4e94479ad",
+          "image_file_sha256": "092fb869e2f062c57d6b720fb4a33983debda2710be1ffb0500569d6c2ba40c5",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 113194029488956,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 5980,
+            "inference_wall_ms": 5980,
+            "cache_hit": false
+          },
+          "reason": "",
+          "match_score": 0,
+          "price_robux": 5,
+          "asset_type_name": "ClassicPants"
+        }
+      ],
+      "partial_items": [],
+      "candidates": [
+        {
+          "asset_id": 17090674198,
+          "name": "Da hood blue grunge y2k t shirt emo streetwear",
+          "description": "hello!\nJoin this group = https://www.roblox.com/groups/15860303/Logogems#!/about \nPair ( if any) = \nTags: Y2k, Goth, Emo, Vamp, Punk, Soft, Edgy, Grunge, Aesthetic, Trendy, Cottagecore, Sanriocore, Angelcore, Retro, Sofite, Pastel Goth, Streetwear, Trash, Trush gang, Vibe, Scenecore,My melody, Cute, Scene, Anime, Core, Waifo, Doll, Clothes, Girls, Boys, Shirts, Pants, Checkered, Leather, Red, Orange, Yellow, Green, Blue, Purple, Black, White, Gray, Pink, Brown, Cherry, Rainbow, Crop top, Halter,Jeans, Jacket, Nirvana, Green day, abs, Rock and roll, Grunge rock, Punk, Rocker,Mupp, Kidcore, Musician, Art, Skull, Demon, Angel, Heart, Sanrio, Angel, , BLM, HappyPride, LGBTQ, Vintage, P4rkr, Sanrio, Playxboy, Streetwear, Mandrake, Manga, Cyber, Collection, Exclusive, Limited, Original, Aesthetic, Pop OUTFITS, The best, Elite, Money, VIP, PLUS, Loyalty, Gold, Retro, Nostalgia, Sale, Clothing, CyberBullet. ",
+          "asset_type": 11,
+          "category": "shirt",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-a61a6a553d68f7b18487bb1e26b62f8a/150/150/Shirt/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/17090674198",
+          "creator": "Logogems",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "blue",
+              "dark blue"
+            ],
+            "secondary_colors": [],
+            "style": "streetwear, grunge, y2k, emo",
+            "pattern": "graphic print",
+            "visible_details": [
+              "dark blue base",
+              "light blue graphic design",
+              "short sleeves"
+            ],
+            "asset_id": 17090674198,
+            "visual_style": [
+              "streetwear",
+              "grunge",
+              "y2k",
+              "emo"
+            ],
+            "clothing_type": "shirt",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Item matches requested color (blue) and style (streetwear) perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 595,
+          "image_download_ms": 1001,
+          "image_verified_for_asset_id": 17090674198,
+          "image_identity_sha256": "e5c513b28d94fd0e372675d311cc0b567c605818a98e1578992f3d4882967e47",
+          "image_file_sha256": "0fac1f9648f5905ebc0ed4a8d22bdf2325e57f312a265addc10c20eb3e13e4a7",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 17090674198,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 10402,
+            "inference_wall_ms": 10402,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 113194029488956,
+          "name": "Blue Y2K Streetwear Da Hoodian Pant",
+          "description": "join group for more\ndmca active\ntags\nswag lol paris hilton da hood club iris dollhouse baddie envy vamp couture skullz barbie latex white pink blue strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt black sad bow kitty teddy bear pawprint flower floral butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll dahood headless affliction Sanrio yay ok dh envy tryhard matching kawaii harajuku crocs rogang keystone it girl grunge gothic swag lol paris hilton da hood club iris dollhouse baddie envy vamp couture skullz barbie latex white pink blue yay ok dh envy tryhard matching kawaii harajuku crocs rogang keystone it girl grunge gothic",
+          "asset_type": 12,
+          "category": "pants",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-8f472a183297a971745a3573b8774a52/150/150/Pants/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/113194029488956",
+          "creator": "kwats drip",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "dark blue",
+              "black"
+            ],
+            "secondary_colors": [],
+            "style": "streetwear, y2k, grunge",
+            "pattern": "graphic",
+            "visible_details": [
+              "waistband detail",
+              "pocket graphics",
+              "dark wash"
+            ],
+            "asset_id": 113194029488956,
+            "visual_style": [
+              "streetwear",
+              "y2k",
+              "grunge"
+            ],
+            "clothing_type": "pants",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 0.9,
+            "reason": "Matches requested color and style perfectly",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 595,
+          "image_download_ms": 990,
+          "image_verified_for_asset_id": 113194029488956,
+          "image_identity_sha256": "074e7612d3ada97d246fe2617bbbb992cee8215df7a9abfa777773e4e94479ad",
+          "image_file_sha256": "092fb869e2f062c57d6b720fb4a33983debda2710be1ffb0500569d6c2ba40c5",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 113194029488956,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 5980,
+            "inference_wall_ms": 5980,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 128454887743205,
+          "name": "Blue Streetwear Shirt",
+          "description": "drip, core, aesthetic, archive, y2k, ywk, emo, scene, grunge, streetwear, underground, alt, anime, manga, graphic, indie, opium, darkwear, skater, rare",
+          "asset_type": 11,
+          "category": "shirt",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c9fe16e3d9a83993424d6fe9e8ef4406/150/150/Shirt/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/128454887743205",
+          "creator": "a1btr4um",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "blue"
+            ],
+            "secondary_colors": [],
+            "style": "streetwear",
+            "pattern": "dotted circle",
+            "visible_details": [
+              "blue base",
+              "darker blue dotted circular pattern on chest"
+            ],
+            "asset_id": 128454887743205,
+            "visual_style": [
+              "streetwear"
+            ],
+            "clothing_type": "shirt",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Matches color, style, and category requirements perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 595,
+          "image_download_ms": 992,
+          "image_verified_for_asset_id": 128454887743205,
+          "image_identity_sha256": "c51f2eb241673d1bf5c93c451c4f2f2594e78b473e5eb94055137f0d950f97a7",
+          "image_file_sha256": "c0e55e6ed0c8cf0980e6339448c9fbe6c67e00052c4f64396db54fb04bad02d9",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 128454887743205,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 9216,
+            "inference_wall_ms": 9216,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 115865026568571,
+          "name": "Blue Streetwear Pants",
+          "description": "Blue Streetwear pants ",
+          "asset_type": 12,
+          "category": "pants",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c191ced8c69268b0e99d324480090724/150/150/Pants/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/115865026568571",
+          "creator": "Style Haven Clothing",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "blue"
+            ],
+            "secondary_colors": [],
+            "style": "streetwear",
+            "pattern": "solid",
+            "visible_details": [
+              "blue fabric",
+              "dark trim at bottom"
+            ],
+            "asset_id": 115865026568571,
+            "visual_style": [
+              "streetwear"
+            ],
+            "clothing_type": "pants",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Matches color, style, and category requirements perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 595,
+          "image_download_ms": 748,
+          "image_verified_for_asset_id": 115865026568571,
+          "image_identity_sha256": "507de99e4ed2483fddf5585a1a10bb3d95c2c3ecb728d24c9139e17fdb9ee17b",
+          "image_file_sha256": "a2e4cb837f6a463e764b8986b5572e255a9133f3bc51595e23aaa116bce02494",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 115865026568571,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 2723,
+            "inference_wall_ms": 2723,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 15669039218,
+          "name": "blue shirt streetwear",
+          "description": "beige version:\nhttps://www.roblox.com/catalog/15669053292/beige-shirt\n\nwhite version:\nhttps://www.roblox.com/catalog/15668993778/white-shirt",
+          "asset_type": 11,
+          "category": "shirt",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-62a1499678474b5239511753c6013b4d/150/150/Shirt/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/15669039218",
+          "creator": "Celestial Threads",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "dark blue",
+              "grey"
+            ],
+            "secondary_colors": [],
+            "style": "streetwear, minimalist",
+            "pattern": "solid",
+            "visible_details": [
+              "short sleeves",
+              "crew neck"
+            ],
+            "asset_id": 15669039218,
+            "visual_style": [
+              "streetwear",
+              "minimalist"
+            ],
+            "clothing_type": "shirt",
+            "description_match": null,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Color matches effective_item_colors and style matches requirements",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 595,
+          "image_download_ms": 984,
+          "image_verified_for_asset_id": 15669039218,
+          "image_identity_sha256": "bb13383c9c07deec30cb4e60614bd964fba05c4a03de8dc3194772a31521e17c",
+          "image_file_sha256": "f180baacf7fe3f322f7b1a3da6d10f9f417228f41f21eb8091cc31e1ee82c3f8",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 15669039218,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 6414,
+            "inference_wall_ms": 6414,
+            "cache_hit": false
+          }
+        },
+        {
+          "asset_id": 8889610840,
+          "name": "Blue Streetwear Pants",
+          "description": "Blue Streetwear Pants\n\nThere was going to be a shirt but it was cancelled.\n\nGroup: https://www.roblox.com/groups/11427771/Gloom-room#!/about",
+          "asset_type": 12,
+          "category": "pants",
+          "price": 5,
+          "currency": "Robux",
+          "availability": "unknown",
+          "thumbnail_url": "https://tr.rbxcdn.com/180DAY-35389727411d86ed334268fc6b30df62/150/150/Pants/Png/noFilter",
+          "item_type": "Asset",
+          "catalog_url": "https://www.roblox.com/catalog/8889610840",
+          "creator": "Gloom room",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "visual_analysis": {
+            "dominant_colors": [
+              "blue",
+              "light blue",
+              "white"
+            ],
+            "secondary_colors": [],
+            "style": "streetwear",
+            "pattern": "graphic",
+            "visible_details": [
+              "blue patterns",
+              "light blue base",
+              "white accents"
+            ],
+            "asset_id": 8889610840,
+            "visual_style": [
+              "streetwear"
+            ],
+            "clothing_type": "pants",
+            "description_match": true,
+            "category_compatible": true,
+            "match_score": 1,
+            "reason": "Matches color, style, and category requirements perfectly.",
+            "visual_analysis_success": true
+          },
+          "image_error": null,
+          "visual_cache_status": "miss",
+          "thumbnail_lookup_ms": 595,
+          "image_download_ms": 501,
+          "image_verified_for_asset_id": 8889610840,
+          "image_identity_sha256": "8b9954fce5e29b48f13e350da0229a12e74eb3c5c53197e94850355300c2e290",
+          "image_file_sha256": "10c8615d5b5d1d5452d2be6742d6daf128090598ea62f5e4d9b87d9c66554bd2",
+          "vision_image": {
+            "source_size": [
+              150,
+              150
+            ],
+            "input_size": [
+              150,
+              150
+            ],
+            "resized": false
+          },
+          "visual_analysis_metrics": {
+            "asset_id": 8889610840,
+            "actual_model": "google/gemma-4-26B-A4B-it",
+            "provider": "deepinfra",
+            "http_status": 200,
+            "wall_ms": 3453,
+            "inference_wall_ms": 3453,
+            "cache_hit": false
+          }
+        }
+      ],
+      "missing_categories": [],
+      "total_known_price": 10,
+      "reply": "Matches streetwear style and blue color",
+      "models": {
+        "reasoning": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        "vision": "google/gemma-4-26B-A4B-it"
+      },
+      "source": "Roblox Marketplace API",
+      "pipeline_status": {
+        "selection_status": "verified",
+        "price_status": "verified",
+        "budget_status": "verified",
+        "availability_status": "unknown",
+        "image_retrieval_status": "verified",
+        "visual_analysis_status": "verified",
+        "avatar_application_status": "not_started"
+      },
+      "selection_status": "verified",
+      "price_status": "verified",
+      "budget_status": "verified",
+      "availability_status": "unknown",
+      "image_retrieval_status": "verified",
+      "visual_analysis_status": "verified",
+      "avatar_application_status": "not_started",
+      "timings_ms": {
+        "requirements": 0,
+        "preserved_validation": 0,
+        "catalog": 1876,
+        "visual_stage": 12232,
+        "selection": 12289,
+        "total": 26398
+      },
+      "catalog_candidate_count": 48,
+      "visual_candidate_count": 6,
+      "visual_failure_count": 0,
+      "visual_cache_hit_count": 0,
+      "visual_model_request_count": 6,
+      "unsupported_asset_count": 0
+    }
+  },
+  {
+    "case": "no_results",
+    "seconds": 8.259,
+    "http_status": 502,
+    "result": {
+      "detail": "Roblox catalog is unavailable. No substitute items were used."
+    }
+  }
+]

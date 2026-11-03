@@ -1,0 +1,42 @@
+{
+  "source": "Roblox Studio native characterR15 and morpherEditorR15, version-7062aec9dbe74b14",
+  "native_mesh_ids": {
+    "LeftHand": 1699715537,
+    "LeftLowerArm": 1699715541,
+    "LeftUpperArm": 1699715550,
+    "RightHand": 1699715557,
+    "RightLowerArm": 1699715562,
+    "RightUpperArm": 1699715576,
+    "UpperTorso": 1699715593,
+    "LeftFoot": 1699715602,
+    "LeftLowerLeg": 1699715610,
+    "LeftUpperLeg": 1699715616,
+    "RightFoot": 1699715627,
+    "RightLowerLeg": 1699715632,
+    "RightUpperLeg": 1699715641,
+    "LowerTorso": 1699715652,
+    "Head": null
+  },
+  "joints": [
+    "Root",
+    "HumanoidRootNode",
+    "LowerTorso",
+    "UpperTorso",
+    "Head",
+    "LeftUpperArm",
+    "LeftLowerArm",
+    "LeftHand",
+    "LeftUpperLeg",
+    "LeftLowerLeg",
+    "LeftFoot",
+    "RightUpperArm",
+    "RightLowerArm",
+    "RightHand",
+    "RightUpperLeg",
+    "RightLowerLeg",
+    "RightFoot"
+  ],
+  "meshes": 15,
+  "uv_mapping": "Roblox R15 compositor data: torso388x272, limbs264x284; native UVs unchanged",
+  "original_models_modified": false
+}

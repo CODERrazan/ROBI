@@ -1,0 +1,50 @@
+{
+  "message": "أبي فستان وردي مع شعر بني طويل وميكب ناعم وفيونكة",
+  "status": 200,
+  "seconds": 14.771,
+  "result": {
+    "intent": "outfit",
+    "ready": true,
+    "reply": "حبيبتي، شنو نوع الفستان اللي تبين؟ فستان طويل ولا قصير؟",
+    "requirements": {
+      "intent": "generate_outfit",
+      "avatar_type": null,
+      "style": [],
+      "colors": [],
+      "categories": [
+        "layeredDressSkirt",
+        "hair",
+        "faceAccessory",
+        "hat"
+      ],
+      "budget_robux": null,
+      "skin_tone": null,
+      "category_preferences": {
+        "layeredDressSkirt": [
+          "pink"
+        ],
+        "hair": [
+          "long",
+          "brown"
+        ],
+        "faceAccessory": [
+          "makeup"
+        ]
+      },
+      "occasion": null,
+      "preferences": [],
+      "excluded_items": [],
+      "category_colors": {
+        "layeredDressSkirt": [
+          "pink"
+        ],
+        "hair": [
+          "brown"
+        ]
+      },
+      "changed_categories": [],
+      "removed_categories": []
+    },
+    "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+  }
+}

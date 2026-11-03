@@ -1,0 +1,137 @@
+{
+  "method": "Real Edge browser CDP interaction with React UI and live backend; no mocked network",
+  "api": [
+    {
+      "url": "http://localhost:8000/api/avatar/resolve",
+      "request": {
+        "items": [
+          {
+            "assetId": 17331596106,
+            "assetType": 11
+          },
+          {
+            "assetId": 9694994699,
+            "assetType": 12
+          }
+        ]
+      },
+      "http_status": 200,
+      "seconds": 0.008,
+      "result": {
+        "rig": "native_classic_r15",
+        "items": [
+          {
+            "asset_id": 17331596106,
+            "asset_type": 11,
+            "name": "୨ৎ black cute shirt",
+            "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "shirt",
+            "texture_asset_id": 17331596076,
+            "texture_url": "/api/avatar/textures/95144e3d15889e4ec5dd7fb71a6c2f1a3bceb12935f629cfea2f939ec5bc892a",
+            "texture_sha256": "95144e3d15889e4ec5dd7fb71a6c2f1a3bceb12935f629cfea2f939ec5bc892a",
+            "width": 585,
+            "height": 559,
+            "resolution_status": "resolved",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v2"
+          },
+          {
+            "asset_id": 9694994699,
+            "asset_type": 12,
+            "name": "white plaid pjs y2k lol cute trendy ",
+            "description": "Grey version\nhttps://www.roblox.com/catalog/9694992049/grey-plaid-pjs-y2k-lol-cute-trendy\n✧༺Ty for purchasing༻∞\n\nShorts:\n",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "pants",
+            "texture_asset_id": 9694994682,
+            "texture_url": "/api/avatar/textures/f6cceb09f00701ab38d51533f099af72a0730f42b82b1f9e3ea68d69be637858",
+            "texture_sha256": "f6cceb09f00701ab38d51533f099af72a0730f42b82b1f9e3ea68d69be637858",
+            "width": 585,
+            "height": 559,
+            "resolution_status": "resolved",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v2"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/avatar/resolve",
+      "request": {
+        "items": [
+          {
+            "assetId": 12980879256,
+            "assetType": 41
+          },
+          {
+            "assetId": 7074764,
+            "assetType": 18
+          }
+        ]
+      },
+      "http_status": 200,
+      "seconds": 0.014,
+      "result": {
+        "rig": "native_classic_r15",
+        "items": [
+          {
+            "asset_id": 12980879256,
+            "asset_type": 41,
+            "name": "Long Brown Hair",
+            "description": "Use Starcode 'BIAGAMER' https://www.roblox.com/catalog/?Category=1&CreatorName=biiiagameryt&salesTypeFilter=1",
+            "price": 90,
+            "availability": "available",
+            "preview_capability": "rigid",
+            "slot": "hair",
+            "accessory_type": "Hair",
+            "is_layered": false,
+            "texture_url": "/api/avatar/textures/fd9185a0e3bec1c73b4f24e3a95db94cba38e6b29ef266636c761443962cb8e6",
+            "texture_sha256": "fd9185a0e3bec1c73b4f24e3a95db94cba38e6b29ef266636c761443962cb8e6",
+            "texture_asset_id": 12980809843,
+            "width": 1000,
+            "height": 1000,
+            "resolution_status": "resolved",
+            "render_kind": "rigid",
+            "geometry_url": "/api/avatar/geometry/b2912d8b6b9364fba3fef31bbef73265e84fb6978dc1580e0d45b54bd8635352",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v2"
+          },
+          {
+            "asset_id": 7074764,
+            "asset_type": 18,
+            "name": "Chill",
+            "description": "It's time to chillax.",
+            "price": 0,
+            "availability": "unavailable",
+            "preview_capability": "face",
+            "slot": "face",
+            "texture_url": "/api/avatar/textures/0daf7312bb463b84810c584c4aa4cebce5801051755a3cf62fe22196b2ce1c64",
+            "texture_sha256": "0daf7312bb463b84810c584c4aa4cebce5801051755a3cf62fe22196b2ce1c64",
+            "texture_asset_id": 7074749,
+            "width": 128,
+            "height": 128,
+            "resolution_status": "resolved",
+            "render_kind": "face",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v2"
+          }
+        ]
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "steps": [
+    {
+      "screenshot": "05-default-appearance.png"
+    }
+  ],
+  "capability": {
+    "state": "ready",
+    "ids": "17331596106,9694994699"
+  },
+  "passed": true
+}

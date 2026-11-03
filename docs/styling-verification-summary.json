@@ -1,0 +1,180 @@
+{
+  "method": "Real Edge UI interactions and real running FastAPI HTTP requests; regression tests are separate",
+  "browser_passed": true,
+  "browser_console_errors": [],
+  "models": {
+    "llama_requested": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "vision_requested": "google/gemma-4-26B-A4B-it",
+    "llama_returned": [
+      "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    ],
+    "vision_returned": [
+      "google/gemma-4-26B-A4B-it"
+    ]
+  },
+  "http_statuses": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+  ],
+  "steps": [
+    {
+      "label": "A-greeting",
+      "message": "\u0647\u0644\u0627 \u0643\u064a\u0641\u0643\u061f",
+      "reply": "\u0647\u0644\u0627 \u0648\u0627\u0644\u0644\u0647! \u0628\u062e\u064a\u0631\u060c \u0634\u0644\u0648\u0646\u0643\u061f \ud83d\udc97",
+      "seconds": 10.538
+    },
+    {
+      "label": "B-clarification",
+      "message": "\u0623\u0628\u064a \u0645\u0644\u0627\u0628\u0633 \u0628\u0646\u062a \u0644\u0648\u0646\u0647\u0627 \u0623\u0633\u0648\u062f.",
+      "reply": "\u062a\u0628\u064a\u0646\u0647\u0627 \u0641\u0633\u062a\u0627\u0646 \u0648\u0644\u0627 \u0628\u0646\u0637\u0644\u0648\u0646 \u0648\u0628\u0644\u0648\u0632\u0629\u061f",
+      "seconds": 8.908
+    },
+    {
+      "label": "C-generate",
+      "message": "\u0623\u0628\u064a \u0628\u0646\u0637\u0644\u0648\u0646 \u0648\u0628\u0644\u0648\u0632\u0629 \u0633\u0648\u062f\u0627\u0621 \u0643\u064a\u0648\u062a \u0628\u0645\u064a\u0632\u0627\u0646\u064a\u0629 100 Robux.",
+      "reply": "\u0628\u0646\u0637\u0644\u0648\u0646 \u0648\u0628\u0644\u0648\u0632\u0629 \u0633\u0648\u062f\u0627\u0621 \u0643\u064a\u0648\u062a \u0628 10 \u0631\u0648\u0628\u0643\u0633",
+      "seconds": 58.859
+    },
+    {
+      "label": "D-modify",
+      "message": "\u063a\u064a\u0631\u064a \u0627\u0644\u0628\u0646\u0637\u0644\u0648\u0646 \u0625\u0644\u0649 \u0623\u0628\u064a\u0636.",
+      "reply": "\u0628\u0646\u0637\u0644\u0648\u0646 \u0623\u0628\u064a\u0636 \u0643\u064a\u0648\u062a \u0645\u0639 \u0628\u0644\u0648\u0632\u0629 \u0633\u0648\u062f\u0627\u0621",
+      "seconds": 34.322
+    },
+    {
+      "label": "G-choose-existing-option",
+      "message": "\u0627\u062e\u062a\u0627\u0631\u064a \u0627\u0644\u062e\u064a\u0627\u0631 \u0627\u0644\u062b\u0627\u0646\u064a.",
+      "reply": "\u0623\u0628\u0634\u0631\u064a\u060c \u0627\u062e\u062a\u0631\u062a \u0644\u0643 \u0627\u0644\u062b\u0627\u0646\u064a!",
+      "seconds": 4.848
+    }
+  ],
+  "generated_option_count": 3,
+  "generation_timings_ms": {
+    "requirements": 0,
+    "catalog": 2161,
+    "visual_stage": 24668,
+    "selection": 20052,
+    "total": 46883
+  },
+  "modification_timings_ms": {
+    "requirements": 0,
+    "catalog": 2443,
+    "visual_stage": 8793,
+    "selection": 13519,
+    "total": 24758
+  },
+  "modification": {
+    "originalShirt": 17331596106,
+    "originalPants": 114915582025729,
+    "shirt": 17331596106,
+    "pants": 9694994699,
+    "knownTotal": 10,
+    "requirements": {
+      "intent": "modify_outfit",
+      "avatar_type": "girl",
+      "style": [
+        "cute"
+      ],
+      "colors": [
+        "black"
+      ],
+      "categories": [
+        "shirt",
+        "pants"
+      ],
+      "budget_robux": 100,
+      "occasion": null,
+      "preferences": [],
+      "excluded_items": [],
+      "category_colors": {
+        "pants": [
+          "white"
+        ]
+      },
+      "changed_categories": [
+        "pants"
+      ],
+      "removed_categories": []
+    },
+    "unchangedCanvas": true
+  },
+  "existing_option_selection": {
+    "optionId": "outfit-5ac9d39c0cc8",
+    "composeRequestsAdded": 0,
+    "displayedAssetIds": [
+      17331596106,
+      14376120266
+    ]
+  },
+  "cloud_cache_passed": true,
+  "cache_runs": [
+    {
+      "label": "cold_after_restart",
+      "seconds": 39.182,
+      "http_status": 200,
+      "timings_ms": {
+        "requirements": 0,
+        "catalog": 2300,
+        "visual_stage": 14879,
+        "selection": 21599,
+        "total": 38781
+      },
+      "cache_hits": 0,
+      "vision_requests": 4
+    },
+    {
+      "label": "repeat_same_requirements",
+      "seconds": 27.108,
+      "http_status": 200,
+      "timings_ms": {
+        "requirements": 0,
+        "catalog": 2515,
+        "visual_stage": 2616,
+        "selection": 21906,
+        "total": 27040
+      },
+      "cache_hits": 4,
+      "vision_requests": 0
+    }
+  ],
+  "reference_upload": {
+    "http_status": 200,
+    "seconds": 12.796,
+    "result": {
+      "analysis": {
+        "style": "minimalist",
+        "colors": [
+          "black",
+          "white"
+        ],
+        "categories": [
+          "top"
+        ],
+        "details": [
+          "sleeveless",
+          "square neckline",
+          "block color"
+        ],
+        "uncertainty": "low"
+      },
+      "model": "google/gemma-4-26B-A4B-it"
+    }
+  },
+  "tests": {
+    "backend": 35,
+    "avatar_configuration": 11,
+    "frontend_build": "passed; existing large-chunk advisory"
+  },
+  "limitations": [
+    "R15 dressing unavailable; base rig only",
+    "Availability unknown when Roblox omits it",
+    "State and caches are in memory",
+    "Latency varies; under60 target is not guaranteed",
+    "Small thumbnail visual judgment is subjective; no garment texture/geometry validation"
+  ]
+}

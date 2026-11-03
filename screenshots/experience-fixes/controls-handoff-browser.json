@@ -1,0 +1,296 @@
+{
+  "method": "Real Edge browser CDP interaction with React UI and live backend; no mocked network",
+  "api": [
+    {
+      "url": "http://localhost:8000/api/avatar/resolve",
+      "request": {
+        "items": [
+          {
+            "assetId": 17331596106,
+            "assetType": 11
+          },
+          {
+            "assetId": 9694994699,
+            "assetType": 12
+          },
+          {
+            "assetId": 63690008,
+            "assetType": 41
+          },
+          {
+            "assetId": 7074764,
+            "assetType": 18
+          }
+        ]
+      },
+      "http_status": 200,
+      "seconds": 0.117,
+      "result": {
+        "rig": "native_classic_r15",
+        "items": [
+          {
+            "asset_id": 17331596106,
+            "asset_type": 11,
+            "name": "୨ৎ black cute shirt",
+            "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "shirt",
+            "texture_asset_id": 17331596076,
+            "texture_url": "/api/avatar/textures/95144e3d15889e4ec5dd7fb71a6c2f1a3bceb12935f629cfea2f939ec5bc892a",
+            "texture_sha256": "95144e3d15889e4ec5dd7fb71a6c2f1a3bceb12935f629cfea2f939ec5bc892a",
+            "width": 585,
+            "height": 559,
+            "resolution_status": "resolved",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v3"
+          },
+          {
+            "asset_id": 9694994699,
+            "asset_type": 12,
+            "name": "white plaid pjs y2k lol cute trendy ",
+            "description": "Grey version\nhttps://www.roblox.com/catalog/9694992049/grey-plaid-pjs-y2k-lol-cute-trendy\n✧༺Ty for purchasing༻∞\n\nShorts:\n",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "pants",
+            "texture_asset_id": 9694994682,
+            "texture_url": "/api/avatar/textures/f6cceb09f00701ab38d51533f099af72a0730f42b82b1f9e3ea68d69be637858",
+            "texture_sha256": "f6cceb09f00701ab38d51533f099af72a0730f42b82b1f9e3ea68d69be637858",
+            "width": 585,
+            "height": 559,
+            "resolution_status": "resolved",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v3"
+          },
+          {
+            "asset_id": 63690008,
+            "asset_type": 41,
+            "name": "Pal Hair",
+            "description": "Yeah buddy!  Pal hair for the win.",
+            "price": 0,
+            "availability": "available",
+            "preview_capability": "rigid",
+            "slot": "hair",
+            "accessory_type": "Hair",
+            "is_layered": false,
+            "texture_url": "/api/avatar/textures/42268d06492b44d72027cfa56787512e5ea184c6918fb1b192a6cb368f3affb9",
+            "texture_sha256": "42268d06492b44d72027cfa56787512e5ea184c6918fb1b192a6cb368f3affb9",
+            "texture_asset_id": 6858317867,
+            "width": 256,
+            "height": 256,
+            "resolution_status": "resolved",
+            "render_kind": "rigid",
+            "geometry_url": "/api/avatar/geometry/157dd1c183d2ae1aa98204db219b4c9fe897f50ec4d2456a34f2ebbd9c23e720",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v3"
+          },
+          {
+            "asset_id": 7074764,
+            "asset_type": 18,
+            "name": "Chill",
+            "description": "It's time to chillax.",
+            "price": 0,
+            "availability": "unavailable",
+            "preview_capability": "face",
+            "slot": "face",
+            "texture_url": "/api/avatar/textures/0daf7312bb463b84810c584c4aa4cebce5801051755a3cf62fe22196b2ce1c64",
+            "texture_sha256": "0daf7312bb463b84810c584c4aa4cebce5801051755a3cf62fe22196b2ce1c64",
+            "texture_asset_id": 7074749,
+            "width": 128,
+            "height": 128,
+            "resolution_status": "resolved",
+            "render_kind": "face",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v3"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/avatar/resolve",
+      "request": {
+        "items": [
+          {
+            "assetId": 144075659,
+            "assetType": 18
+          }
+        ]
+      },
+      "http_status": 200,
+      "seconds": 4.3,
+      "result": {
+        "rig": "native_classic_r15",
+        "items": [
+          {
+            "asset_id": 144075659,
+            "asset_type": 18,
+            "name": "Smile",
+            "description": "",
+            "price": 0,
+            "availability": "unavailable",
+            "preview_capability": "face",
+            "slot": "face",
+            "texture_url": "/api/avatar/textures/bb65a7c4b70f950c4534eeec0089f74b85759fbdcbf53d6fe8fff7b80a155d04",
+            "texture_sha256": "bb65a7c4b70f950c4534eeec0089f74b85759fbdcbf53d6fe8fff7b80a155d04",
+            "texture_asset_id": 144080495,
+            "width": 128,
+            "height": 128,
+            "resolution_status": "resolved",
+            "render_kind": "face",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v3"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/avatar/resolve",
+      "request": {
+        "items": [
+          {
+            "assetId": 17331596106,
+            "assetType": 11
+          },
+          {
+            "assetId": 9694994699,
+            "assetType": 12
+          },
+          {
+            "assetId": 63690008,
+            "assetType": 41
+          },
+          {
+            "assetId": 144075659,
+            "assetType": 18
+          }
+        ]
+      },
+      "http_status": 200,
+      "seconds": 0.029,
+      "result": {
+        "rig": "native_classic_r15",
+        "items": [
+          {
+            "asset_id": 17331596106,
+            "asset_type": 11,
+            "name": "୨ৎ black cute shirt",
+            "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "shirt",
+            "texture_asset_id": 17331596076,
+            "texture_url": "/api/avatar/textures/95144e3d15889e4ec5dd7fb71a6c2f1a3bceb12935f629cfea2f939ec5bc892a",
+            "texture_sha256": "95144e3d15889e4ec5dd7fb71a6c2f1a3bceb12935f629cfea2f939ec5bc892a",
+            "width": 585,
+            "height": 559,
+            "resolution_status": "resolved",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v3"
+          },
+          {
+            "asset_id": 9694994699,
+            "asset_type": 12,
+            "name": "white plaid pjs y2k lol cute trendy ",
+            "description": "Grey version\nhttps://www.roblox.com/catalog/9694992049/grey-plaid-pjs-y2k-lol-cute-trendy\n✧༺Ty for purchasing༻∞\n\nShorts:\n",
+            "price": 5,
+            "availability": "available",
+            "preview_capability": "classic_template",
+            "slot": "pants",
+            "texture_asset_id": 9694994682,
+            "texture_url": "/api/avatar/textures/f6cceb09f00701ab38d51533f099af72a0730f42b82b1f9e3ea68d69be637858",
+            "texture_sha256": "f6cceb09f00701ab38d51533f099af72a0730f42b82b1f9e3ea68d69be637858",
+            "width": 585,
+            "height": 559,
+            "resolution_status": "resolved",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v3"
+          },
+          {
+            "asset_id": 63690008,
+            "asset_type": 41,
+            "name": "Pal Hair",
+            "description": "Yeah buddy!  Pal hair for the win.",
+            "price": 0,
+            "availability": "available",
+            "preview_capability": "rigid",
+            "slot": "hair",
+            "accessory_type": "Hair",
+            "is_layered": false,
+            "texture_url": "/api/avatar/textures/42268d06492b44d72027cfa56787512e5ea184c6918fb1b192a6cb368f3affb9",
+            "texture_sha256": "42268d06492b44d72027cfa56787512e5ea184c6918fb1b192a6cb368f3affb9",
+            "texture_asset_id": 6858317867,
+            "width": 256,
+            "height": 256,
+            "resolution_status": "resolved",
+            "render_kind": "rigid",
+            "geometry_url": "/api/avatar/geometry/157dd1c183d2ae1aa98204db219b4c9fe897f50ec4d2456a34f2ebbd9c23e720",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v3"
+          },
+          {
+            "asset_id": 144075659,
+            "asset_type": 18,
+            "name": "Smile",
+            "description": "",
+            "price": 0,
+            "availability": "unavailable",
+            "preview_capability": "face",
+            "slot": "face",
+            "texture_url": "/api/avatar/textures/bb65a7c4b70f950c4534eeec0089f74b85759fbdcbf53d6fe8fff7b80a155d04",
+            "texture_sha256": "bb65a7c4b70f950c4534eeec0089f74b85759fbdcbf53d6fe8fff7b80a155d04",
+            "texture_asset_id": 144080495,
+            "width": 128,
+            "height": 128,
+            "resolution_status": "resolved",
+            "render_kind": "face",
+            "compatibility_status": "renderable",
+            "renderer_profile": "native-r15-v3"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/roblox/recipient",
+      "request": {
+        "username": "Roblox"
+      },
+      "http_status": 200,
+      "seconds": 1.38,
+      "result": {
+        "id": 1,
+        "name": "Roblox",
+        "display_name": "Roblox"
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "steps": [
+    {
+      "screenshot": "02-short-hair.png"
+    },
+    {
+      "screenshot": "03-appearance-controls.png"
+    },
+    {
+      "screenshot": "04-account-confirmation.png"
+    }
+  ],
+  "capability": {
+    "state": "ready",
+    "ids": "17331596106,9694994699,63690008,7074764"
+  },
+  "appearance": {
+    "hair": "63690008",
+    "face": "144075659",
+    "ids": "17331596106,9694994699,63690008,144075659"
+  },
+  "handoffUI": {
+    "usernameLookupVisible": true,
+    "realPublicAccount": "Roblox",
+    "codeNotCreatedWithoutExplicitConfirmation": true
+  },
+  "passed": true
+}

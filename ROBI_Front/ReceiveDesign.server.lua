@@ -1,0 +1,2 @@
+-- Legacy location: install Roblox/ROBI.server.lua and Roblox/OutfitDescription.lua using Roblox/README.md.
+-- This file intentionally does not run an unauthenticated receiver.

@@ -1,0 +1,40 @@
+{
+  "status": 200,
+  "response": {
+    "rig": "native_classic_r15",
+    "items": [
+      {
+        "asset_id": 6439158354,
+        "asset_type": 2,
+        "name": "Roblox\ud83c\udfae",
+        "description": "T-Shirt",
+        "price": 5,
+        "availability": "available",
+        "preview_capability": "classic_template",
+        "slot": "tshirt",
+        "order": 1,
+        "texture_asset_id": 6439158322,
+        "texture_url": "/api/avatar/textures/52359f6ba611111108b2ddaa937ddb71197de921a73a8286178530fc639dba37",
+        "texture_sha256": "52359f6ba611111108b2ddaa937ddb71197de921a73a8286178530fc639dba37",
+        "width": 420,
+        "height": 420,
+        "resolution_status": "resolved"
+      },
+      {
+        "asset_id": 88305103859479,
+        "asset_type": 67,
+        "name": "Black",
+        "description": "Black: https://www.roblox.com/catalog/93635133768445/Black\nMore Black UGCS: https://www.roblox.com/catalog?Keyword=Black&Category=1&CreatorName=Kool+closet&CreatorType=Group&salesTypeFilter=1",
+        "price": 120,
+        "availability": "available",
+        "preview_capability": "native_only",
+        "slot": "layered",
+        "accessory_type": "Jacket",
+        "is_layered": true,
+        "order": 2,
+        "resolution_status": "unsupported",
+        "message": "Accurate preview requires the Roblox Experience."
+      }
+    ]
+  }
+}

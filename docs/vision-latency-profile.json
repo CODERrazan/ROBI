@@ -1,0 +1,59 @@
+{
+  "method": "Real current Roblox targetId-bound images and local Ollama requests; no mocked analyses",
+  "model": "gemma3:4b",
+  "memory_before": {
+    "available_gib": 2.925,
+    "total_gib": 15.828,
+    "load_percent": 81
+  },
+  "experiments": [
+    {
+      "name": "baseline_verbose_single",
+      "wall_seconds": 94.268,
+      "parallel_requests": 1,
+      "min_available_ram_gib": 0.195,
+      "peak_memory_load_percent": 98,
+      "requests": [
+        {
+          "asset_id": 84755756006518,
+          "source_sha256": "09c4029d67aec3a6d59371ed4eef444c11c37d0f7c4f62b9d5dbb22ad972f727",
+          "dimensions": [
+            150,
+            150
+          ],
+          "http_status": 200,
+          "actual_model": "gemma3:4b",
+          "wall_seconds": 94.009,
+          "load_seconds": 14.7996,
+          "prompt_eval_seconds": 69.598,
+          "eval_seconds": 9.487,
+          "prompt_tokens": 362,
+          "prompt_cached_tokens": 0,
+          "output_tokens": 80,
+          "done_reason": "stop",
+          "analysis": {
+            "dominant_colors": [
+              "black",
+              "gray"
+            ],
+            "secondary_colors": [
+              "white"
+            ],
+            "style": "athletic",
+            "pattern": "striped",
+            "visible_details": [
+              "wide-leg pants",
+              "side stripes",
+              "cuffed bottoms",
+              "fabric texture"
+            ],
+            "confidence": 0.95
+          }
+        }
+      ]
+    }
+  ],
+  "ollama_before": {
+    "models": []
+  }
+}

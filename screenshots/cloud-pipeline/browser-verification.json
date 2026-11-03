@@ -1,0 +1,2451 @@
+{
+  "method": "Real Edge browser CDP interaction with React UI and live backend; no mocked network",
+  "api": [
+    {
+      "url": "http://localhost:8000/api/chat",
+      "request": {
+        "message": "هلا كيفك؟",
+        "history": [],
+        "active_requirements": null,
+        "current_items": [],
+        "available_options": [],
+        "selected_option_id": null
+      },
+      "http_status": 200,
+      "seconds": 10.318,
+      "result": {
+        "intent": "conversation",
+        "ready": false,
+        "reply": "هلا والله! بخير، شلونك؟ 💗",
+        "requirements": null,
+        "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/chat",
+      "request": {
+        "message": "أبي ملابس بنت لونها أسود.",
+        "history": [
+          {
+            "role": "user",
+            "content": "هلا كيفك؟"
+          },
+          {
+            "role": "assistant",
+            "content": "هلا والله! بخير، شلونك؟ 💗"
+          }
+        ],
+        "active_requirements": null,
+        "current_items": [],
+        "available_options": [],
+        "selected_option_id": null
+      },
+      "http_status": 200,
+      "seconds": 8.539,
+      "result": {
+        "intent": "outfit",
+        "ready": false,
+        "reply": "تبينها فستان ولا بنطلون وبلوزة؟",
+        "requirements": {
+          "intent": "generate_outfit",
+          "avatar_type": "girl",
+          "style": [],
+          "colors": [
+            "black"
+          ],
+          "categories": [],
+          "budget_robux": null,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {},
+          "changed_categories": [],
+          "removed_categories": []
+        },
+        "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/chat",
+      "request": {
+        "message": "أبي بنطلون وبلوزة سوداء كيوت بميزانية 100 Robux.",
+        "history": [
+          {
+            "role": "user",
+            "content": "هلا كيفك؟"
+          },
+          {
+            "role": "assistant",
+            "content": "هلا والله! بخير، شلونك؟ 💗"
+          },
+          {
+            "role": "user",
+            "content": "أبي ملابس بنت لونها أسود."
+          },
+          {
+            "role": "assistant",
+            "content": "تبينها فستان ولا بنطلون وبلوزة؟"
+          }
+        ],
+        "active_requirements": {
+          "intent": "generate_outfit",
+          "avatar_type": "girl",
+          "style": [],
+          "colors": [
+            "black"
+          ],
+          "categories": [],
+          "budget_robux": null,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {},
+          "changed_categories": [],
+          "removed_categories": []
+        },
+        "current_items": [],
+        "available_options": [],
+        "selected_option_id": null
+      },
+      "http_status": 200,
+      "seconds": 11.492,
+      "result": {
+        "intent": "outfit",
+        "ready": true,
+        "reply": "أبشري! بدور لك على ستايل كيوت",
+        "requirements": {
+          "intent": "generate_outfit",
+          "avatar_type": "girl",
+          "style": [
+            "cute"
+          ],
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "shirt",
+            "pants"
+          ],
+          "budget_robux": 100,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {},
+          "changed_categories": [],
+          "removed_categories": []
+        },
+        "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/outfits/compose",
+      "request": {
+        "message": "أبي بنطلون وبلوزة سوداء كيوت بميزانية 100 Robux.",
+        "budget": 100,
+        "requirements": {
+          "intent": "generate_outfit",
+          "avatar_type": "girl",
+          "style": [
+            "cute"
+          ],
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "shirt",
+            "pants"
+          ],
+          "budget_robux": 100,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {},
+          "changed_categories": [],
+          "removed_categories": []
+        },
+        "current_items": [],
+        "reference_analysis": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "هلا كيفك؟"
+          },
+          {
+            "role": "assistant",
+            "content": "هلا والله! بخير، شلونك؟ 💗"
+          },
+          {
+            "role": "user",
+            "content": "أبي ملابس بنت لونها أسود."
+          },
+          {
+            "role": "assistant",
+            "content": "تبينها فستان ولا بنطلون وبلوزة؟"
+          },
+          {
+            "role": "user",
+            "content": "أبي بنطلون وبلوزة سوداء كيوت بميزانية 100 Robux."
+          }
+        ]
+      },
+      "http_status": 200,
+      "seconds": 46.956,
+      "result": {
+        "requirements": {
+          "intent": "generate_outfit",
+          "avatar_type": "girl",
+          "style": [
+            "cute"
+          ],
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "shirt",
+            "pants"
+          ],
+          "budget_robux": 100,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {},
+          "changed_categories": [],
+          "removed_categories": []
+        },
+        "intent": "generate_outfit",
+        "outfit_options": [
+          {
+            "id": "outfit-99160e223847",
+            "name": "بنطلون وبلوزة سوداء",
+            "items": [
+              {
+                "asset_id": 114915582025729,
+                "name": "black cute pants",
+                "description": "Black pants, cute, kawaii.",
+                "asset_type": 12,
+                "category": "pants",
+                "price": 5,
+                "currency": "Robux",
+                "availability": "unknown",
+                "thumbnail_url": "https://tr.rbxcdn.com/180DAY-34dd131e5e6616b6eee2995c747fb932/150/150/Pants/Png/noFilter",
+                "item_type": "Asset",
+                "catalog_url": "https://www.roblox.com/catalog/114915582025729",
+                "creator": "vanj kazino1",
+                "image_retrieval_status": "verified",
+                "visual_analysis_status": "verified",
+                "visual_analysis": {
+                  "dominant_colors": [
+                    "black"
+                  ],
+                  "secondary_colors": [],
+                  "style": "simple",
+                  "pattern": "solid",
+                  "visible_details": [
+                    "solid color",
+                    "no texture"
+                  ],
+                  "asset_id": 114915582025729,
+                  "visual_style": [
+                    "simple"
+                  ],
+                  "clothing_type": "pants",
+                  "description_match": true,
+                  "category_compatible": true,
+                  "match_score": 1,
+                  "reason": "Item matches color, style, and category requirements perfectly.",
+                  "visual_analysis_success": true
+                },
+                "image_error": null,
+                "visual_cache_status": "miss",
+                "thumbnail_lookup_ms": 577,
+                "image_download_ms": 1673,
+                "image_verified_for_asset_id": 114915582025729,
+                "image_identity_sha256": "049ae246e82c98a1349ae5467dfb78a70113886394d3cb050e5b97192e199b9d",
+                "image_file_sha256": "889095babab9a5930635879845dacfca3ad17e0f0891573ad46ddfb3ab5d5954",
+                "vision_image": {
+                  "source_size": [
+                    150,
+                    150
+                  ],
+                  "input_size": [
+                    150,
+                    150
+                  ],
+                  "resized": false
+                },
+                "visual_analysis_metrics": {
+                  "asset_id": 114915582025729,
+                  "actual_model": "google/gemma-4-26B-A4B-it",
+                  "provider": "deepinfra",
+                  "http_status": 200,
+                  "wall_ms": 5051,
+                  "inference_wall_ms": 5051,
+                  "cache_hit": false
+                },
+                "reason": "",
+                "match_score": 0,
+                "price_robux": 5,
+                "asset_type_name": "ClassicPants"
+              },
+              {
+                "asset_id": 17331596106,
+                "name": "୨ৎ black cute shirt",
+                "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+                "asset_type": 11,
+                "category": "shirt",
+                "price": 5,
+                "currency": "Robux",
+                "availability": "unknown",
+                "thumbnail_url": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+                "item_type": "Asset",
+                "catalog_url": "https://www.roblox.com/catalog/17331596106",
+                "creator": "miyadesu",
+                "image_retrieval_status": "verified",
+                "visual_analysis_status": "verified",
+                "visual_analysis": {
+                  "dominant_colors": [
+                    "black",
+                    "white"
+                  ],
+                  "secondary_colors": [],
+                  "style": "cute, minimalist",
+                  "pattern": "solid",
+                  "visible_details": [
+                    "sleeveless design",
+                    "square neckline",
+                    "black torso",
+                    "white accents"
+                  ],
+                  "asset_id": 17331596106,
+                  "visual_style": [
+                    "cute",
+                    "minimalist"
+                  ],
+                  "clothing_type": "shirt",
+                  "description_match": true,
+                  "category_compatible": true,
+                  "match_score": 1,
+                  "reason": "Item color matches effective_item_colors and style requirements.",
+                  "visual_analysis_success": true
+                },
+                "image_error": null,
+                "visual_cache_status": "miss",
+                "thumbnail_lookup_ms": 577,
+                "image_download_ms": 305,
+                "image_verified_for_asset_id": 17331596106,
+                "image_identity_sha256": "32a56fb7d9cfca5f7adc8a953d6541e6454c8a0592e63ef217545e4d6de6c7c6",
+                "image_file_sha256": "5e63cf4844aa3b225d02fff8c1a2edabd23e163bf39e70835f7f1070001b6f8a",
+                "vision_image": {
+                  "source_size": [
+                    150,
+                    150
+                  ],
+                  "input_size": [
+                    150,
+                    150
+                  ],
+                  "resized": false
+                },
+                "visual_analysis_metrics": {
+                  "asset_id": 17331596106,
+                  "actual_model": "google/gemma-4-26B-A4B-it",
+                  "provider": "deepinfra",
+                  "http_status": 200,
+                  "wall_ms": 5341,
+                  "inference_wall_ms": 5341,
+                  "cache_hit": false
+                },
+                "reason": "",
+                "match_score": 0,
+                "price_robux": 5,
+                "asset_type_name": "ClassicShirt"
+              }
+            ],
+            "total_known_price": 10,
+            "total_price_known": true,
+            "explanation": "بنطلون وبلوزة سوداء كيوت ب 10 روبكس"
+          },
+          {
+            "id": "outfit-4a78d034726d",
+            "name": "بنطلون وبلوزة سوداء",
+            "items": [
+              {
+                "asset_id": 97675213230716,
+                "name": "୨୧ black cute pants",
+                "description": "Join my group for more!\n",
+                "asset_type": 12,
+                "category": "pants",
+                "price": 7,
+                "currency": "Robux",
+                "availability": "unknown",
+                "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c2987d60666d98f517ce556e67254f50/150/150/Pants/Png/noFilter",
+                "item_type": "Asset",
+                "catalog_url": "https://www.roblox.com/catalog/97675213230716",
+                "creator": "୨୧ darki ୨୧",
+                "image_retrieval_status": "verified",
+                "visual_analysis_status": "verified",
+                "visual_analysis": {
+                  "dominant_colors": [
+                    "black"
+                  ],
+                  "secondary_colors": [],
+                  "style": "cute",
+                  "pattern": "solid",
+                  "visible_details": [
+                    "belt/waistband detail"
+                  ],
+                  "asset_id": 97675213230716,
+                  "visual_style": [
+                    "cute"
+                  ],
+                  "clothing_type": "pants",
+                  "description_match": null,
+                  "category_compatible": true,
+                  "match_score": 1,
+                  "reason": "Item color matches effective_item_colors and requirements.",
+                  "visual_analysis_success": true
+                },
+                "image_error": null,
+                "visual_cache_status": "miss",
+                "thumbnail_lookup_ms": 577,
+                "image_download_ms": 2854,
+                "image_verified_for_asset_id": 97675213230716,
+                "image_identity_sha256": "e741b009f827436b40fa52d831fd20a9ef8d21b4d8ee943a29207f0cb3afb50c",
+                "image_file_sha256": "6eb2a66d16dfdbf88b9ff1d03c4ede7bf1b25277d7518ea01042082204dd2b58",
+                "vision_image": {
+                  "source_size": [
+                    150,
+                    150
+                  ],
+                  "input_size": [
+                    150,
+                    150
+                  ],
+                  "resized": false
+                },
+                "visual_analysis_metrics": {
+                  "asset_id": 97675213230716,
+                  "actual_model": "google/gemma-4-26B-A4B-it",
+                  "provider": "deepinfra",
+                  "http_status": 200,
+                  "wall_ms": 20073,
+                  "inference_wall_ms": 20073,
+                  "cache_hit": false
+                },
+                "reason": "",
+                "match_score": 0,
+                "price_robux": 7,
+                "asset_type_name": "ClassicPants"
+              },
+              {
+                "asset_id": 120754709718635,
+                "name": "black cute shirt",
+                "description": "Shirt",
+                "asset_type": 11,
+                "category": "shirt",
+                "price": 5,
+                "currency": "Robux",
+                "availability": "unknown",
+                "thumbnail_url": "https://tr.rbxcdn.com/180DAY-9c58a84835e16a80180bddb0b52d77cc/150/150/Shirt/Png/noFilter",
+                "item_type": "Asset",
+                "catalog_url": "https://www.roblox.com/catalog/120754709718635",
+                "creator": "casually family",
+                "image_retrieval_status": "verified",
+                "visual_analysis_status": "verified",
+                "visual_analysis": {
+                  "dominant_colors": [
+                    "black",
+                    "white"
+                  ],
+                  "secondary_colors": [],
+                  "style": "cute",
+                  "pattern": "solid",
+                  "visible_details": [
+                    "strapless/tube top style",
+                    "black bodice",
+                    "black arm bands"
+                  ],
+                  "asset_id": 120754709718635,
+                  "visual_style": [
+                    "cute"
+                  ],
+                  "clothing_type": "shirt",
+                  "description_match": true,
+                  "category_compatible": true,
+                  "match_score": 1,
+                  "reason": "Item matches color, style, and category requirements perfectly.",
+                  "visual_analysis_success": true
+                },
+                "image_error": null,
+                "visual_cache_status": "miss",
+                "thumbnail_lookup_ms": 577,
+                "image_download_ms": 2847,
+                "image_verified_for_asset_id": 120754709718635,
+                "image_identity_sha256": "4beb5255bde6ced5220f987608de9d0c8e952b79238c34f1cd161032a88b80d7",
+                "image_file_sha256": "46fd18d96a16868eced94f53bbfed8b1e8df7efcbe7e81f1b95f30b5e36528e6",
+                "vision_image": {
+                  "source_size": [
+                    150,
+                    150
+                  ],
+                  "input_size": [
+                    150,
+                    150
+                  ],
+                  "resized": false
+                },
+                "visual_analysis_metrics": {
+                  "asset_id": 120754709718635,
+                  "actual_model": "google/gemma-4-26B-A4B-it",
+                  "provider": "deepinfra",
+                  "http_status": 200,
+                  "wall_ms": 20185,
+                  "inference_wall_ms": 20185,
+                  "cache_hit": false
+                },
+                "reason": "",
+                "match_score": 0,
+                "price_robux": 5,
+                "asset_type_name": "ClassicShirt"
+              }
+            ],
+            "total_known_price": 12,
+            "total_price_known": true,
+            "explanation": "بنطلون وبلوزة سوداء كيوت ب 12 روبكس"
+          },
+          {
+            "id": "outfit-e9818addc294",
+            "name": "بنطلون وبلوزة سوداء",
+            "items": [
+              {
+                "asset_id": 97675213230716,
+                "name": "୨୧ black cute pants",
+                "description": "Join my group for more!\n",
+                "asset_type": 12,
+                "category": "pants",
+                "price": 7,
+                "currency": "Robux",
+                "availability": "unknown",
+                "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c2987d60666d98f517ce556e67254f50/150/150/Pants/Png/noFilter",
+                "item_type": "Asset",
+                "catalog_url": "https://www.roblox.com/catalog/97675213230716",
+                "creator": "୨୧ darki ୨୧",
+                "image_retrieval_status": "verified",
+                "visual_analysis_status": "verified",
+                "visual_analysis": {
+                  "dominant_colors": [
+                    "black"
+                  ],
+                  "secondary_colors": [],
+                  "style": "cute",
+                  "pattern": "solid",
+                  "visible_details": [
+                    "belt/waistband detail"
+                  ],
+                  "asset_id": 97675213230716,
+                  "visual_style": [
+                    "cute"
+                  ],
+                  "clothing_type": "pants",
+                  "description_match": null,
+                  "category_compatible": true,
+                  "match_score": 1,
+                  "reason": "Item color matches effective_item_colors and requirements.",
+                  "visual_analysis_success": true
+                },
+                "image_error": null,
+                "visual_cache_status": "miss",
+                "thumbnail_lookup_ms": 577,
+                "image_download_ms": 2854,
+                "image_verified_for_asset_id": 97675213230716,
+                "image_identity_sha256": "e741b009f827436b40fa52d831fd20a9ef8d21b4d8ee943a29207f0cb3afb50c",
+                "image_file_sha256": "6eb2a66d16dfdbf88b9ff1d03c4ede7bf1b25277d7518ea01042082204dd2b58",
+                "vision_image": {
+                  "source_size": [
+                    150,
+                    150
+                  ],
+                  "input_size": [
+                    150,
+                    150
+                  ],
+                  "resized": false
+                },
+                "visual_analysis_metrics": {
+                  "asset_id": 97675213230716,
+                  "actual_model": "google/gemma-4-26B-A4B-it",
+                  "provider": "deepinfra",
+                  "http_status": 200,
+                  "wall_ms": 20073,
+                  "inference_wall_ms": 20073,
+                  "cache_hit": false
+                },
+                "reason": "",
+                "match_score": 0,
+                "price_robux": 7,
+                "asset_type_name": "ClassicPants"
+              },
+              {
+                "asset_id": 17331596106,
+                "name": "୨ৎ black cute shirt",
+                "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+                "asset_type": 11,
+                "category": "shirt",
+                "price": 5,
+                "currency": "Robux",
+                "availability": "unknown",
+                "thumbnail_url": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+                "item_type": "Asset",
+                "catalog_url": "https://www.roblox.com/catalog/17331596106",
+                "creator": "miyadesu",
+                "image_retrieval_status": "verified",
+                "visual_analysis_status": "verified",
+                "visual_analysis": {
+                  "dominant_colors": [
+                    "black",
+                    "white"
+                  ],
+                  "secondary_colors": [],
+                  "style": "cute, minimalist",
+                  "pattern": "solid",
+                  "visible_details": [
+                    "sleeveless design",
+                    "square neckline",
+                    "black torso",
+                    "white accents"
+                  ],
+                  "asset_id": 17331596106,
+                  "visual_style": [
+                    "cute",
+                    "minimalist"
+                  ],
+                  "clothing_type": "shirt",
+                  "description_match": true,
+                  "category_compatible": true,
+                  "match_score": 1,
+                  "reason": "Item color matches effective_item_colors and style requirements.",
+                  "visual_analysis_success": true
+                },
+                "image_error": null,
+                "visual_cache_status": "miss",
+                "thumbnail_lookup_ms": 577,
+                "image_download_ms": 305,
+                "image_verified_for_asset_id": 17331596106,
+                "image_identity_sha256": "32a56fb7d9cfca5f7adc8a953d6541e6454c8a0592e63ef217545e4d6de6c7c6",
+                "image_file_sha256": "5e63cf4844aa3b225d02fff8c1a2edabd23e163bf39e70835f7f1070001b6f8a",
+                "vision_image": {
+                  "source_size": [
+                    150,
+                    150
+                  ],
+                  "input_size": [
+                    150,
+                    150
+                  ],
+                  "resized": false
+                },
+                "visual_analysis_metrics": {
+                  "asset_id": 17331596106,
+                  "actual_model": "google/gemma-4-26B-A4B-it",
+                  "provider": "deepinfra",
+                  "http_status": 200,
+                  "wall_ms": 5341,
+                  "inference_wall_ms": 5341,
+                  "cache_hit": false
+                },
+                "reason": "",
+                "match_score": 0,
+                "price_robux": 5,
+                "asset_type_name": "ClassicShirt"
+              }
+            ],
+            "total_known_price": 12,
+            "total_price_known": true,
+            "explanation": "بنطلون وبلوزة سوداء كيوت ب 12 روبكس"
+          }
+        ],
+        "selected_items": [
+          {
+            "asset_id": 114915582025729,
+            "name": "black cute pants",
+            "description": "Black pants, cute, kawaii.",
+            "asset_type": 12,
+            "category": "pants",
+            "price": 5,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-34dd131e5e6616b6eee2995c747fb932/150/150/Pants/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/114915582025729",
+            "creator": "vanj kazino1",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black"
+              ],
+              "secondary_colors": [],
+              "style": "simple",
+              "pattern": "solid",
+              "visible_details": [
+                "solid color",
+                "no texture"
+              ],
+              "asset_id": 114915582025729,
+              "visual_style": [
+                "simple"
+              ],
+              "clothing_type": "pants",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item matches color, style, and category requirements perfectly.",
+              "visual_analysis_success": true
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "thumbnail_lookup_ms": 577,
+            "image_download_ms": 1673,
+            "image_verified_for_asset_id": 114915582025729,
+            "image_identity_sha256": "049ae246e82c98a1349ae5467dfb78a70113886394d3cb050e5b97192e199b9d",
+            "image_file_sha256": "889095babab9a5930635879845dacfca3ad17e0f0891573ad46ddfb3ab5d5954",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 114915582025729,
+              "actual_model": "google/gemma-4-26B-A4B-it",
+              "provider": "deepinfra",
+              "http_status": 200,
+              "wall_ms": 5051,
+              "inference_wall_ms": 5051,
+              "cache_hit": false
+            },
+            "reason": "",
+            "match_score": 0,
+            "price_robux": 5,
+            "asset_type_name": "ClassicPants"
+          },
+          {
+            "asset_id": 17331596106,
+            "name": "୨ৎ black cute shirt",
+            "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+            "asset_type": 11,
+            "category": "shirt",
+            "price": 5,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/17331596106",
+            "creator": "miyadesu",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "cute, minimalist",
+              "pattern": "solid",
+              "visible_details": [
+                "sleeveless design",
+                "square neckline",
+                "black torso",
+                "white accents"
+              ],
+              "asset_id": 17331596106,
+              "visual_style": [
+                "cute",
+                "minimalist"
+              ],
+              "clothing_type": "shirt",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item color matches effective_item_colors and style requirements.",
+              "visual_analysis_success": true
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "thumbnail_lookup_ms": 577,
+            "image_download_ms": 305,
+            "image_verified_for_asset_id": 17331596106,
+            "image_identity_sha256": "32a56fb7d9cfca5f7adc8a953d6541e6454c8a0592e63ef217545e4d6de6c7c6",
+            "image_file_sha256": "5e63cf4844aa3b225d02fff8c1a2edabd23e163bf39e70835f7f1070001b6f8a",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 17331596106,
+              "actual_model": "google/gemma-4-26B-A4B-it",
+              "provider": "deepinfra",
+              "http_status": 200,
+              "wall_ms": 5341,
+              "inference_wall_ms": 5341,
+              "cache_hit": false
+            },
+            "reason": "",
+            "match_score": 0,
+            "price_robux": 5,
+            "asset_type_name": "ClassicShirt"
+          }
+        ],
+        "partial_items": [],
+        "candidates": [
+          {
+            "asset_id": 17331596106,
+            "name": "୨ৎ black cute shirt",
+            "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+            "asset_type": 11,
+            "category": "shirt",
+            "price": 5,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/17331596106",
+            "creator": "miyadesu",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "cute, minimalist",
+              "pattern": "solid",
+              "visible_details": [
+                "sleeveless design",
+                "square neckline",
+                "black torso",
+                "white accents"
+              ],
+              "asset_id": 17331596106,
+              "visual_style": [
+                "cute",
+                "minimalist"
+              ],
+              "clothing_type": "shirt",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item color matches effective_item_colors and style requirements.",
+              "visual_analysis_success": true
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "thumbnail_lookup_ms": 577,
+            "image_download_ms": 305,
+            "image_verified_for_asset_id": 17331596106,
+            "image_identity_sha256": "32a56fb7d9cfca5f7adc8a953d6541e6454c8a0592e63ef217545e4d6de6c7c6",
+            "image_file_sha256": "5e63cf4844aa3b225d02fff8c1a2edabd23e163bf39e70835f7f1070001b6f8a",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 17331596106,
+              "actual_model": "google/gemma-4-26B-A4B-it",
+              "provider": "deepinfra",
+              "http_status": 200,
+              "wall_ms": 5341,
+              "inference_wall_ms": 5341,
+              "cache_hit": false
+            }
+          },
+          {
+            "asset_id": 114915582025729,
+            "name": "black cute pants",
+            "description": "Black pants, cute, kawaii.",
+            "asset_type": 12,
+            "category": "pants",
+            "price": 5,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-34dd131e5e6616b6eee2995c747fb932/150/150/Pants/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/114915582025729",
+            "creator": "vanj kazino1",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black"
+              ],
+              "secondary_colors": [],
+              "style": "simple",
+              "pattern": "solid",
+              "visible_details": [
+                "solid color",
+                "no texture"
+              ],
+              "asset_id": 114915582025729,
+              "visual_style": [
+                "simple"
+              ],
+              "clothing_type": "pants",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item matches color, style, and category requirements perfectly.",
+              "visual_analysis_success": true
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "thumbnail_lookup_ms": 577,
+            "image_download_ms": 1673,
+            "image_verified_for_asset_id": 114915582025729,
+            "image_identity_sha256": "049ae246e82c98a1349ae5467dfb78a70113886394d3cb050e5b97192e199b9d",
+            "image_file_sha256": "889095babab9a5930635879845dacfca3ad17e0f0891573ad46ddfb3ab5d5954",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 114915582025729,
+              "actual_model": "google/gemma-4-26B-A4B-it",
+              "provider": "deepinfra",
+              "http_status": 200,
+              "wall_ms": 5051,
+              "inference_wall_ms": 5051,
+              "cache_hit": false
+            }
+          },
+          {
+            "asset_id": 120754709718635,
+            "name": "black cute shirt",
+            "description": "Shirt",
+            "asset_type": 11,
+            "category": "shirt",
+            "price": 5,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-9c58a84835e16a80180bddb0b52d77cc/150/150/Shirt/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/120754709718635",
+            "creator": "casually family",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "cute",
+              "pattern": "solid",
+              "visible_details": [
+                "strapless/tube top style",
+                "black bodice",
+                "black arm bands"
+              ],
+              "asset_id": 120754709718635,
+              "visual_style": [
+                "cute"
+              ],
+              "clothing_type": "shirt",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item matches color, style, and category requirements perfectly.",
+              "visual_analysis_success": true
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "thumbnail_lookup_ms": 577,
+            "image_download_ms": 2847,
+            "image_verified_for_asset_id": 120754709718635,
+            "image_identity_sha256": "4beb5255bde6ced5220f987608de9d0c8e952b79238c34f1cd161032a88b80d7",
+            "image_file_sha256": "46fd18d96a16868eced94f53bbfed8b1e8df7efcbe7e81f1b95f30b5e36528e6",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 120754709718635,
+              "actual_model": "google/gemma-4-26B-A4B-it",
+              "provider": "deepinfra",
+              "http_status": 200,
+              "wall_ms": 20185,
+              "inference_wall_ms": 20185,
+              "cache_hit": false
+            }
+          },
+          {
+            "asset_id": 97675213230716,
+            "name": "୨୧ black cute pants",
+            "description": "Join my group for more!\n",
+            "asset_type": 12,
+            "category": "pants",
+            "price": 7,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c2987d60666d98f517ce556e67254f50/150/150/Pants/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/97675213230716",
+            "creator": "୨୧ darki ୨୧",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black"
+              ],
+              "secondary_colors": [],
+              "style": "cute",
+              "pattern": "solid",
+              "visible_details": [
+                "belt/waistband detail"
+              ],
+              "asset_id": 97675213230716,
+              "visual_style": [
+                "cute"
+              ],
+              "clothing_type": "pants",
+              "description_match": null,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item color matches effective_item_colors and requirements.",
+              "visual_analysis_success": true
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "thumbnail_lookup_ms": 577,
+            "image_download_ms": 2854,
+            "image_verified_for_asset_id": 97675213230716,
+            "image_identity_sha256": "e741b009f827436b40fa52d831fd20a9ef8d21b4d8ee943a29207f0cb3afb50c",
+            "image_file_sha256": "6eb2a66d16dfdbf88b9ff1d03c4ede7bf1b25277d7518ea01042082204dd2b58",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 97675213230716,
+              "actual_model": "google/gemma-4-26B-A4B-it",
+              "provider": "deepinfra",
+              "http_status": 200,
+              "wall_ms": 20073,
+              "inference_wall_ms": 20073,
+              "cache_hit": false
+            }
+          }
+        ],
+        "missing_categories": [],
+        "total_known_price": 10,
+        "reply": "بنطلون وبلوزة سوداء كيوت ب 10 روبكس",
+        "models": {
+          "reasoning": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "vision": "google/gemma-4-26B-A4B-it"
+        },
+        "source": "Roblox Marketplace API",
+        "pipeline_status": {
+          "selection_status": "verified",
+          "price_status": "verified",
+          "budget_status": "verified",
+          "availability_status": "unknown",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "avatar_application_status": "not_started"
+        },
+        "selection_status": "verified",
+        "price_status": "verified",
+        "budget_status": "verified",
+        "availability_status": "unknown",
+        "image_retrieval_status": "verified",
+        "visual_analysis_status": "verified",
+        "avatar_application_status": "not_started",
+        "timings_ms": {
+          "requirements": 0,
+          "catalog": 2161,
+          "visual_stage": 24668,
+          "selection": 20052,
+          "total": 46883
+        },
+        "catalog_candidate_count": 20,
+        "visual_candidate_count": 4,
+        "visual_failure_count": 0,
+        "visual_cache_hit_count": 0,
+        "visual_model_request_count": 4,
+        "unsupported_asset_count": 0
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/chat",
+      "request": {
+        "message": "غيري البنطلون إلى أبيض.",
+        "history": [
+          {
+            "role": "user",
+            "content": "هلا كيفك؟"
+          },
+          {
+            "role": "assistant",
+            "content": "هلا والله! بخير، شلونك؟ 💗"
+          },
+          {
+            "role": "user",
+            "content": "أبي ملابس بنت لونها أسود."
+          },
+          {
+            "role": "assistant",
+            "content": "تبينها فستان ولا بنطلون وبلوزة؟"
+          },
+          {
+            "role": "user",
+            "content": "أبي بنطلون وبلوزة سوداء كيوت بميزانية 100 Robux."
+          },
+          {
+            "role": "assistant",
+            "content": "بنطلون وبلوزة سوداء كيوت ب 10 روبكس"
+          }
+        ],
+        "active_requirements": {
+          "intent": "generate_outfit",
+          "avatar_type": "girl",
+          "style": [
+            "cute"
+          ],
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "shirt",
+            "pants"
+          ],
+          "budget_robux": 100,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {},
+          "changed_categories": [],
+          "removed_categories": []
+        },
+        "current_items": [
+          {
+            "slot": "pants",
+            "source": "roblox",
+            "assetId": 114915582025729,
+            "name": "black cute pants",
+            "verified": true,
+            "price": 5,
+            "itemType": "Asset",
+            "assetType": 12,
+            "availability": "unknown",
+            "reason": "",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black"
+              ],
+              "secondary_colors": [],
+              "style": "simple",
+              "pattern": "solid",
+              "visible_details": [
+                "solid color",
+                "no texture"
+              ],
+              "asset_id": 114915582025729,
+              "visual_style": [
+                "simple"
+              ],
+              "clothing_type": "pants",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item matches color, style, and category requirements perfectly.",
+              "visual_analysis_success": true
+            },
+            "thumbnailUrl": "https://tr.rbxcdn.com/180DAY-34dd131e5e6616b6eee2995c747fb932/150/150/Pants/Png/noFilter",
+            "category": "pants"
+          },
+          {
+            "slot": "shirt",
+            "source": "roblox",
+            "assetId": 17331596106,
+            "name": "୨ৎ black cute shirt",
+            "verified": true,
+            "price": 5,
+            "itemType": "Asset",
+            "assetType": 11,
+            "availability": "unknown",
+            "reason": "",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "cute, minimalist",
+              "pattern": "solid",
+              "visible_details": [
+                "sleeveless design",
+                "square neckline",
+                "black torso",
+                "white accents"
+              ],
+              "asset_id": 17331596106,
+              "visual_style": [
+                "cute",
+                "minimalist"
+              ],
+              "clothing_type": "shirt",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item color matches effective_item_colors and style requirements.",
+              "visual_analysis_success": true
+            },
+            "thumbnailUrl": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+            "category": "shirt"
+          }
+        ],
+        "available_options": [
+          {
+            "id": "outfit-99160e223847",
+            "name": "بنطلون وبلوزة سوداء"
+          },
+          {
+            "id": "outfit-4a78d034726d",
+            "name": "بنطلون وبلوزة سوداء"
+          },
+          {
+            "id": "outfit-e9818addc294",
+            "name": "بنطلون وبلوزة سوداء"
+          }
+        ],
+        "selected_option_id": "outfit-99160e223847"
+      },
+      "http_status": 200,
+      "seconds": 9.177,
+      "result": {
+        "intent": "outfit",
+        "ready": true,
+        "reply": "أبشري! غيرت لك البنطلون إلى أبيض.",
+        "requirements": {
+          "intent": "modify_outfit",
+          "avatar_type": "girl",
+          "style": [
+            "cute"
+          ],
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "shirt",
+            "pants"
+          ],
+          "budget_robux": 100,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {
+            "pants": [
+              "white"
+            ]
+          },
+          "changed_categories": [
+            "pants"
+          ],
+          "removed_categories": []
+        },
+        "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/outfits/compose",
+      "request": {
+        "message": "غيري البنطلون إلى أبيض.",
+        "budget": 100,
+        "requirements": {
+          "intent": "modify_outfit",
+          "avatar_type": "girl",
+          "style": [
+            "cute"
+          ],
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "shirt",
+            "pants"
+          ],
+          "budget_robux": 100,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {
+            "pants": [
+              "white"
+            ]
+          },
+          "changed_categories": [
+            "pants"
+          ],
+          "removed_categories": []
+        },
+        "current_items": [
+          {
+            "slot": "pants",
+            "source": "roblox",
+            "assetId": 114915582025729,
+            "name": "black cute pants",
+            "verified": true,
+            "price": 5,
+            "itemType": "Asset",
+            "assetType": 12,
+            "availability": "unknown",
+            "reason": "",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black"
+              ],
+              "secondary_colors": [],
+              "style": "simple",
+              "pattern": "solid",
+              "visible_details": [
+                "solid color",
+                "no texture"
+              ],
+              "asset_id": 114915582025729,
+              "visual_style": [
+                "simple"
+              ],
+              "clothing_type": "pants",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item matches color, style, and category requirements perfectly.",
+              "visual_analysis_success": true
+            },
+            "thumbnailUrl": "https://tr.rbxcdn.com/180DAY-34dd131e5e6616b6eee2995c747fb932/150/150/Pants/Png/noFilter",
+            "category": "pants"
+          },
+          {
+            "slot": "shirt",
+            "source": "roblox",
+            "assetId": 17331596106,
+            "name": "୨ৎ black cute shirt",
+            "verified": true,
+            "price": 5,
+            "itemType": "Asset",
+            "assetType": 11,
+            "availability": "unknown",
+            "reason": "",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "cute, minimalist",
+              "pattern": "solid",
+              "visible_details": [
+                "sleeveless design",
+                "square neckline",
+                "black torso",
+                "white accents"
+              ],
+              "asset_id": 17331596106,
+              "visual_style": [
+                "cute",
+                "minimalist"
+              ],
+              "clothing_type": "shirt",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item color matches effective_item_colors and style requirements.",
+              "visual_analysis_success": true
+            },
+            "thumbnailUrl": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+            "category": "shirt"
+          }
+        ],
+        "reference_analysis": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "هلا كيفك؟"
+          },
+          {
+            "role": "assistant",
+            "content": "هلا والله! بخير، شلونك؟ 💗"
+          },
+          {
+            "role": "user",
+            "content": "أبي ملابس بنت لونها أسود."
+          },
+          {
+            "role": "assistant",
+            "content": "تبينها فستان ولا بنطلون وبلوزة؟"
+          },
+          {
+            "role": "user",
+            "content": "أبي بنطلون وبلوزة سوداء كيوت بميزانية 100 Robux."
+          },
+          {
+            "role": "assistant",
+            "content": "بنطلون وبلوزة سوداء كيوت ب 10 روبكس"
+          },
+          {
+            "role": "user",
+            "content": "غيري البنطلون إلى أبيض."
+          }
+        ]
+      },
+      "http_status": 200,
+      "seconds": 24.806,
+      "result": {
+        "requirements": {
+          "intent": "modify_outfit",
+          "avatar_type": "girl",
+          "style": [
+            "cute"
+          ],
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "shirt",
+            "pants"
+          ],
+          "budget_robux": 100,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {
+            "pants": [
+              "white"
+            ]
+          },
+          "changed_categories": [
+            "pants"
+          ],
+          "removed_categories": []
+        },
+        "intent": "modify_outfit",
+        "outfit_options": [
+          {
+            "id": "outfit-b0dd564bf271",
+            "name": "بدلة كيوت",
+            "items": [
+              {
+                "asset_id": 17331596106,
+                "name": "୨ৎ black cute shirt",
+                "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+                "asset_type": 11,
+                "category": "shirt",
+                "price": 5,
+                "currency": "Robux",
+                "availability": "unknown",
+                "thumbnail_url": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+                "item_type": "Asset",
+                "catalog_url": "https://www.roblox.com/catalog/17331596106",
+                "creator": "miyadesu",
+                "image_retrieval_status": "verified",
+                "visual_analysis_status": "verified",
+                "visual_analysis": {
+                  "dominant_colors": [
+                    "black",
+                    "white"
+                  ],
+                  "secondary_colors": [],
+                  "style": "cute, minimalist",
+                  "pattern": "solid",
+                  "visible_details": [
+                    "sleeveless design",
+                    "square neckline",
+                    "black torso",
+                    "white accents"
+                  ],
+                  "asset_id": 17331596106,
+                  "visual_style": [
+                    "cute",
+                    "minimalist"
+                  ],
+                  "clothing_type": "shirt",
+                  "description_match": true,
+                  "category_compatible": true,
+                  "match_score": 1,
+                  "reason": "Item color matches effective_item_colors and style requirements.",
+                  "visual_analysis_success": true
+                },
+                "image_error": null,
+                "visual_cache_status": "miss",
+                "thumbnail_lookup_ms": 577,
+                "image_download_ms": 305,
+                "image_verified_for_asset_id": 17331596106,
+                "image_identity_sha256": "32a56fb7d9cfca5f7adc8a953d6541e6454c8a0592e63ef217545e4d6de6c7c6",
+                "image_file_sha256": "5e63cf4844aa3b225d02fff8c1a2edabd23e163bf39e70835f7f1070001b6f8a",
+                "vision_image": {
+                  "source_size": [
+                    150,
+                    150
+                  ],
+                  "input_size": [
+                    150,
+                    150
+                  ],
+                  "resized": false
+                },
+                "visual_analysis_metrics": {
+                  "asset_id": 17331596106,
+                  "actual_model": "google/gemma-4-26B-A4B-it",
+                  "provider": "deepinfra",
+                  "http_status": 200,
+                  "wall_ms": 5341,
+                  "inference_wall_ms": 5341,
+                  "cache_hit": false
+                },
+                "reason": "",
+                "match_score": 0,
+                "price_robux": 5,
+                "asset_type_name": "ClassicShirt"
+              },
+              {
+                "asset_id": 9694994699,
+                "name": "white plaid pjs y2k lol cute trendy ",
+                "description": "Grey version\nhttps://www.roblox.com/catalog/9694992049/grey-plaid-pjs-y2k-lol-cute-trendy\n✧༺Ty for purchasing༻∞\n\nShorts:\n",
+                "asset_type": 12,
+                "category": "pants",
+                "price": 5,
+                "currency": "Robux",
+                "availability": "unknown",
+                "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c5361dd5c293b774204be2a825a292ae/150/150/Pants/Png/noFilter",
+                "item_type": "Asset",
+                "catalog_url": "https://www.roblox.com/catalog/9694994699",
+                "creator": "variem",
+                "image_retrieval_status": "verified",
+                "visual_analysis_status": "verified",
+                "visual_analysis": {
+                  "dominant_colors": [
+                    "grey",
+                    "white"
+                  ],
+                  "secondary_colors": [],
+                  "style": "cute, y2k, pajamas",
+                  "pattern": "plaid",
+                  "visible_details": [
+                    "checkered pattern",
+                    "waistband detail"
+                  ],
+                  "asset_id": 9694994699,
+                  "visual_style": [
+                    "cute",
+                    "y2k",
+                    "pajamas"
+                  ],
+                  "clothing_type": "pants",
+                  "description_match": true,
+                  "category_compatible": true,
+                  "match_score": 0.9,
+                  "reason": "Matches category color override (white) and style requirements.",
+                  "visual_analysis_success": true
+                },
+                "image_error": null,
+                "visual_cache_status": "miss",
+                "thumbnail_lookup_ms": 675,
+                "image_download_ms": 1760,
+                "image_verified_for_asset_id": 9694994699,
+                "image_identity_sha256": "e2a4626ef43fa4ae1e02cb7a1b6441a1333ff3c8806c9372729f07ea193119a1",
+                "image_file_sha256": "022d010ffe419d02f6a6b213b1fd362c59bf697be0aea4646672e6434f6a6387",
+                "vision_image": {
+                  "source_size": [
+                    150,
+                    150
+                  ],
+                  "input_size": [
+                    150,
+                    150
+                  ],
+                  "resized": false
+                },
+                "visual_analysis_metrics": {
+                  "asset_id": 9694994699,
+                  "actual_model": "google/gemma-4-26B-A4B-it",
+                  "provider": "deepinfra",
+                  "http_status": 200,
+                  "wall_ms": 4787,
+                  "inference_wall_ms": 4787,
+                  "cache_hit": false
+                },
+                "reason": "",
+                "match_score": 0,
+                "price_robux": 5,
+                "asset_type_name": "ClassicPants"
+              }
+            ],
+            "total_known_price": 10,
+            "total_price_known": true,
+            "explanation": "بنطلون أبيض كيوت مع بلوزة سوداء"
+          },
+          {
+            "id": "outfit-5ac9d39c0cc8",
+            "name": "ملابس كيوت جديدة",
+            "items": [
+              {
+                "asset_id": 17331596106,
+                "name": "୨ৎ black cute shirt",
+                "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+                "asset_type": 11,
+                "category": "shirt",
+                "price": 5,
+                "currency": "Robux",
+                "availability": "unknown",
+                "thumbnail_url": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+                "item_type": "Asset",
+                "catalog_url": "https://www.roblox.com/catalog/17331596106",
+                "creator": "miyadesu",
+                "image_retrieval_status": "verified",
+                "visual_analysis_status": "verified",
+                "visual_analysis": {
+                  "dominant_colors": [
+                    "black",
+                    "white"
+                  ],
+                  "secondary_colors": [],
+                  "style": "cute, minimalist",
+                  "pattern": "solid",
+                  "visible_details": [
+                    "sleeveless design",
+                    "square neckline",
+                    "black torso",
+                    "white accents"
+                  ],
+                  "asset_id": 17331596106,
+                  "visual_style": [
+                    "cute",
+                    "minimalist"
+                  ],
+                  "clothing_type": "shirt",
+                  "description_match": true,
+                  "category_compatible": true,
+                  "match_score": 1,
+                  "reason": "Item color matches effective_item_colors and style requirements.",
+                  "visual_analysis_success": true
+                },
+                "image_error": null,
+                "visual_cache_status": "miss",
+                "thumbnail_lookup_ms": 577,
+                "image_download_ms": 305,
+                "image_verified_for_asset_id": 17331596106,
+                "image_identity_sha256": "32a56fb7d9cfca5f7adc8a953d6541e6454c8a0592e63ef217545e4d6de6c7c6",
+                "image_file_sha256": "5e63cf4844aa3b225d02fff8c1a2edabd23e163bf39e70835f7f1070001b6f8a",
+                "vision_image": {
+                  "source_size": [
+                    150,
+                    150
+                  ],
+                  "input_size": [
+                    150,
+                    150
+                  ],
+                  "resized": false
+                },
+                "visual_analysis_metrics": {
+                  "asset_id": 17331596106,
+                  "actual_model": "google/gemma-4-26B-A4B-it",
+                  "provider": "deepinfra",
+                  "http_status": 200,
+                  "wall_ms": 5341,
+                  "inference_wall_ms": 5341,
+                  "cache_hit": false
+                },
+                "reason": "",
+                "match_score": 0,
+                "price_robux": 5,
+                "asset_type_name": "ClassicShirt"
+              },
+              {
+                "asset_id": 14376120266,
+                "name": "white cute pants",
+                "description": "join group pweasant 🐾🎀\nhttps://www.roblox.com/groups/32044535/pweasant#!/about \ntags\ncyber y2k emo bunny barbie swag flare low rise sweetpants elegant pretty pants shirt glam fashion stylish summer lana sanrio kitty meow fairy hoodie kawaii cute princess corset flower heaven cloud snow rain teddy chocolate boba candy cotton bear winter vintage fluffy pink white black baby blue purple skirt bow  shorts shine light sparkle glow angel cottagecore basic soft girl puppy berry ribbon dream school coconut dress vanilla strawberry donut cat pinkie pie cinnamoroll streetwear doll cake cupcake beach ocean pjs skull pastel dark plush kuromi sweet casual comfy mocha love hug sun moon vampire bone blood cozy casual paw panda cookie lollipop subversive dollete heart rose hello kitty cherry plushie sweater star sleepy twilight ",
+                "asset_type": 12,
+                "category": "pants",
+                "price": 7,
+                "currency": "Robux",
+                "availability": "unknown",
+                "thumbnail_url": "https://tr.rbxcdn.com/180DAY-87aa0077c7e1b48fc9e2bda2dc8ae730/150/150/Pants/Png/noFilter",
+                "item_type": "Asset",
+                "catalog_url": "https://www.roblox.com/catalog/14376120266",
+                "creator": "pweasant",
+                "image_retrieval_status": "verified",
+                "visual_analysis_status": "verified",
+                "visual_analysis": {
+                  "dominant_colors": [
+                    "white",
+                    "light grey"
+                  ],
+                  "secondary_colors": [],
+                  "style": "basic, minimalist",
+                  "pattern": "solid",
+                  "visible_details": [
+                    "no visible texture",
+                    "no visible patterns"
+                  ],
+                  "asset_id": 14376120266,
+                  "visual_style": [
+                    "basic",
+                    "minimalist"
+                  ],
+                  "clothing_type": "pants",
+                  "description_match": null,
+                  "category_compatible": true,
+                  "match_score": 0.5,
+                  "reason": "Item is a plain white base; lacks the specific 'cute' aesthetic details described in metadata, but matches color requirements.",
+                  "visual_analysis_success": true
+                },
+                "image_error": null,
+                "visual_cache_status": "miss",
+                "thumbnail_lookup_ms": 675,
+                "image_download_ms": 271,
+                "image_verified_for_asset_id": 14376120266,
+                "image_identity_sha256": "3e169e3cff9717ce2b2da68bc8351ebe086e0bc87add8e7758b89b8bb6bdcd6b",
+                "image_file_sha256": "1238403be3a99eb39135397d23e8e5210eb92d76337e6bb49b942780ca5d078f",
+                "vision_image": {
+                  "source_size": [
+                    150,
+                    150
+                  ],
+                  "input_size": [
+                    150,
+                    150
+                  ],
+                  "resized": false
+                },
+                "visual_analysis_metrics": {
+                  "asset_id": 14376120266,
+                  "actual_model": "google/gemma-4-26B-A4B-it",
+                  "provider": "deepinfra",
+                  "http_status": 200,
+                  "wall_ms": 6334,
+                  "inference_wall_ms": 6334,
+                  "cache_hit": false
+                },
+                "reason": "",
+                "match_score": 0,
+                "price_robux": 7,
+                "asset_type_name": "ClassicPants"
+              }
+            ],
+            "total_known_price": 12,
+            "total_price_known": true,
+            "explanation": "بنطلون أبيض سادة مع بلوزة سوداء"
+          }
+        ],
+        "selected_items": [
+          {
+            "asset_id": 17331596106,
+            "name": "୨ৎ black cute shirt",
+            "description": "Join the group for more cutie clothes tags (ignore): cutecore mlp cute dahood sanrio hellokitty meow pompompurin twilight bat spookie dead ghost spooky scary horror cool kool skool yummy kawaii strawberry y2k softie preppy anime vibe ###### kawaii twilight strawberry ichigo melody rila purge school skool harajuku plush shirousa parfait schoolgirl sanrio flamingo pink blue crop top fairy yay valentines heart love ok grunge gyaru swag school uniform trend ugh envy bliss qt blush cyber bunny kitten bella lace shop gothic tt swag cinnamoroll bear core weird core legwarmers socks strawberry japan tokyo maid vampire fae fairy paws meow pink cherry blossom bunny panda bypassed bikini miniskirt short skirt bow kitty teddy bear pawprint butterfly unicorn elf mlp bye visual kei dh bunny monster energy yum ribs um skin ugh ew maybe shady sick acid trendy demon heart 2000s shady envy kid doll softcore valentines valentine loves",
+            "asset_type": 11,
+            "category": "shirt",
+            "price": 5,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/17331596106",
+            "creator": "miyadesu",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "cute, minimalist",
+              "pattern": "solid",
+              "visible_details": [
+                "sleeveless design",
+                "square neckline",
+                "black torso",
+                "white accents"
+              ],
+              "asset_id": 17331596106,
+              "visual_style": [
+                "cute",
+                "minimalist"
+              ],
+              "clothing_type": "shirt",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item color matches effective_item_colors and style requirements.",
+              "visual_analysis_success": true
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "thumbnail_lookup_ms": 577,
+            "image_download_ms": 305,
+            "image_verified_for_asset_id": 17331596106,
+            "image_identity_sha256": "32a56fb7d9cfca5f7adc8a953d6541e6454c8a0592e63ef217545e4d6de6c7c6",
+            "image_file_sha256": "5e63cf4844aa3b225d02fff8c1a2edabd23e163bf39e70835f7f1070001b6f8a",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 17331596106,
+              "actual_model": "google/gemma-4-26B-A4B-it",
+              "provider": "deepinfra",
+              "http_status": 200,
+              "wall_ms": 5341,
+              "inference_wall_ms": 5341,
+              "cache_hit": false
+            },
+            "reason": "",
+            "match_score": 0,
+            "price_robux": 5,
+            "asset_type_name": "ClassicShirt"
+          },
+          {
+            "asset_id": 9694994699,
+            "name": "white plaid pjs y2k lol cute trendy ",
+            "description": "Grey version\nhttps://www.roblox.com/catalog/9694992049/grey-plaid-pjs-y2k-lol-cute-trendy\n✧༺Ty for purchasing༻∞\n\nShorts:\n",
+            "asset_type": 12,
+            "category": "pants",
+            "price": 5,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c5361dd5c293b774204be2a825a292ae/150/150/Pants/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/9694994699",
+            "creator": "variem",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "grey",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "cute, y2k, pajamas",
+              "pattern": "plaid",
+              "visible_details": [
+                "checkered pattern",
+                "waistband detail"
+              ],
+              "asset_id": 9694994699,
+              "visual_style": [
+                "cute",
+                "y2k",
+                "pajamas"
+              ],
+              "clothing_type": "pants",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 0.9,
+              "reason": "Matches category color override (white) and style requirements.",
+              "visual_analysis_success": true
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "thumbnail_lookup_ms": 675,
+            "image_download_ms": 1760,
+            "image_verified_for_asset_id": 9694994699,
+            "image_identity_sha256": "e2a4626ef43fa4ae1e02cb7a1b6441a1333ff3c8806c9372729f07ea193119a1",
+            "image_file_sha256": "022d010ffe419d02f6a6b213b1fd362c59bf697be0aea4646672e6434f6a6387",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 9694994699,
+              "actual_model": "google/gemma-4-26B-A4B-it",
+              "provider": "deepinfra",
+              "http_status": 200,
+              "wall_ms": 4787,
+              "inference_wall_ms": 4787,
+              "cache_hit": false
+            },
+            "reason": "",
+            "match_score": 0,
+            "price_robux": 5,
+            "asset_type_name": "ClassicPants"
+          }
+        ],
+        "partial_items": [],
+        "candidates": [
+          {
+            "asset_id": 9694994699,
+            "name": "white plaid pjs y2k lol cute trendy ",
+            "description": "Grey version\nhttps://www.roblox.com/catalog/9694992049/grey-plaid-pjs-y2k-lol-cute-trendy\n✧༺Ty for purchasing༻∞\n\nShorts:\n",
+            "asset_type": 12,
+            "category": "pants",
+            "price": 5,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-c5361dd5c293b774204be2a825a292ae/150/150/Pants/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/9694994699",
+            "creator": "variem",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "grey",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "cute, y2k, pajamas",
+              "pattern": "plaid",
+              "visible_details": [
+                "checkered pattern",
+                "waistband detail"
+              ],
+              "asset_id": 9694994699,
+              "visual_style": [
+                "cute",
+                "y2k",
+                "pajamas"
+              ],
+              "clothing_type": "pants",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 0.9,
+              "reason": "Matches category color override (white) and style requirements.",
+              "visual_analysis_success": true
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "thumbnail_lookup_ms": 675,
+            "image_download_ms": 1760,
+            "image_verified_for_asset_id": 9694994699,
+            "image_identity_sha256": "e2a4626ef43fa4ae1e02cb7a1b6441a1333ff3c8806c9372729f07ea193119a1",
+            "image_file_sha256": "022d010ffe419d02f6a6b213b1fd362c59bf697be0aea4646672e6434f6a6387",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 9694994699,
+              "actual_model": "google/gemma-4-26B-A4B-it",
+              "provider": "deepinfra",
+              "http_status": 200,
+              "wall_ms": 4787,
+              "inference_wall_ms": 4787,
+              "cache_hit": false
+            }
+          },
+          {
+            "asset_id": 14376120266,
+            "name": "white cute pants",
+            "description": "join group pweasant 🐾🎀\nhttps://www.roblox.com/groups/32044535/pweasant#!/about \ntags\ncyber y2k emo bunny barbie swag flare low rise sweetpants elegant pretty pants shirt glam fashion stylish summer lana sanrio kitty meow fairy hoodie kawaii cute princess corset flower heaven cloud snow rain teddy chocolate boba candy cotton bear winter vintage fluffy pink white black baby blue purple skirt bow  shorts shine light sparkle glow angel cottagecore basic soft girl puppy berry ribbon dream school coconut dress vanilla strawberry donut cat pinkie pie cinnamoroll streetwear doll cake cupcake beach ocean pjs skull pastel dark plush kuromi sweet casual comfy mocha love hug sun moon vampire bone blood cozy casual paw panda cookie lollipop subversive dollete heart rose hello kitty cherry plushie sweater star sleepy twilight ",
+            "asset_type": 12,
+            "category": "pants",
+            "price": 7,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-87aa0077c7e1b48fc9e2bda2dc8ae730/150/150/Pants/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/14376120266",
+            "creator": "pweasant",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "white",
+                "light grey"
+              ],
+              "secondary_colors": [],
+              "style": "basic, minimalist",
+              "pattern": "solid",
+              "visible_details": [
+                "no visible texture",
+                "no visible patterns"
+              ],
+              "asset_id": 14376120266,
+              "visual_style": [
+                "basic",
+                "minimalist"
+              ],
+              "clothing_type": "pants",
+              "description_match": null,
+              "category_compatible": true,
+              "match_score": 0.5,
+              "reason": "Item is a plain white base; lacks the specific 'cute' aesthetic details described in metadata, but matches color requirements.",
+              "visual_analysis_success": true
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "thumbnail_lookup_ms": 675,
+            "image_download_ms": 271,
+            "image_verified_for_asset_id": 14376120266,
+            "image_identity_sha256": "3e169e3cff9717ce2b2da68bc8351ebe086e0bc87add8e7758b89b8bb6bdcd6b",
+            "image_file_sha256": "1238403be3a99eb39135397d23e8e5210eb92d76337e6bb49b942780ca5d078f",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 14376120266,
+              "actual_model": "google/gemma-4-26B-A4B-it",
+              "provider": "deepinfra",
+              "http_status": 200,
+              "wall_ms": 6334,
+              "inference_wall_ms": 6334,
+              "cache_hit": false
+            }
+          }
+        ],
+        "missing_categories": [],
+        "total_known_price": 10,
+        "reply": "بنطلون أبيض كيوت مع بلوزة سوداء",
+        "models": {
+          "reasoning": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "vision": "google/gemma-4-26B-A4B-it"
+        },
+        "source": "Roblox Marketplace API",
+        "pipeline_status": {
+          "selection_status": "verified",
+          "price_status": "verified",
+          "budget_status": "verified",
+          "availability_status": "unknown",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "avatar_application_status": "not_started"
+        },
+        "selection_status": "verified",
+        "price_status": "verified",
+        "budget_status": "verified",
+        "availability_status": "unknown",
+        "image_retrieval_status": "verified",
+        "visual_analysis_status": "verified",
+        "avatar_application_status": "not_started",
+        "timings_ms": {
+          "requirements": 0,
+          "catalog": 2443,
+          "visual_stage": 8793,
+          "selection": 13519,
+          "total": 24758
+        },
+        "catalog_candidate_count": 10,
+        "visual_candidate_count": 2,
+        "visual_failure_count": 0,
+        "visual_cache_hit_count": 0,
+        "visual_model_request_count": 2,
+        "unsupported_asset_count": 0
+      }
+    },
+    {
+      "url": "http://localhost:8000/api/chat",
+      "request": {
+        "message": "اختاري الخيار الثاني.",
+        "history": [
+          {
+            "role": "user",
+            "content": "هلا كيفك؟"
+          },
+          {
+            "role": "assistant",
+            "content": "هلا والله! بخير، شلونك؟ 💗"
+          },
+          {
+            "role": "user",
+            "content": "أبي ملابس بنت لونها أسود."
+          },
+          {
+            "role": "assistant",
+            "content": "تبينها فستان ولا بنطلون وبلوزة؟"
+          },
+          {
+            "role": "user",
+            "content": "أبي بنطلون وبلوزة سوداء كيوت بميزانية 100 Robux."
+          },
+          {
+            "role": "assistant",
+            "content": "بنطلون وبلوزة سوداء كيوت ب 10 روبكس"
+          },
+          {
+            "role": "user",
+            "content": "غيري البنطلون إلى أبيض."
+          },
+          {
+            "role": "assistant",
+            "content": "بنطلون أبيض كيوت مع بلوزة سوداء"
+          }
+        ],
+        "active_requirements": {
+          "intent": "modify_outfit",
+          "avatar_type": "girl",
+          "style": [
+            "cute"
+          ],
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "shirt",
+            "pants"
+          ],
+          "budget_robux": 100,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {
+            "pants": [
+              "white"
+            ]
+          },
+          "changed_categories": [
+            "pants"
+          ],
+          "removed_categories": []
+        },
+        "current_items": [
+          {
+            "slot": "shirt",
+            "source": "roblox",
+            "assetId": 17331596106,
+            "name": "୨ৎ black cute shirt",
+            "verified": true,
+            "price": 5,
+            "itemType": "Asset",
+            "assetType": 11,
+            "availability": "unknown",
+            "reason": "",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "cute, minimalist",
+              "pattern": "solid",
+              "visible_details": [
+                "sleeveless design",
+                "square neckline",
+                "black torso",
+                "white accents"
+              ],
+              "asset_id": 17331596106,
+              "visual_style": [
+                "cute",
+                "minimalist"
+              ],
+              "clothing_type": "shirt",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 1,
+              "reason": "Item color matches effective_item_colors and style requirements.",
+              "visual_analysis_success": true
+            },
+            "thumbnailUrl": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+            "category": "shirt"
+          },
+          {
+            "slot": "pants",
+            "source": "roblox",
+            "assetId": 9694994699,
+            "name": "white plaid pjs y2k lol cute trendy ",
+            "verified": true,
+            "price": 5,
+            "itemType": "Asset",
+            "assetType": 12,
+            "availability": "unknown",
+            "reason": "",
+            "visual_analysis": {
+              "dominant_colors": [
+                "grey",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "cute, y2k, pajamas",
+              "pattern": "plaid",
+              "visible_details": [
+                "checkered pattern",
+                "waistband detail"
+              ],
+              "asset_id": 9694994699,
+              "visual_style": [
+                "cute",
+                "y2k",
+                "pajamas"
+              ],
+              "clothing_type": "pants",
+              "description_match": true,
+              "category_compatible": true,
+              "match_score": 0.9,
+              "reason": "Matches category color override (white) and style requirements.",
+              "visual_analysis_success": true
+            },
+            "thumbnailUrl": "https://tr.rbxcdn.com/180DAY-c5361dd5c293b774204be2a825a292ae/150/150/Pants/Png/noFilter",
+            "category": "pants"
+          }
+        ],
+        "available_options": [
+          {
+            "id": "outfit-b0dd564bf271",
+            "name": "بدلة كيوت"
+          },
+          {
+            "id": "outfit-5ac9d39c0cc8",
+            "name": "ملابس كيوت جديدة"
+          }
+        ],
+        "selected_option_id": "outfit-b0dd564bf271"
+      },
+      "http_status": 200,
+      "seconds": 4.455,
+      "result": {
+        "intent": "select_option",
+        "ready": false,
+        "option_index": 2,
+        "reply": "أبشري، اخترت لك الثاني!",
+        "requirements": {
+          "intent": "modify_outfit",
+          "avatar_type": "girl",
+          "style": [
+            "cute"
+          ],
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "shirt",
+            "pants"
+          ],
+          "budget_robux": 100,
+          "occasion": null,
+          "preferences": [],
+          "excluded_items": [],
+          "category_colors": {
+            "pants": [
+              "white"
+            ]
+          },
+          "changed_categories": [
+            "pants"
+          ],
+          "removed_categories": []
+        },
+        "option_id": "outfit-5ac9d39c0cc8",
+        "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "steps": [
+    {
+      "screenshot": "01-initial.png"
+    },
+    {
+      "label": "A-greeting",
+      "message": "هلا كيفك؟",
+      "reply": "هلا والله! بخير، شلونك؟ 💗",
+      "seconds": 10.538
+    },
+    {
+      "label": "B-clarification",
+      "message": "أبي ملابس بنت لونها أسود.",
+      "reply": "تبينها فستان ولا بنطلون وبلوزة؟",
+      "seconds": 8.908
+    },
+    {
+      "label": "C-generate",
+      "message": "أبي بنطلون وبلوزة سوداء كيوت بميزانية 100 Robux.",
+      "reply": "بنطلون وبلوزة سوداء كيوت ب 10 روبكس",
+      "seconds": 58.859
+    },
+    {
+      "screenshot": "02-outfit-options.png"
+    },
+    {
+      "screenshot": "03-selected-outfit.png"
+    },
+    {
+      "label": "D-modify",
+      "message": "غيري البنطلون إلى أبيض.",
+      "reply": "بنطلون أبيض كيوت مع بلوزة سوداء",
+      "seconds": 34.322
+    },
+    {
+      "screenshot": "04-modified-outfit.png"
+    },
+    {
+      "label": "G-choose-existing-option",
+      "message": "اختاري الخيار الثاني.",
+      "reply": "أبشري، اخترت لك الثاني!",
+      "seconds": 4.848
+    },
+    {
+      "screenshot": "05-conversation-option-choice.png"
+    }
+  ],
+  "displayedOptions": [
+    {
+      "id": "outfit-99160e223847",
+      "assets": [
+        114915582025729,
+        17331596106
+      ],
+      "images": [
+        {
+          "src": "https://tr.rbxcdn.com/180DAY-34dd131e5e6616b6eee2995c747fb932/150/150/Pants/Png/noFilter",
+          "loaded": true
+        },
+        {
+          "src": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "id": "outfit-4a78d034726d",
+      "assets": [
+        97675213230716,
+        120754709718635
+      ],
+      "images": [
+        {
+          "src": "https://tr.rbxcdn.com/180DAY-c2987d60666d98f517ce556e67254f50/150/150/Pants/Png/noFilter",
+          "loaded": true
+        },
+        {
+          "src": "https://tr.rbxcdn.com/180DAY-9c58a84835e16a80180bddb0b52d77cc/150/150/Shirt/Png/noFilter",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "id": "outfit-e9818addc294",
+      "assets": [
+        97675213230716,
+        17331596106
+      ],
+      "images": [
+        {
+          "src": "https://tr.rbxcdn.com/180DAY-c2987d60666d98f517ce556e67254f50/150/150/Pants/Png/noFilter",
+          "loaded": true
+        },
+        {
+          "src": "https://tr.rbxcdn.com/180DAY-7d60c90c6c5a197ba7a6778869af0126/150/150/Shirt/Png/noFilter",
+          "loaded": true
+        }
+      ]
+    }
+  ],
+  "modification": {
+    "originalShirt": 17331596106,
+    "originalPants": 114915582025729,
+    "shirt": 17331596106,
+    "pants": 9694994699,
+    "knownTotal": 10,
+    "requirements": {
+      "intent": "modify_outfit",
+      "avatar_type": "girl",
+      "style": [
+        "cute"
+      ],
+      "colors": [
+        "black"
+      ],
+      "categories": [
+        "shirt",
+        "pants"
+      ],
+      "budget_robux": 100,
+      "occasion": null,
+      "preferences": [],
+      "excluded_items": [],
+      "category_colors": {
+        "pants": [
+          "white"
+        ]
+      },
+      "changed_categories": [
+        "pants"
+      ],
+      "removed_categories": []
+    },
+    "unchangedCanvas": true
+  },
+  "selectedDomAssets": [
+    17331596106,
+    9694994699
+  ],
+  "existingOptionSelection": {
+    "optionId": "outfit-5ac9d39c0cc8",
+    "composeRequestsAdded": 0,
+    "displayedAssetIds": [
+      17331596106,
+      14376120266
+    ]
+  },
+  "passed": true
+}

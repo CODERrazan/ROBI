@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+backend/.data/
+**/__pycache__/
+**/.venv/
+**/node_modules/
+Roblox/*.local.lua

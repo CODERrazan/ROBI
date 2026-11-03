@@ -1,0 +1,14 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "layout": {
+    "width": 390,
+    "scrollWidth": 390,
+    "bodyWidth": 390
+  },
+  "options": 2,
+  "asideVisible": true,
+  "noHorizontalOverflow": true
+}

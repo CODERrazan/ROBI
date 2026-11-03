@@ -1,0 +1,17 @@
+{
+  "browser": "Visible Microsoft Edge",
+  "steps": [
+    {
+      "label": "Greeting",
+      "seconds": 4.48,
+      "reply": "هلاا! كيف حالك؟ 😊"
+    },
+    {
+      "label": "Outfit request",
+      "seconds": 9.74,
+      "reply": "Roblox catalog is unavailable. No substitute items were used."
+    }
+  ],
+  "passed": false,
+  "error": "Timed out: document.querySelectorAll('.outfit-option').length>0"
+}

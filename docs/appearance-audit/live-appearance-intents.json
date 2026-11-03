@@ -1,0 +1,191 @@
+[
+  {
+    "stage": "chat",
+    "message": "أبي فستان وردي مع شعر بني طويل وميكب ناعم وفيونكة",
+    "http_status": 502,
+    "seconds": 12.925,
+    "result": {
+      "detail": "Conversation service failed. Please try again."
+    }
+  },
+  {
+    "stage": "chat",
+    "message": "خلي لون البشرة أسمر",
+    "http_status": 200,
+    "seconds": 6.748,
+    "result": {
+      "intent": "conversation",
+      "ready": false,
+      "reply": "تمام، لون البشرة أسمر يتناسب مع الألوان الداكنة. شنو نوع الملابس اللي تبحث عنها؟",
+      "requirements": null,
+      "conversation_kind": "advice",
+      "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    }
+  },
+  {
+    "stage": "dress_search",
+    "http_status": 200,
+    "seconds": 3.863,
+    "result": {
+      "requirements": {
+        "intent": "generate_outfit",
+        "avatar_type": null,
+        "style": [],
+        "colors": [
+          "pink"
+        ],
+        "categories": [
+          "layeredDressSkirt"
+        ],
+        "budget_robux": 100,
+        "skin_tone": null,
+        "category_preferences": {},
+        "occasion": null,
+        "preferences": [],
+        "excluded_items": [],
+        "category_colors": {},
+        "changed_categories": [],
+        "removed_categories": []
+      },
+      "intent": "generate_outfit",
+      "outfit_options": [],
+      "selected_items": [],
+      "partial_items": [],
+      "compatibility_checks": [
+        {
+          "asset_id": 89161160656185,
+          "asset_type": 72,
+          "name": "♡ FREE Pink Winter Dress",
+          "description": "╭ Thank you for buying ! 🥛\n┊· · ———— ୨୧ ———— ·\n┊ made by jadie \n┊ for boosters only\n┊Shop my ugc ♡ : https://www.roblox.com/groups/6471663/Zwoms#!/store\n┊recolors r in grp !\n┊· · ———— ୨୧ ————\n· · ☁ ☁ ☁ ",
+          "price": 0,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        },
+        {
+          "asset_id": 17187628001,
+          "asset_type": 72,
+          "name": "🍀Summer Check Crop Top w Mini Skirt (Pink)",
+          "description": "🍀Our Group🍀\nhttps://www.roblox.com/groups/13809262/POND-STORE#!/store\n🍀Catalog🍀\nhttps://www.roblox.com/catalog?Category=1&CreatorName=POND%20STORE&CreatorType=Group&salesTypeFilter=1&SortType=3",
+          "price": 0,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        },
+        {
+          "asset_id": 17787826871,
+          "asset_type": 72,
+          "name": "Pink Glinda Good Witch Wicked Bubble Dress Skirt",
+          "description": "✨ Pink Glinda Good Witch Wicked Ballgown Bubble Dress Skirt\n👚 Matching Corset: https://www.roblox.com/catalog/17787884971/\n🎨 Matching 2D Outfit: https://www.roblox.com/catalog/14785818363/\n👑 Matching Tiara: https://www.roblox.com/catalog/17796229802/\n🪄 Matching Magic Wand: https://www.roblox.com/catalog/17795644339/\n-\n🎀 Want more? Shop my UGC: https://www.roblox.com/groups/4751186/PearlLilac-Studios#!/store\n👑 Made by: TheNormalgirl1218",
+          "price": 60,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        },
+        {
+          "asset_id": 136488081935401,
+          "asset_type": 72,
+          "name": "🩷 Pink's Descendants Princess Tutu Skirt Dress",
+          "description": "❗\"That's my sister and she needs me!\"\n*DESIGNED FOR 3.0 PACKAGES!*\n\n👕 Matching Fit:\nhttps://www.roblox.com/catalog/106566084915117/\nhttps://www.roblox.com/catalog/85329984797742/\n\n💈 Matching Hair, Sparkles, and Bow:\nhttps://www.roblox.com/catalog/78873257127708/\nhttps://www.roblox.com/catalog/117145378490976/\nhttps://www.roblox.com/catalog/87062226597369/\n\n🤩 Matching Makeup:\nhttps://www.roblox.com/catalog/91073433525567/\n\n 📿 Matching Belt, Purse, and Dresses:\nhttps://www.roblox.com/catalog/80764499534249/\nhttps://www.roblox.com/catalog/81445218862627/\nhttps://www.roblox.com/catalog/130219922384505/\n\n 🌺  Matching Heart Box:\nhttps://www.roblox.com/catalog/73516918194116/\nhttps://www.roblox.com/catalog/105271870663802/\n\n🌟 Want more? Join the group!: https://www.roblox.com/groups/10390141/TV-Movie-Apparel/",
+          "price": 60,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        },
+        {
+          "asset_id": 139646290689349,
+          "asset_type": 72,
+          "name": "Cute Ruffled Dress with Laced Skirt in White&Pink",
+          "description": "︵︵︵︵︵︵︵︵\nmore ugc https://www.roblox.com/communities/35317254/tyny#!/about\n\n\nmodeled by besmira \n︵︵︵︵︵︵︵︵",
+          "price": 60,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        },
+        {
+          "asset_id": 72076948749226,
+          "asset_type": 72,
+          "name": "Cute Ruffled Dress with Laced Skirt in Black&Pink",
+          "description": "︵︵︵︵︵︵︵︵\nmore ugc https://www.roblox.com/communities/35317254/tyny#!/about\n\n\nmodeled by besmira \n︵︵︵︵︵︵︵︵",
+          "price": 60,
+          "availability": "available",
+          "preview_capability": "native_only",
+          "slot": "layered",
+          "accessory_type": "DressSkirt",
+          "is_layered": true,
+          "compatibility_status": "unsupported",
+          "resolution_status": "unsupported",
+          "message": "This clothing type requires the native Roblox preview."
+        }
+      ],
+      "candidates": [],
+      "missing_categories": [
+        "layeredDressSkirt"
+      ],
+      "total_known_price": 0,
+      "reply": "النوع اللي طلبتيه ما نقدر نعرضه بدقة في الموقع للحين. ما بدّلته بنوع ثاني؛ تقدرين تجربينه داخل Roblox.",
+      "models": {
+        "reasoning": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+        "vision": "google/gemma-4-26B-A4B-it"
+      },
+      "source": "Roblox Marketplace API",
+      "pipeline_status": {
+        "selection_status": "no_match",
+        "price_status": "not_applicable",
+        "budget_status": "not_applicable",
+        "availability_status": "not_applicable",
+        "image_retrieval_status": "failed",
+        "visual_analysis_status": "failed",
+        "avatar_application_status": "not_started"
+      },
+      "selection_status": "no_match",
+      "price_status": "not_applicable",
+      "budget_status": "not_applicable",
+      "availability_status": "not_applicable",
+      "image_retrieval_status": "failed",
+      "visual_analysis_status": "failed",
+      "avatar_application_status": "not_started",
+      "timings_ms": {
+        "requirements": 0,
+        "preserved_validation": 0,
+        "catalog": 1408,
+        "catalog_failed_queries": 0,
+        "compatibility": 2439,
+        "visual_stage": 0,
+        "selection": 0,
+        "total": 3849
+      },
+      "catalog_candidate_count": 29,
+      "visual_candidate_count": 0,
+      "visual_failure_count": 0,
+      "visual_cache_hit_count": 0,
+      "visual_model_request_count": 0,
+      "unsupported_asset_count": 0
+    }
+  }
+]

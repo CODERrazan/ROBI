@@ -1,0 +1,871 @@
+{
+  "measured_at_utc": "2026-11-03T04:52:43.215110+00:00",
+  "method": "Real backend endpoints with real Scout, Roblox and local Gemma; no mocked services",
+  "baseline_seconds": 379.223,
+  "baseline_vision_seconds": 349.023,
+  "configuration": {
+    "shortlist_max": 3,
+    "vision_concurrency": 1,
+    "models": {
+      "llama": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "vision": "gemma3:4b"
+    }
+  },
+  "runs": {
+    "analysis_cache_miss": {
+      "http_status": 200,
+      "seconds": 242.059,
+      "stage_seconds": {
+        "outfit_requirements": 11.586,
+        "catalog_search": 1.628,
+        "thumbnail_lookup": 0.599,
+        "thumbnail_download": 1.943,
+        "image_preparation": 0.088,
+        "candidate_thumbnail": 340.478,
+        "outfit_selection": 12.853
+      },
+      "model_events": [
+        {
+          "stage": "outfit_requirements",
+          "provider": "DeepInfra",
+          "requested_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "actual_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "seconds": 11.586,
+          "http_status": 200
+        },
+        {
+          "stage": "candidate_thumbnail",
+          "provider": "Ollama",
+          "requested_model": "gemma3:4b",
+          "actual_model": "gemma3:4b",
+          "seconds": 129.051,
+          "http_status": 200
+        },
+        {
+          "stage": "candidate_thumbnail",
+          "provider": "Ollama",
+          "requested_model": "gemma3:4b",
+          "actual_model": "gemma3:4b",
+          "seconds": 211.427,
+          "http_status": 200
+        },
+        {
+          "stage": "outfit_selection",
+          "provider": "DeepInfra",
+          "requested_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "actual_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "seconds": 12.853,
+          "http_status": 200
+        }
+      ],
+      "min_available_ram_gib": 0.222,
+      "peak_memory_load_percent": 98,
+      "result": {
+        "requirements": {
+          "ready": true,
+          "clarification": "",
+          "style": "cute",
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "pants",
+            "shirt"
+          ],
+          "search_terms": [
+            "black cute pants",
+            "black cute shirt"
+          ],
+          "budget": 500,
+          "restrictions": [],
+          "response": "اوكي، بنبحثلك عن بنطلون وبلوزة كيوت لونها أسود بميزانيتك 500 روبوكس."
+        },
+        "candidates": [
+          {
+            "asset_id": 84755756006518,
+            "name": "✅ Black baggy pants preppy new w cute white shoes ",
+            "description": "🔴 TOP: https://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=Prep+Outfitters&CreatorType=Group&salesTypeFilter=1&SortType=3\n\n🔴 MORE COLORS: https://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=Prep+Outfitters&CreatorType=Group&salesTypeFilter=1&SortType=2",
+            "asset_type": 66,
+            "category": "layeredPants",
+            "price": 75,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-4f908bb35fa9770904bbe34c2f1b7a4c/150/150/PantsAccessory/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/84755756006518",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white",
+                "gray"
+              ],
+              "secondary_colors": [],
+              "style": "wide-leg",
+              "pattern": "striped",
+              "visible_details": [
+                "side stripes",
+                "wide-leg fit",
+                "elastic waistband"
+              ]
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "image_verified_for_asset_id": 84755756006518,
+            "image_identity_sha256": "09c4029d67aec3a6d59371ed4eef444c11c37d0f7c4f62b9d5dbb22ad972f727",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 84755756006518,
+              "actual_model": "gemma3:4b",
+              "http_status": 200,
+              "wall_ms": 211427,
+              "inference_wall_ms": 83457,
+              "queue_ms": 127970,
+              "load_ms": 27,
+              "prompt_eval_ms": 654,
+              "eval_ms": 7210,
+              "prompt_tokens": 343,
+              "prompt_cached_tokens": 338,
+              "output_tokens": 55,
+              "done_reason": "stop",
+              "keep_alive": "10m",
+              "cache_hit": false
+            }
+          },
+          {
+            "asset_id": 89847075421013,
+            "name": "Coquette Cute Button Shirt (Black)",
+            "description": "Ty for buying!",
+            "asset_type": 65,
+            "category": "layeredShirt",
+            "price": 65,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-3f693f61ced03da200449bfefb2a63de/150/150/ShirtAccessory/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/89847075421013",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "dark gray",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "long sleeve",
+              "pattern": "none",
+              "visible_details": [
+                "crew neck",
+                "ribbed fabric",
+                "button closure"
+              ]
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "image_verified_for_asset_id": 89847075421013,
+            "image_identity_sha256": "43e4e55f49a1c70b070cb401df7c77ddc9f4fbbcb5686ecfb838a90d95e67231",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 89847075421013,
+              "actual_model": "gemma3:4b",
+              "http_status": 200,
+              "wall_ms": 129051,
+              "inference_wall_ms": 129051,
+              "queue_ms": 0,
+              "load_ms": 82,
+              "prompt_eval_ms": 70163,
+              "eval_ms": 6615,
+              "prompt_tokens": 343,
+              "prompt_cached_tokens": 0,
+              "output_tokens": 54,
+              "done_reason": "stop",
+              "keep_alive": "10m",
+              "cache_hit": false
+            }
+          }
+        ],
+        "selected_items": [
+          {
+            "asset_id": 89847075421013,
+            "name": "Coquette Cute Button Shirt (Black)",
+            "description": "Ty for buying!",
+            "asset_type": 65,
+            "category": "layeredShirt",
+            "price": 65,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-3f693f61ced03da200449bfefb2a63de/150/150/ShirtAccessory/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/89847075421013",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "dark gray",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "long sleeve",
+              "pattern": "none",
+              "visible_details": [
+                "crew neck",
+                "ribbed fabric",
+                "button closure"
+              ]
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "image_verified_for_asset_id": 89847075421013,
+            "image_identity_sha256": "43e4e55f49a1c70b070cb401df7c77ddc9f4fbbcb5686ecfb838a90d95e67231",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 89847075421013,
+              "actual_model": "gemma3:4b",
+              "http_status": 200,
+              "wall_ms": 129051,
+              "inference_wall_ms": 129051,
+              "queue_ms": 0,
+              "load_ms": 82,
+              "prompt_eval_ms": 70163,
+              "eval_ms": 6615,
+              "prompt_tokens": 343,
+              "prompt_cached_tokens": 0,
+              "output_tokens": 54,
+              "done_reason": "stop",
+              "keep_alive": "10m",
+              "cache_hit": false
+            },
+            "reason": "matching style and color",
+            "match_score": 0.9
+          },
+          {
+            "asset_id": 84755756006518,
+            "name": "✅ Black baggy pants preppy new w cute white shoes ",
+            "description": "🔴 TOP: https://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=Prep+Outfitters&CreatorType=Group&salesTypeFilter=1&SortType=3\n\n🔴 MORE COLORS: https://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=Prep+Outfitters&CreatorType=Group&salesTypeFilter=1&SortType=2",
+            "asset_type": 66,
+            "category": "layeredPants",
+            "price": 75,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-4f908bb35fa9770904bbe34c2f1b7a4c/150/150/PantsAccessory/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/84755756006518",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white",
+                "gray"
+              ],
+              "secondary_colors": [],
+              "style": "wide-leg",
+              "pattern": "striped",
+              "visible_details": [
+                "side stripes",
+                "wide-leg fit",
+                "elastic waistband"
+              ]
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "image_verified_for_asset_id": 84755756006518,
+            "image_identity_sha256": "09c4029d67aec3a6d59371ed4eef444c11c37d0f7c4f62b9d5dbb22ad972f727",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 84755756006518,
+              "actual_model": "gemma3:4b",
+              "http_status": 200,
+              "wall_ms": 211427,
+              "inference_wall_ms": 83457,
+              "queue_ms": 127970,
+              "load_ms": 27,
+              "prompt_eval_ms": 654,
+              "eval_ms": 7210,
+              "prompt_tokens": 343,
+              "prompt_cached_tokens": 338,
+              "output_tokens": 55,
+              "done_reason": "stop",
+              "keep_alive": "10m",
+              "cache_hit": false
+            },
+            "reason": "matching style and color",
+            "match_score": 0.8
+          }
+        ],
+        "missing_categories": [],
+        "total_known_price": 140,
+        "reply": "اوكي، لقد وجدت بنطلون وبلوزة كيوت لونها أسود بميزانيتك 500 روبوكس. Availability remains unknown for some selected items.",
+        "models": {
+          "reasoning": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "vision": "gemma3:4b"
+        },
+        "source": "Roblox Marketplace API",
+        "visual_analysis": {
+          "model": "gemma3:4b",
+          "observations": [
+            {
+              "asset_id": 84755756006518,
+              "image_retrieval_status": "verified",
+              "visual_analysis_status": "verified",
+              "analysis": {
+                "dominant_colors": [
+                  "black",
+                  "white",
+                  "gray"
+                ],
+                "secondary_colors": [],
+                "style": "wide-leg",
+                "pattern": "striped",
+                "visible_details": [
+                  "side stripes",
+                  "wide-leg fit",
+                  "elastic waistband"
+                ]
+              }
+            },
+            {
+              "asset_id": 89847075421013,
+              "image_retrieval_status": "verified",
+              "visual_analysis_status": "verified",
+              "analysis": {
+                "dominant_colors": [
+                  "black",
+                  "dark gray",
+                  "white"
+                ],
+                "secondary_colors": [],
+                "style": "long sleeve",
+                "pattern": "none",
+                "visible_details": [
+                  "crew neck",
+                  "ribbed fabric",
+                  "button closure"
+                ]
+              }
+            }
+          ]
+        },
+        "pipeline_status": {
+          "selection_status": "verified",
+          "price_status": "verified",
+          "budget_status": "verified",
+          "availability_status": "unknown",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "avatar_application_status": "not_started"
+        },
+        "selection_status": "verified",
+        "price_status": "verified",
+        "budget_status": "verified",
+        "availability_status": "unknown",
+        "image_retrieval_status": "verified",
+        "visual_analysis_status": "verified",
+        "avatar_application_status": "not_started",
+        "catalog_candidate_count": 20,
+        "visual_candidate_count": 2,
+        "visual_failure_count": 0,
+        "visual_cache_hit_count": 0,
+        "visual_model_request_count": 2,
+        "unsupported_asset_count": 0
+      },
+      "passed": true
+    },
+    "repeated_request": {
+      "http_status": 200,
+      "seconds": 191.75,
+      "stage_seconds": {
+        "outfit_requirements": 8.655,
+        "catalog_search": 0.885,
+        "thumbnail_lookup": 0.48,
+        "thumbnail_download": 1.172,
+        "image_preparation": 0.005,
+        "candidate_thumbnail": 234.061,
+        "outfit_selection": 22.052
+      },
+      "model_events": [
+        {
+          "stage": "outfit_requirements",
+          "provider": "DeepInfra",
+          "requested_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "actual_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "seconds": 8.655,
+          "http_status": 200
+        },
+        {
+          "stage": "candidate_thumbnail",
+          "provider": "Ollama",
+          "requested_model": "gemma3:4b",
+          "actual_model": "gemma3:4b",
+          "seconds": 76.274,
+          "http_status": 200
+        },
+        {
+          "stage": "candidate_thumbnail",
+          "provider": "Ollama",
+          "requested_model": "gemma3:4b",
+          "actual_model": "gemma3:4b",
+          "seconds": 157.787,
+          "http_status": 200
+        },
+        {
+          "stage": "outfit_selection",
+          "provider": "DeepInfra",
+          "requested_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "actual_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "seconds": 22.052,
+          "http_status": 200
+        }
+      ],
+      "min_available_ram_gib": 0.22,
+      "peak_memory_load_percent": 98,
+      "result": {
+        "requirements": {
+          "ready": true,
+          "clarification": "",
+          "style": "cute",
+          "colors": [
+            "black"
+          ],
+          "categories": [
+            "pants",
+            "shirt"
+          ],
+          "search_terms": [
+            "black cute pants",
+            "black cute shirt"
+          ],
+          "budget": 500,
+          "restrictions": [],
+          "response": "اوكي، بنبحث لك عن بنطلون وبلوزة كيوتين بلون أسود، بميزانيتك 500 روبوكس."
+        },
+        "candidates": [
+          {
+            "asset_id": 84755756006518,
+            "name": "✅ Black baggy pants preppy new w cute white shoes ",
+            "description": "🔴 TOP: https://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=Prep+Outfitters&CreatorType=Group&salesTypeFilter=1&SortType=3\n\n🔴 MORE COLORS: https://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=Prep+Outfitters&CreatorType=Group&salesTypeFilter=1&SortType=2",
+            "asset_type": 66,
+            "category": "layeredPants",
+            "price": 75,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-4f908bb35fa9770904bbe34c2f1b7a4c/150/150/PantsAccessory/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/84755756006518",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white",
+                "gray"
+              ],
+              "secondary_colors": [],
+              "style": "wide-leg",
+              "pattern": "striped",
+              "visible_details": [
+                "wide-leg fit",
+                "side stripes",
+                "cuffed hem"
+              ]
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "image_verified_for_asset_id": 84755756006518,
+            "image_identity_sha256": "3ed23ecc192fc87dd61e64eb80db4aad4875065e55c3a5cf67fe1594fb76ff08",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 84755756006518,
+              "actual_model": "gemma3:4b",
+              "http_status": 200,
+              "wall_ms": 76273,
+              "inference_wall_ms": 76273,
+              "queue_ms": 0,
+              "load_ms": 27,
+              "prompt_eval_ms": 68150,
+              "eval_ms": 7104,
+              "prompt_tokens": 343,
+              "prompt_cached_tokens": 0,
+              "output_tokens": 56,
+              "done_reason": "stop",
+              "keep_alive": "10m",
+              "cache_hit": false
+            }
+          },
+          {
+            "asset_id": 89847075421013,
+            "name": "Coquette Cute Button Shirt (Black)",
+            "description": "Ty for buying!",
+            "asset_type": 65,
+            "category": "layeredShirt",
+            "price": 65,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-3f693f61ced03da200449bfefb2a63de/150/150/ShirtAccessory/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/89847075421013",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "dark gray",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "long sleeve",
+              "pattern": "none",
+              "visible_details": [
+                "crew neck",
+                "ribbed fabric",
+                "button closure"
+              ]
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "image_verified_for_asset_id": 89847075421013,
+            "image_identity_sha256": "d6ea62bfe97ea19d6c3fcf2b19a1593138e61cc1630e061a2780d082e8af57eb",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 89847075421013,
+              "actual_model": "gemma3:4b",
+              "http_status": 200,
+              "wall_ms": 157787,
+              "inference_wall_ms": 82029,
+              "queue_ms": 75757,
+              "load_ms": 49,
+              "prompt_eval_ms": 72801,
+              "eval_ms": 8086,
+              "prompt_tokens": 343,
+              "prompt_cached_tokens": 0,
+              "output_tokens": 54,
+              "done_reason": "stop",
+              "keep_alive": "10m",
+              "cache_hit": false
+            }
+          }
+        ],
+        "selected_items": [
+          {
+            "asset_id": 84755756006518,
+            "name": "✅ Black baggy pants preppy new w cute white shoes ",
+            "description": "🔴 TOP: https://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=Prep+Outfitters&CreatorType=Group&salesTypeFilter=1&SortType=3\n\n🔴 MORE COLORS: https://www.roblox.com/catalog?taxonomy=tZsUsd2BqGViQrJ9Vs3Wah&CreatorName=Prep+Outfitters&CreatorType=Group&salesTypeFilter=1&SortType=2",
+            "asset_type": 66,
+            "category": "layeredPants",
+            "price": 75,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-4f908bb35fa9770904bbe34c2f1b7a4c/150/150/PantsAccessory/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/84755756006518",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "white",
+                "gray"
+              ],
+              "secondary_colors": [],
+              "style": "wide-leg",
+              "pattern": "striped",
+              "visible_details": [
+                "wide-leg fit",
+                "side stripes",
+                "cuffed hem"
+              ]
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "image_verified_for_asset_id": 84755756006518,
+            "image_identity_sha256": "3ed23ecc192fc87dd61e64eb80db4aad4875065e55c3a5cf67fe1594fb76ff08",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 84755756006518,
+              "actual_model": "gemma3:4b",
+              "http_status": 200,
+              "wall_ms": 76273,
+              "inference_wall_ms": 76273,
+              "queue_ms": 0,
+              "load_ms": 27,
+              "prompt_eval_ms": 68150,
+              "eval_ms": 7104,
+              "prompt_tokens": 343,
+              "prompt_cached_tokens": 0,
+              "output_tokens": 56,
+              "done_reason": "stop",
+              "keep_alive": "10m",
+              "cache_hit": false
+            },
+            "reason": "بنطلون أسود كيوت",
+            "match_score": 0.8
+          },
+          {
+            "asset_id": 89847075421013,
+            "name": "Coquette Cute Button Shirt (Black)",
+            "description": "Ty for buying!",
+            "asset_type": 65,
+            "category": "layeredShirt",
+            "price": 65,
+            "currency": "Robux",
+            "availability": "unknown",
+            "thumbnail_url": "https://tr.rbxcdn.com/180DAY-3f693f61ced03da200449bfefb2a63de/150/150/ShirtAccessory/Png/noFilter",
+            "item_type": "Asset",
+            "catalog_url": "https://www.roblox.com/catalog/89847075421013",
+            "image_retrieval_status": "verified",
+            "visual_analysis_status": "verified",
+            "visual_analysis": {
+              "dominant_colors": [
+                "black",
+                "dark gray",
+                "white"
+              ],
+              "secondary_colors": [],
+              "style": "long sleeve",
+              "pattern": "none",
+              "visible_details": [
+                "crew neck",
+                "ribbed fabric",
+                "button closure"
+              ]
+            },
+            "image_error": null,
+            "visual_cache_status": "miss",
+            "image_verified_for_asset_id": 89847075421013,
+            "image_identity_sha256": "d6ea62bfe97ea19d6c3fcf2b19a1593138e61cc1630e061a2780d082e8af57eb",
+            "vision_image": {
+              "source_size": [
+                150,
+                150
+              ],
+              "input_size": [
+                150,
+                150
+              ],
+              "resized": false
+            },
+            "visual_analysis_metrics": {
+              "asset_id": 89847075421013,
+              "actual_model": "gemma3:4b",
+              "http_status": 200,
+              "wall_ms": 157787,
+              "inference_wall_ms": 82029,
+              "queue_ms": 75757,
+              "load_ms": 49,
+              "prompt_eval_ms": 72801,
+              "eval_ms": 8086,
+              "prompt_tokens": 343,
+              "prompt_cached_tokens": 0,
+              "output_tokens": 54,
+              "done_reason": "stop",
+              "keep_alive": "10m",
+              "cache_hit": false
+            },
+            "reason": "بلوزة أسود كيوت",
+            "match_score": 0.9
+          }
+        ],
+        "missing_categories": [],
+        "total_known_price": 140,
+        "reply": "اوكي، لقد وجدت بنطلون وبلوزة كيوتين بلون أسود ضمن ميزانيتك. البنطلون: 75 روبوكس، البلوزة: 65 روبوكس. Availability remains unknown for some selected items.",
+        "models": {
+          "reasoning": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "vision": "gemma3:4b"
+        },
+        "source": "Roblox Marketplace API",
+        "visual_analysis": {
+          "model": "gemma3:4b",
+          "observations": [
+            {
+              "asset_id": 84755756006518,
+              "image_retrieval_status": "verified",
+              "visual_analysis_status": "verified",
+              "analysis": {
+                "dominant_colors": [
+                  "black",
+                  "white",
+                  "gray"
+                ],
+                "secondary_colors": [],
+                "style": "wide-leg",
+                "pattern": "striped",
+                "visible_details": [
+                  "wide-leg fit",
+                  "side stripes",
+                  "cuffed hem"
+                ]
+              }
+            },
+            {
+              "asset_id": 89847075421013,
+              "image_retrieval_status": "verified",
+              "visual_analysis_status": "verified",
+              "analysis": {
+                "dominant_colors": [
+                  "black",
+                  "dark gray",
+                  "white"
+                ],
+                "secondary_colors": [],
+                "style": "long sleeve",
+                "pattern": "none",
+                "visible_details": [
+                  "crew neck",
+                  "ribbed fabric",
+                  "button closure"
+                ]
+              }
+            }
+          ]
+        },
+        "pipeline_status": {
+          "selection_status": "verified",
+          "price_status": "verified",
+          "budget_status": "verified",
+          "availability_status": "unknown",
+          "image_retrieval_status": "verified",
+          "visual_analysis_status": "verified",
+          "avatar_application_status": "not_started"
+        },
+        "selection_status": "verified",
+        "price_status": "verified",
+        "budget_status": "verified",
+        "availability_status": "unknown",
+        "image_retrieval_status": "verified",
+        "visual_analysis_status": "verified",
+        "avatar_application_status": "not_started",
+        "catalog_candidate_count": 20,
+        "visual_candidate_count": 2,
+        "visual_failure_count": 0,
+        "visual_cache_hit_count": 0,
+        "visual_model_request_count": 2,
+        "unsupported_asset_count": 0
+      },
+      "passed": true
+    }
+  },
+  "ollama_before": {
+    "models": [
+      {
+        "name": "gemma3:4b",
+        "model": "gemma3:4b",
+        "size": 2886687784,
+        "digest": "68ceab7e468a31c988b44d5a4984a0e21f58c4f7158c6ce29c1804babac38df7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "gemma3",
+          "families": [
+            "gemma3",
+            "clip"
+          ],
+          "parameter_size": "3.9B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-03T07:57:29.2741673+03:00",
+        "size_vram": 0,
+        "context_length": 2048,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "passed": true,
+  "ollama_after": {
+    "models": [
+      {
+        "name": "gemma3:4b",
+        "model": "gemma3:4b",
+        "size": 2886687784,
+        "digest": "68ceab7e468a31c988b44d5a4984a0e21f58c4f7158c6ce29c1804babac38df7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "gemma3",
+          "families": [
+            "gemma3",
+            "clip"
+          ],
+          "parameter_size": "3.9B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-03T08:09:38.2940908+03:00",
+        "size_vram": 0,
+        "context_length": 2048,
+        "runner": "llamacpp"
+      }
+    ]
+  }
+}

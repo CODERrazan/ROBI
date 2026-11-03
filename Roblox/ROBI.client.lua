@@ -1,0 +1,93 @@
+-- StarterPlayer/StarterPlayerScripts/ROBI.client.lua
+local Players=game:GetService("Players")
+local AvatarEditor=game:GetService("AvatarEditorService")
+local player=Players.LocalPlayer
+local function t(ar,en)return string.sub(player.LocaleId,1,2)=="ar" and ar or en end
+print("[ROBI] client_start")
+local request,event
+local gui=Instance.new("ScreenGui");gui.Name="ROBIStudio";gui.ResetOnSpawn=false;gui.Parent=player:WaitForChild("PlayerGui")
+local panel=Instance.new("ScrollingFrame");panel.Size=UDim2.new(0.92,0,0.85,0);panel.Position=UDim2.new(0,12,0.075,0);panel.AutomaticCanvasSize=Enum.AutomaticSize.Y;panel.CanvasSize=UDim2.new();panel.ScrollBarThickness=6;
+local limit=Instance.new("UISizeConstraint");limit.MaxSize=Vector2.new(350,850);limit.Parent=panel;panel.BackgroundColor3=Color3.fromRGB(29,24,50);panel.Parent=gui
+Instance.new("UICorner",panel).CornerRadius=UDim.new(0,16)
+local layout=Instance.new("UIListLayout");layout.Padding=UDim.new(0,9);layout.SortOrder=Enum.SortOrder.LayoutOrder;layout.Parent=panel
+local padding=Instance.new("UIPadding");padding.PaddingLeft=UDim.new(0,14);padding.PaddingRight=UDim.new(0,14);padding.PaddingTop=UDim.new(0,14);padding.Parent=panel
+local function label(text,height)
+ local object=Instance.new("TextLabel");object.Size=UDim2.new(1,0,0,height);object.BackgroundTransparency=1;object.TextColor3=Color3.new(1,1,1);object.TextWrapped=true;object.Text=text;object.TextSize=16;object.Font=Enum.Font.Gotham;object.Parent=panel;return object
+end
+label("ROBI Avatar Studio",30)
+local code=Instance.new("TextBox");code.Size=UDim2.new(1,0,0,40);code.PlaceholderText="ABCD-EFGH-IJKL";code.Text=player:GetAttribute("ROBILaunchCode") or "";code.ClearTextOnFocus=false;code.TextEditable=true;code.TextSize=20;code.Parent=panel
+local message=label(t("هلا! أنا روبي 🎀 أجهز لك الاستوديو...","Welcome to ROBI! Connecting to the styling studio..."),85)
+print("[ROBI] welcome_visible")
+local remotes=game:GetService("ReplicatedStorage"):WaitForChild("ROBI",20)
+request=remotes and remotes:WaitForChild("Request",10)
+event=remotes and remotes:WaitForChild("Status",10)
+if not request or not event then
+ message.Text=t("واجهة روبي موجودة، لكن السيرفر ما اشتغل. تأكدي من تثبيت حزمة السيرفر ونشرها.","ROBI UI is installed, but the server is unavailable. Check Studio Output, install ROBI-Server in ServerScriptService, and publish.")
+ warn("[ROBI] missing_server_remotes");return
+end
+message.Text=t("هلاا! حطي رمز إطلالتك هنا، وبجهز لك معاينة خاصة 🎀","Enter your design code to load your own preview mannequin.")
+print("[ROBI] client_connected")
+local busy=false;local promptOpen=false
+local function invoke(action,value)
+ if busy then return nil end;busy=true
+ local ok,response=pcall(function()return request:InvokeServer(action,value)end);busy=false
+ if not ok or not response.ok then message.Text=ok and response.error or "Could not contact ROBI.";return nil end
+ return response.result or {}
+end
+local function button(text,callback)
+ local b=Instance.new("TextButton");b.Size=UDim2.new(1,0,0,40);b.Text=text;b.TextColor3=Color3.new(1,1,1);b.BackgroundColor3=Color3.fromRGB(126,97,233);b.TextSize=15;b.Font=Enum.Font.GothamBold;b.Parent=panel;Instance.new("UICorner",b)
+ b.Activated:Connect(callback);return b
+end
+local itemList=label("",0)
+itemList.AutomaticSize=Enum.AutomaticSize.Y
+itemList.TextXAlignment=Enum.TextXAlignment.Left
+local function showItems(check)
+ local lines={}
+ for _,item in ipairs(check.items or {}) do
+  local state=item.owned and "Owned" or item.off_sale and "Off sale" or item.purchasable and "Missing" or "Unavailable"
+  local cost=item.price==nil and "Price unknown" or tostring(item.price).." Robux"
+  table.insert(lines,string.format("%s | %s | %s",item.name,state,cost))
+ end
+ itemList.Text=table.concat(lines,"\n")
+ message.Text=string.format("%d missing items. Known missing cost: %s Robux. %d blocked items.",check.missing_count,tostring(check.total_missing_known),check.blocked_count)
+end
+button(t("عايني هذا الرمز","Preview this code"),function()invoke("claim",code.Text)end)
+button(t("تحققي من الملكية والتكلفة","Check ownership and current cost"),function()
+ local check=invoke("check");if check then showItems(check)end
+end)
+button(t("شراء القطع الناقصة — تأكيد Roblox","Purchase missing items (Roblox prompt)"),function()invoke("purchase")end)
+local function saveAction(kind)
+ if promptOpen then return end
+ local prepared=invoke("prepare_save");if not prepared then return end
+ local description=prepared.description
+ if not description then message.Text="Validated preview description is not available yet.";return end
+ promptOpen=true
+ local ok=pcall(function()
+  if kind=="outfit" then AvatarEditor:PromptCreateOutfit(description,Enum.HumanoidRigType.R15,{},Enum.OutfitType.Avatar)
+  else AvatarEditor:PromptSaveAvatar(description,Enum.HumanoidRigType.R15) end
+ end)
+ if not ok then promptOpen=false;message.Text="Roblox could not open this prompt. Try again in the published experience." end
+end
+button(t("احفظي ستايل جديد","Save a new outfit"),function()saveAction("outfit")end)
+button(t("لبّسني في Roblox","Wear on my Roblox account"),function()saveAction("avatar")end)
+local function completed(action,result)
+ promptOpen=false
+ if result==Enum.AvatarPromptResult.Success then message.Text=action.." confirmed by Roblox."
+ elseif result==Enum.AvatarPromptResult.PermissionDenied then message.Text="You declined. Nothing was changed by this prompt; your design is still here."
+ else message.Text=action.." was not confirmed. Your design is preserved." end
+end
+AvatarEditor.PromptCreateOutfitCompleted:Connect(function(result,_failureType)completed("Outfit save",result)end)
+AvatarEditor.PromptSaveAvatarCompleted:Connect(function(result,_description)completed("Account avatar change",result)end)
+event.OnClientEvent:Connect(function(update)
+ message.Text=update.message or update.state
+ if update.state=="ready" and update.extra and update.extra.model then
+  task.spawn(function()local check=invoke("check");if check then showItems(check)end end)
+  local model=update.extra.model
+  local camera=workspace.CurrentCamera
+  if camera then
+   local center=model:GetPivot().Position+Vector3.new(0,1,0)
+   camera.CameraType=Enum.CameraType.Scriptable
+   camera.CFrame=CFrame.lookAt(center+Vector3.new(0,1,-9),center)
+  end
+ end
+end)

@@ -1,0 +1,52 @@
+{
+  "mode": "Live public HTTPS backend protocol test; server identity simulated by test script, NOT a Roblox client/Studio test",
+  "base_url": "https://labored-manager-boggle.ngrok-free.dev",
+  "checks": [
+    {
+      "path": "/health",
+      "http_status": 200
+    },
+    {
+      "path": "/api/roblox/config",
+      "http_status": 200
+    },
+    {
+      "path": "/api/designs/launch-token",
+      "http_status": 200
+    },
+    {
+      "path": "/api/designs/claim",
+      "http_status": 401
+    },
+    {
+      "path": "/api/designs/claim",
+      "http_status": 200
+    },
+    {
+      "path": "/api/designs/redeem",
+      "http_status": 200
+    },
+    {
+      "path": "/api/designs/54e146c8-cb98-49de-81c4-2e3fa12382c3/approve",
+      "http_status": 200
+    },
+    {
+      "path": "/api/designs/redeem",
+      "http_status": 200
+    },
+    {
+      "path": "/api/designs/redeem",
+      "http_status": 200
+    },
+    {
+      "path": "/api/designs/redeem",
+      "http_status": 409
+    }
+  ],
+  "asset_ids": [
+    17331596106,
+    9694994699
+  ],
+  "duration_seconds": 6.03,
+  "passed": true
+}

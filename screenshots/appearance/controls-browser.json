@@ -1,0 +1,26 @@
+{
+  "method": "Real Edge browser CDP interaction with React UI and live backend; no mocked network",
+  "api": [],
+  "consoleErrors": [],
+  "steps": [
+    {
+      "screenshot": "06-final-desktop.png"
+    },
+    {
+      "screenshot": "07-final-mobile.png"
+    }
+  ],
+  "controls": {
+    "rotationChanged": true,
+    "zoomChanged": true,
+    "resetChanged": true,
+    "resetExactPixels": true
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "noteBottom": 337.5,
+    "controlsTop": 625.515625
+  },
+  "passed": true
+}

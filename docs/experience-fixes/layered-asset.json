@@ -1,0 +1,13 @@
+{
+  "asset_id": 73598153533805,
+  "asset_type": 72,
+  "bytes": 5408,
+  "instance_classes": [
+    "Accessory",
+    "Attachment",
+    "MeshPart",
+    "WrapLayer"
+  ],
+  "rigid_supported": false,
+  "reason": "Wrapping, deformable mesh or PBR surface is not supported"
+}
